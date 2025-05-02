@@ -1,0 +1,166 @@
+.quick-facts-main {
+    margin: 20px 30px 0 30px;
+    font-size: 34px;
+    box-shadow: 0 0 15px rgba(41, 121, 136, 0.3);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 450px;
+   
+    padding: 20px;
+}
+
+.quick-facts-main > h1 {
+    text-align: center;
+    color: #297988;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.text-card {
+    font-size: 18px;
+    font-weight: 500;
+    color: #555;
+}
+
+.quickfacts-btn {
+    color: #297988;
+    border: 2px solid #297988;
+    width: 200px;
+    height: 50px;
+    border-radius: 6px;
+    margin-top: 20px;
+    transition: all 0.4s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    background: white;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.quickfacts-btn:hover {
+    color: white;
+    background-color: #297988;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(41, 121, 136, 0.3);
+}
+
+.main-card {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fact-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+.fact-card:hover {
+    transform: translateY(-10px) rotateX(5deg) rotateY(5deg);
+    box-shadow: 0 15px 30px rgba(41, 121, 136, 0.3);
+}
+
+.card-content {
+    transform: translateZ(20px);
+    padding: 20px;
+    text-align: center;
+}
+
+.icon-text {
+    font-size: 40px;
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    border: 2px solid #297988;
+    border-radius: 50%;
+    background-color: white;
+    padding: 10px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #297988;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.fact-card:hover .icon-text {
+    transform: translateX(-50%) scale(1.1);
+    background-color: #297988;
+    color: white;
+}
+
+.number-value {
+    font-size: 42px;
+    font-weight: 700;
+    margin: 30px 0 10px;
+    color: #297988;
+    transition: all 0.3s ease;
+}
+
+.fact-card:hover .number-value {
+    transform: scale(1.1);
+}
+
+/* Individual card colors */
+.card-1 {
+    border-top: 4px solid #4CAF50;
+}
+
+.card-2 {
+    border-top: 4px solid #2196F3;
+}
+
+.card-3 {
+    border-top: 4px solid #FF9800;
+}
+
+.card-4 {
+    border-top: 4px solid #9C27B0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .main-card {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .quick-facts-main {
+        height: auto;
+        padding: 30px 20px;
+    }
+    
+    .main-card {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .fact-card {
+        width: 80%;
+        max-width: 300px;
+        margin-bottom: 40px;
+    }
+}

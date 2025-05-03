@@ -49,7 +49,7 @@ function HomePage() {
     const buttonVariants = {
         hover: {
             y: -3,
-            rotateY: 5,
+            scale: 1.05, 
             boxShadow: "0 5px 15px rgba(41, 121, 136, 0.4)",
             transition: {
                 type: "spring",
@@ -100,7 +100,6 @@ function HomePage() {
                     className='view-more-btn'
                     whileHover="hover"
                     variants={buttonVariants}
-                    style={{ transformStyle: "preserve-3d" }}
                 >
                     Client Login
                 </motion.button>

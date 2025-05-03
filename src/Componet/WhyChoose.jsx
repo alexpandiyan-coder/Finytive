@@ -1,58 +1,59 @@
-import React from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
-import { 
-  LayoutDashboard, 
-  ShieldCheck, 
-  Users, 
-  Clock, 
-  Target, 
-  Lightbulb, 
-  Briefcase 
-} from "lucide-react"; 
+import "./WhyCoose.css"
 
-const Box = ({ content, Icon }) => {
-  return (
-    <Card 
-      className="text-center shadow-sm"
-      style={{ 
-        height: '14rem', 
-        width: '14rem', 
-        borderRadius: '1.5rem', 
-        transition: 'transform 0.5s',
-        border: '2px solid #097969' 
-      }}
-      onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-8px)'}
-      onMouseLeave={e => e.currentTarget.style.transform = 'translateY(0)'}
-    >
-      <Card.Body className="d-flex flex-column align-items-center justify-content-center">
-        <Icon size={48} className="mb-3 text-success" />
-        <Card.Text>{content}</Card.Text>
-      </Card.Body>
-    </Card>
-  );
-};
+const steps = [
+  {
+    title: "Well-Trusted Organization",
+    description:
+      "Finytive is recognized for its reliability, transparency, and client-first approach We’ve built long-term relationships through consistent delivery and proven results"
+  },
+  {
+    title: "Client First",
+    description:
+     `We prioritize client needs at every stage, ensuring personalized solutions and satisfaction.
+Your goals drive our strategy, innovation, and long-term partnership approach`
+  },
+  {
+    title: "On-Time Delivery",
+    description:
+      `We follow agile processes to ensure projects are delivered within deadlines without compromising quality.
+Timely execution is our commitment to your business success`
+  },
+  {
+    title: "Results Focused",
+    description:
+      `We aim for measurable outcomes that drive growth and value for your business.
+Every solution we build is aligned with your goals and success metrics`
+  },
+  {
+    title: "Total Ownership",
+    description:
+      `We take complete responsibility from start to finish, ensuring seamless execution and accountability.
+Our team treats your project as our own, delivering with dedication and precision.`
+  }
+];
 
 export default function WhyChoose() {
-  const boxContents = [
-    { content: "Well Trusted Organization", Icon: ShieldCheck },
-    { content: "Client First", Icon: Users },
-    { content: "On Time Delivery", Icon: Clock },
-    { content: "Results Focused", Icon: Target },
-    { content: "Proactive Approach", Icon: Lightbulb },
-    { content: "Total Ownership", Icon: Briefcase },
-  ];
-
   return (
-    <Container fluid className="d-flex flex-column align-items-center justify-content-center min-vh-100 bg-light py-5" style={{ backgroundColor: '#ffffff' }}>
-      <h1 className="display-4 mb-5">Why Choose Finytive </h1>
-
-      <Row className="g-4 justify-content-center">
-        {boxContents.map((item, index) => (
-          <Col key={index} xs={12} md={3} className="d-flex justify-content-center">
-            <Box content={item.content} Icon={item.Icon} />
-          </Col>
-        ))}
-      </Row>
-    </Container>
-  );
+    <section className="timeline-section">
+      <div className="why-choose-div">
+      <h2>  Why Choose <span className="logo-title"> Finytive?</span> </h2>
+      <p>
+Finytive delivers innovative, secure, and scalable fintech solutions tailored to your business.
+We combine deep industry expertise with fast, customer-centric development.
+Our end-to-end support ensures long-term success and compliance
+</p>
+      </div>
+      {steps.map((step, index) => (
+        <div className="timeline-item" key={index}>
+          <div className="timeline-circle">
+            <span>{index + 1}</span>
+          </div>
+          <div className="timeline-content">
+            <h3 className="timeline-title">{step.title}</h3>
+            <p className="timeline-description">{step.description}</p>
+          </div>
+        </div>
+      ))}
+    </section>
+  );
 }

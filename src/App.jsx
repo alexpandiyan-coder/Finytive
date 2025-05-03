@@ -19,7 +19,7 @@ function App() {
      <ProjectPage/>
      <Products/>
      <WhyChoose/>
-     {/* <Footer/> */}
+     <Footer/>
     </div>
   )
 }

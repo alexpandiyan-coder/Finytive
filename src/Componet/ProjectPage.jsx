@@ -28,6 +28,10 @@ function ProjectPage() {
       title: "Helpdesk Management Software",
       desc: "Streamlined ticketing, SLA monitoring, and team collaboration.",
       img: crm
+    }, {
+      title: "Finytive CRM",
+      desc: "A complete CRM to manage leads, automate tasks, and boost your sales productivity.",
+      img: crm
     }
   ];
 

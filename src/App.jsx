@@ -17,8 +17,8 @@ function App() {
      <HomePage/>
      <HeaderPage/>
      <ProjectPage/>
-     <Products/>
      <WhyChoose/>
+     <Products/>
      <Footer/>
     </div>
   )

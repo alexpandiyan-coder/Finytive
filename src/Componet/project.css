@@ -18,14 +18,14 @@
  
   }
   
-  /* Product Grid */
+  
   .product-card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     gap: 30px;
   }
   
-  /* 3D Card Container */
+
   .product-card-3d {
     background-color: transparent;
     height: 300px;
@@ -34,7 +34,7 @@
     opacity: 0;
   }
   
-  /* Inner card for flipping */
+  
   .product-card-inner {
     position: relative;
     width: 100%;
@@ -46,12 +46,12 @@
     border-radius: 12px;
   }
   
-  /* Flip on hover */
+
   .product-card-3d:hover .product-card-inner {
     transform: rotateY(180deg);
   }
   
-  /* Front and back styling */
+
   .product-card-front, .product-card-back {
     position: absolute;
     width: 100%;
@@ -67,7 +67,6 @@
     background-color: white;
   }
   
-  /* Back card styling */
   .product-card-back {
     background-color: #297988;
     color: white;
@@ -100,7 +99,7 @@
     color: #297988;
   }
   
-  /* Front card styling */
+
   .product-card-front h4 {
     margin-top: 15px;
     color: #343a40;
@@ -124,7 +123,7 @@
     transform: scale(1.1);
   }
   
-  /* Button */
+  
   .btn-outline-warnings {
     font-size: 0.9rem;
     padding: 8px 18px;
@@ -142,7 +141,7 @@
     color: white;
   }
   
-  /* Animation */
+
   @keyframes fadeIn {
     to {
       opacity: 1;
@@ -150,7 +149,7 @@
     }
   }
   
-  /* Responsive */
+  
   @media (max-width: 768px) {
     .title {
       font-size: 1.5rem;

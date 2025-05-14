@@ -1,0 +1,138 @@
+/* WhyChoose.css */
+
+.why-choose-section {
+  padding: 80px 20px;
+  background:white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.why-choose-header {
+  max-width: 800px;
+  margin: 0 auto 60px;
+}
+
+.why-choose-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+  position: relative;
+  display: inline-block;
+}
+
+.why-choose-header h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background:#ffffff;
+  border-radius: 2px;
+}
+
+.subtitle {
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.choose-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  transition: all 0.5s ease;
+  position: relative;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  box-shadow: 0 10px 30px rgba(0, 123, 143, 0.2);
+  border: 1px solid rgba(0, 123, 143, 0.1);
+  z-index: 1;
+}
+
+.choose-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #007b8f, #00a3bf);
+  z-index: 2;
+}
+
+.choose-card:hover {
+  transform: translateY(-10px) perspective(1000px);
+}
+
+.card-icon {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.choose-card:hover .card-icon {
+  transform: scale(1.2);
+}
+
+.card-title {
+  color: #007b8f;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 3;
+}
+
+.card-description {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 3;
+}
+
+.card-number {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  font-size: 5rem;
+  font-weight: bold;
+  color: rgba(0, 123, 143, 0.05);
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.choose-card:hover .card-number {
+  color: rgba(0, 123, 143, 0.1);
+  transform: scale(1.1);
+}
+
+.logo-title {
+  color: #007b8f;
+  font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .why-choose-header h2 {
+    font-size: 2rem;
+  }
+  
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .choose-card {
+    padding: 25px;
+  }
+}

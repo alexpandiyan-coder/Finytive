@@ -25,16 +25,30 @@
   color: #2d3748;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
 }
-
 .font-child {
   font-size: 65px;
-  color: #297988;
-  background: linear-gradient(to right, #297988, #4fd1c5);
+  background: linear-gradient(to right, #297988, #4fd1c5, #297988);
+  background-size: 300% auto;
+  background-position: left center;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
+  animation: gradientSmooth 6s ease-in-out infinite;
 }
+
+@keyframes gradientSmooth {
+  0% {
+    background-position: 0% center;
+  }
+  50% {
+    background-position: 100% center;
+  }
+  100% {
+    background-position: 0% center;
+  }
+}
+
 
 .header-subtext {
   font-size: 18px;
@@ -105,6 +119,8 @@
   transform-style: preserve-3d;
   filter: drop-shadow(0 10px 20px rgba(41, 121, 136, 0.2));
   transition: all 0.5s ease;
+  position: relative;
+  bottom: 50px;
 }
 
 .logo-img:hover {

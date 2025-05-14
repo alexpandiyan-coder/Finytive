@@ -1,0 +1,66 @@
+.technology{
+  
+    margin: 10px 35px 10px 35px;
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+
+.technology-header{
+    width: 500px;
+}
+
+.technology-heading{
+    color:#297988;
+}
+
+.round-img{
+    position: absolute;
+    top: 600px;
+    transform: rotate(-10deg);
+    left: -40px;
+    width: 150px;
+
+}
+
+.technology-footer{
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.videoVision{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    padding: 10px;
+    font-size: 15px;
+    margin: 10px;
+   background-color: rgba(41, 121, 136, 0.5);
+}
+
+.videoVision > .img-1{
+    width:80px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.robot-img{
+    width: 100px;
+    border-radius: 100px;
+}
+
+.videoVision:hover{
+    transform: scale(1);
+}
+
+.technology{
+   background-color: #F5F5F5;
+    border-radius: 20px;
+    padding: 10px;
+}

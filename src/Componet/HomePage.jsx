@@ -77,7 +77,7 @@ function HomePage() {
                 
                 <div className='list-tab'>
                     <ul>
-                        {['Apps', 'Industries', 'Company', 'Pricing', 'Customers', 'Partners'].map((item, index) => (
+                        {['Home', 'Services', 'Company', 'Works', 'Customers', 'Blog'].map((item, index) => (
                             <motion.li 
                                 key={index}
                                 whileHover="hover"

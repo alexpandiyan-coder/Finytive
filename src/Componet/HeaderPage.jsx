@@ -1,7 +1,6 @@
-import React, { useEffect } from 'react';
 import "./header.css"
 import img1 from "../assets/banner-thumb-7 1.svg"
-import AOS from 'aos';
+
 import 'aos/dist/aos.css';
 function HeaderPage() {
 
@@ -22,8 +21,8 @@ function HeaderPage() {
         </div>
       </div>
 
-      <div className='logo-container' data-aos="fade-left">
-        <img src={img1} className='logo-img' alt="ERP Solutions Illustration" />
+      <div className='logo-container' width={"1000px"} data-aos="fade-left">
+        <img src={img1} width={"400px"} className='logo-img' alt="ERP Solutions Illustration" />
       </div>
     </header>
   )

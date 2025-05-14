@@ -1,0 +1,29 @@
+.about-robot{
+
+    width: 470px;
+
+}
+.about-main{
+    margin: 10px 25px 10px 25px;
+    display: flex;
+    justify-content: center;
+}
+.about-footer-div{
+    width: 650px;
+    margin: 20px;
+
+   display: flex;
+   justify-items: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 20px;
+   font-size: 20px;
+   padding: 10px;
+}
+.about-img-div{
+    margin: 20px;
+}
+
+.header-title{
+    color:#297988;
+}

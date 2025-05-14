@@ -49,7 +49,6 @@ function ProjectPage() {
                 )}
                 <h4>{product.title}</h4>
                 <p>{product.desc}</p>
-                <button className="btn-outline-warnings">Explore</button>
               </div>
               <div className="product-card-back">
                 <h4>Features</h4>

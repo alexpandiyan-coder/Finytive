@@ -1,34 +1,28 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { FaFacebook, FaLinkedin, FaYoutube } from 'react-icons/fa';
+import { FaFacebook, FaLinkedin, FaYoutube, FaRegCopyright } from 'react-icons/fa';
+import footerImg1 from "../assets/Footer/div.pattern-1.png";
+import footerImg2 from "../assets/Footer/div.pattern-2.png";
+import './footer.css';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  const teal = 'teal';
-
-  const socialLinks = [
-    { icon: FaFacebook, link: 'https://www.facebook.com' },
-    { icon: FaLinkedin, link: 'https://www.linkedin.com' },
-    { icon: FaYoutube, link: 'https://www.youtube.com' },
-  ];
-
-  const [hoveredIcon, setHoveredIcon] = useState(null);
 
   return (
-    <footer className="bg-white text-dark py-5">
+    <footer className="text-dark footer-main-content" style={{ backgroundColor: 'teal' }}>
       <Container>
         <Row className="gy-4">
           <Col md={3}>
-            <h1 className="fw-bold" style={{ color: teal }}>Finytive</h1>
-            <p className="mt-3">
+            <h1 className="fw-bold text-warning">Finytive</h1>
+            <p className="mt-3 text-light">
               Finytive is an independent, leading software firm specialized in Enterprise
               business applications (POS, CRM, ERP for Retail, Manufacturing & Education).
             </p>
           </Col>
 
           <Col md={2}>
-            <h5 className="mb-3" style={{ color: teal }}>Products</h5>
-            <ul className="list-unstyled lh-lg">
+            <h5 className="mb-3 text-white">Products</h5>
+            <ul className="list-unstyled lh-lg text-light">
               <li>Finytive BOOKS</li>
               <li>Finytive CRM</li>
               <li>Finytive ERP</li>
@@ -39,8 +33,8 @@ const Footer = () => {
           </Col>
 
           <Col md={2}>
-            <h5 className="mb-3" style={{ color: teal }}>Our Services</h5>
-            <ul className="list-unstyled lh-lg">
+            <h5 className="mb-3 text-white">Our Services</h5>
+            <ul className="list-unstyled lh-lg text-light">
               <li>Invoice Generator</li>
               <li>GST Calculator</li>
               <li>Website Builder</li>
@@ -48,8 +42,8 @@ const Footer = () => {
           </Col>
 
           <Col md={2}>
-            <h5 className="mb-3" style={{ color: teal }}>About Us</h5>
-            <ul className="list-unstyled lh-lg">
+            <h5 className="mb-3 text-white">About Us</h5>
+            <ul className="list-unstyled lh-lg text-light">
               <li>Our Company</li>
               <li>Jobs</li>
               <li>Blogs</li>
@@ -58,54 +52,47 @@ const Footer = () => {
           </Col>
 
           <Col md={3}>
-            <h5 className="mb-3" style={{ color: teal }}>Contact Us</h5>
-            <p>Location: Chennai, INDIA.</p>
-            <p>‪+91 44 4853 2233‬</p>
-            <p>
+            <h5 className="mb-3 text-white">Contact Us</h5>
+            <p className="text-light">Location: Chennai, INDIA.</p>
+            <p className="text-light">+91 44 4853 2233</p>
+            <p className="text-light">
               E-mail:{' '}
-              <a href="mailto:info@finytive.com" className="text-decoration-none" style={{ color: teal }}>
+              <a href="mailto:info@finytive.com" className="text-warning text-decoration-none">
                 info@finytive.com
               </a>
             </p>
           </Col>
         </Row>
 
-        <Row className="mt-5 pt-4 border-top border-secondary-subtle">
-          <Col md={6} className="d-flex align-items-center">
-            <p className="mb-0">© {currentYear} Finytive. All Rights Reserved.</p>
+        <Row className="mt-4">
+          <Col className="text-center">
+            <a href="https://www.facebook.com" className="text-light me-3">
+              <FaFacebook size={24} />
+            </a>
+            <a href="https://www.linkedin.com" className="text-light me-3">
+              <FaLinkedin size={24} />
+            </a>
+            <a href="https://www.youtube.com" className="text-light">
+              <FaYoutube size={24} />
+            </a>
           </Col>
+        </Row>
 
-          <Col md={6} className="d-flex justify-content-end align-items-center gap-3">
-            {socialLinks.map(({ icon: Icon, link }, index) => (
-              <a
-                key={index}
-                href={link}
-                target="_blank"
-                rel="noopener noreferrer"
-                onMouseEnter={() => setHoveredIcon(index)}
-                onMouseLeave={() => setHoveredIcon(null)}
-                className="d-flex justify-content-center align-items-center rounded-circle"
-                style={{
-                  width: '40px',
-                  height: '40px',
-                  backgroundColor: '#ccc',
-                  transition: 'all 0.3s ease',
-                }}
-              >
-                <Icon
-                  style={{
-                    fontSize: '20px',
-                    color: hoveredIcon === index ? teal : '#000',
-                    transition: 'color 0.3s ease',
-                  }}
-                />
-              </a>
-            ))}
+        <hr />
+
+        <Row className="mt-3">
+          <Col className="text-center text-light">
+            <p>
+              <FaRegCopyright /> {currentYear} Finytive. All rights reserved.
+            </p>
           </Col>
         </Row>
       </Container>
+
+      <img src={footerImg1} alt="Decorative Pattern 1" className="footer-img-1" />
+      <img src={footerImg2} alt="Decorative Pattern 2" className="footer-img-2" />
     </footer>
   );
 };
 
-export default Footer;
+export default Footer;

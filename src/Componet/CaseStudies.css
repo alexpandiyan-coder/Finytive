@@ -1,0 +1,180 @@
+/* caseStudies.css */
+
+.case-studies-main {
+    position: relative;
+    padding: 5rem 2rem;
+    background-color: #f9fafb;
+    overflow: hidden;
+}
+
+.case-studies-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.case-studies-header h2 {
+    font-size: 2.5rem;
+    color: #111827;
+    margin-bottom: 1rem;
+}
+
+.case-studies-header p {
+    font-size: 1.2rem;
+    color: #6b7280;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.case-studies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.case-study-tilt {
+    height: 100%;
+    border-radius: 16px;
+}
+
+.case-study-item {
+    height: 100%;
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.image-container {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.case-study-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    pointer-events: none;
+}
+
+.case-study-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.case-study-content h3 {
+    font-size: 1.5rem;
+    color: #111827;
+    margin-bottom: 0.5rem;
+}
+
+.case-study-content p {
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.cta-button {
+    align-self: flex-start;
+    padding: 0.75rem 1.5rem;
+    background-color: #6366f1;
+    color: white;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.floating-circle-1,
+.floating-circle-2 {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle, #6366f1, transparent);
+    filter: blur(50px);
+    z-index: 0;
+}
+
+.floating-circle-1 {
+    width: 300px;
+    height: 300px;
+    top: -100px;
+    left: -100px;
+}
+
+.floating-circle-2 {
+    width: 400px;
+    height: 400px;
+    bottom: -150px;
+    right: -100px;
+}
+
+@media (max-width: 768px) {
+    .case-studies-header h2 {
+        font-size: 2rem;
+    }
+    
+    .case-studies-header p {
+        font-size: 1rem;
+    }
+    
+    .case-studies-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* Add this to your caseStudies.css file */
+
+.demo-btn1 {
+    background-color: #297988;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.75rem;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    align-self: flex-start;
+}
+
+/* Floating circles */
+.floating-circle-1,
+.floating-circle-2 {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle, #297988, transparent);
+    filter: blur(50px);
+    z-index: 0;
+}
+
+.floating-circle-1 {
+    width: 300px;
+    height: 300px;
+    top: -100px;
+    left: -100px;
+}
+
+.floating-circle-2 {
+    width: 400px;
+    height: 400px;
+    bottom: -150px;
+    right: -100px;
+}
+
+/* Rest of your existing CSS remains the same */

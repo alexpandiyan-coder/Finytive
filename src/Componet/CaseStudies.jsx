@@ -1,5 +1,5 @@
 import React from 'react';
-import './caseStudies.css';
+import './CaseStudies.css';
 import { motion } from 'framer-motion';
 import Tilt from 'react-parallax-tilt';
 import img1 from "../assets/cloud-storage-background-business-network-design.jpg";

@@ -3,7 +3,7 @@ import img1 from "../assets/technology/Figure → icon-8.png.png"
 import round from "../assets/technology/Group 56 (3).svg"
 import Robot from "../assets/technology/Robot face-amico.png"
 import { FcApproval } from 'react-icons/fc';
-import "./technology.css"
+import "./Technology.css"
 function Technology() {
     return (
         <section className='technology'>

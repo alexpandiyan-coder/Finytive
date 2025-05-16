@@ -23,21 +23,21 @@ const Footer = () => {
           <Col md={2}>
             <h5 className="mb-3 text-white">Products</h5>
             <ul className="list-unstyled lh-lg text-light">
-              <li>Finytive BOOKS</li>
+             
               <li>Finytive CRM</li>
-              <li>Finytive ERP</li>
-              <li>Visitor Management Software</li>
-              <li>Parking Management Software</li>
-              <li>Helpdesk Management Software</li>
+              <li>Finytive Tickora</li>
+              <li>ITCBC</li>
+             
             </ul>
           </Col>
 
           <Col md={2}>
             <h5 className="mb-3 text-white">Our Services</h5>
             <ul className="list-unstyled lh-lg text-light">
-              <li>Invoice Generator</li>
-              <li>GST Calculator</li>
-              <li>Website Builder</li>
+              <li>AI Solutions</li>
+              <li>Mobile App Development</li>
+              <li>Cloud Computing</li>
+              <li>Banking Applications</li>
             </ul>
           </Col>
 

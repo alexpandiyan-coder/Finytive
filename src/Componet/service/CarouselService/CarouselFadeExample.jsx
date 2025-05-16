@@ -18,7 +18,6 @@ function CarouselFadeExample() {
           <p>Leverage AI to automate operations and gain business insights.</p>
         </Carousel.Caption>
       </Carousel.Item>
-
       <Carousel.Item>
         <img
           className="d-block "

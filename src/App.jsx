@@ -13,6 +13,7 @@ import WhyChoose from './Componet/WhyChoose';
 import VisionMission from './Componet/VisionMission';
 import OurRecentBlogs from './Componet/OurRecentBlogs';
 import Service from './Componet/service/Service';
+import ContactPage from './Componet/ContactPage/ContactPage';
 
 function App() {
   useEffect(() => {
@@ -39,6 +40,7 @@ function App() {
 
           {/* Other routes (still inside layout with same nav + footer) */}
           <Route path="/service" element={<Service />} />
+          <Route path="/Contact" element={<ContactPage />} />
         </Route>
       </Routes>
   );

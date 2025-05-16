@@ -2,11 +2,11 @@ import React, { useEffect } from 'react';
 import "./home.css";
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { useNavigate } from 'react-router-dom'; // ✅ import
+import { useNavigate } from 'react-router-dom';
 
 function HomePage() {
     const navControls = useAnimation();
-    const navigate = useNavigate(); // ✅ use navigate
+    const navigate = useNavigate();
     const [ref, inView] = useInView({
         threshold: 0.1,
         triggerOnce: true
@@ -62,9 +62,13 @@ function HomePage() {
 
     const handleNavigation = (item) => {
         if (item === 'Services') {
-            navigate('/service'); // ✅ navigate to "/service"
+            navigate('/service');
+        } else if (item === 'Contact') {
+            navigate('/contact');
+        } else if (item === "Home") {
+            navigate('/');
         }
-        // You can add more routes here for other items
+        // Add more navigation routes here if needed
     };
 
     return (
@@ -86,12 +90,12 @@ function HomePage() {
                 
                 <div className='list-tab'>
                     <ul>
-                        {['Home', 'Services', 'Company', 'Works', 'Customers', 'Blog'].map((item, index) => (
+                        {['Home', 'Services', 'Works', 'Blog', 'Contact'].map((item, index) => (
                             <motion.li 
                                 key={index}
                                 whileHover="hover"
                                 variants={itemVariants}
-                                onClick={() => handleNavigation(item)} // ✅ add click handler
+                                onClick={() => handleNavigation(item)}
                                 style={{ cursor: 'pointer', transformStyle: "preserve-3d" }}
                             >
                                 {item}

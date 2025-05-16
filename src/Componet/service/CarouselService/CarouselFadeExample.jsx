@@ -37,7 +37,7 @@ function CarouselFadeExample() {
           className="d-block "
           src={MobileImage}
           alt="Banking Applications"
-            style={{width:"100%",height:"400px"}}
+            style={{width:"100%",height:"500px"}}
         />
         <Carousel.Caption>
           <h3>Banking Applications</h3>

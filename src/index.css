@@ -7,3 +7,10 @@
   font-family: 'Audiowide', cursive;
 
 }
+
+.demo-btn1:hover {
+  background: white;
+  color: #297988;
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 5px 15px rgba(41, 121, 136, 0.3);
+}

@@ -2,9 +2,11 @@ import React, { useEffect } from 'react';
 import "./home.css";
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { useNavigate } from 'react-router-dom'; // ✅ import
 
 function HomePage() {
     const navControls = useAnimation();
+    const navigate = useNavigate(); // ✅ use navigate
     const [ref, inView] = useInView({
         threshold: 0.1,
         triggerOnce: true
@@ -58,6 +60,13 @@ function HomePage() {
         }
     };
 
+    const handleNavigation = (item) => {
+        if (item === 'Services') {
+            navigate('/service'); // ✅ navigate to "/service"
+        }
+        // You can add more routes here for other items
+    };
+
     return (
         <section className='nav-main' ref={ref}>
             <motion.nav 
@@ -82,7 +91,8 @@ function HomePage() {
                                 key={index}
                                 whileHover="hover"
                                 variants={itemVariants}
-                                style={{ transformStyle: "preserve-3d" }}
+                                onClick={() => handleNavigation(item)} // ✅ add click handler
+                                style={{ cursor: 'pointer', transformStyle: "preserve-3d" }}
                             >
                                 {item}
                                 <motion.div 
@@ -105,7 +115,7 @@ function HomePage() {
                 </motion.button>
             </motion.nav>
         </section>
-    )
+    );
 }
 
 export default HomePage;

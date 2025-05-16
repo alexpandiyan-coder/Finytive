@@ -13,7 +13,6 @@ function Technology() {
                 <h1 className='technology-heading'>
                     TECHNOLOGY
                 </h1>
-
                 <p className='fs-1'>Any enough advanced
                     technology is unclear
                     from magi</p>

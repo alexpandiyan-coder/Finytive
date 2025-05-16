@@ -11,7 +11,7 @@ function CarouselFadeExample() {
           className="d-block "
           src={AiImage}
           alt="AI Solutions"
-            style={{width:"100%",height:"400px"}}
+            style={{width:"100%",height:"500px"}}
         />
         <Carousel.Caption>
           <h3>AI Solutions</h3>
@@ -24,7 +24,7 @@ function CarouselFadeExample() {
           className="d-block "
           src={CloudImage}
           alt="Mobile App Development"
-            style={{width:"100%",height:"400px"}}
+            style={{width:"100%",height:"500px"}}
         />
         <Carousel.Caption>
           <h3>CloudImagec</h3>
@@ -50,7 +50,7 @@ function CarouselFadeExample() {
           className="d-block"
           src={CloudImage}
           alt="Cloud Computing"
-          style={{width:"100%",height:"400px"}}
+          style={{width:"100%",height:"500px"}}
         />
         <Carousel.Caption>
           <h3>Cloud Computing</h3>

@@ -67,7 +67,6 @@
 .header-buttons {
   display: flex;
   gap: 15px;
-  margin-top: 20px;
 }
 
 .demo-btn1, .demo-btn2 {
@@ -107,44 +106,28 @@
 }
 
 .logo-container {
+  width: 700px;
   perspective: 1000px;
   position: relative;
   z-index: 1;
 }
 
 .logo-img {
-  width: 550px;
-  height: 450px;
+  width: 600px;
+  height: 500px;
   animation: float-rotate 8s ease-in-out infinite;
   transform-style: preserve-3d;
   filter: drop-shadow(0 10px 20px rgba(41, 121, 136, 0.2));
   transition: all 0.5s ease;
   position: relative;
-  bottom: 50px;
+  bottom: 40px;
+  right: -30px;
 }
-
 .logo-img:hover {
   animation-play-state: paused;
   filter: drop-shadow(0 15px 30px rgba(41, 121, 136, 0.4));
 }
 
-@keyframes float-rotate {
-  0% {
-      transform: translateY(0px) rotateY(0deg) rotateX(0deg);
-  }
-  25% {
-      transform: translateY(-20px) rotateY(5deg) rotateX(2deg);
-  }
-  50% {
-      transform: translateY(0px) rotateY(0deg) rotateX(0deg);
-  }
-  75% {
-      transform: translateY(-20px) rotateY(-5deg) rotateX(-2deg);
-  }
-  100% {
-      transform: translateY(0px) rotateY(0deg) rotateX(0deg);
-  }
-}
 
 /* Responsive Design */
 @media (max-width: 1200px) {

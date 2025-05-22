@@ -5,57 +5,60 @@ import MobileImage from './Blog-Images---The-Future-of-SEO-AG-6 1.png';
 
 function CarouselFadeExample() {
   return (
-    <Carousel fade interval={1000}>
+    <Carousel fade interval={3000} style={{ width: "100%", margin: "0 auto", height: "350px" }}>
+      
       <Carousel.Item>
         <img
-          className="d-block "
+          className="d-block w-100"
           src={AiImage}
           alt="AI Solutions"
-            style={{width:"100%",height:"500px"}}
+          style={{ height: "350px", objectFit: "cover" }}
         />
         <Carousel.Caption>
           <h3>AI Solutions</h3>
           <p>Leverage AI to automate operations and gain business insights.</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block "
-          src={CloudImage}
-          alt="Mobile App Development"
-            style={{width:"100%",height:"500px"}}
-        />
-        <Carousel.Caption>
-          <h3>CloudImagec</h3>
-          <p>Build seamless and high-performance mobile apps.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
 
       <Carousel.Item>
         <img
-          className="d-block "
-          src={MobileImage}
-          alt="Banking Applications"
-            style={{width:"100%",height:"500px"}}
-        />
-        <Carousel.Caption>
-          <h3>Banking Applications</h3>
-          <p>Develop secure and robust banking platforms.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-
-      <Carousel.Item>
-        <img
-          className="d-block"
+          className="d-block w-100"
           src={CloudImage}
           alt="Cloud Computing"
-          style={{width:"100%",height:"500px"}}
+          style={{ height: "350px", objectFit: "cover" }}
         />
         <Carousel.Caption>
           <h3>Cloud Computing</h3>
           <p>Scale applications with cloud services and infrastructure.</p>
         </Carousel.Caption>
       </Carousel.Item>
+
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src={MobileImage}
+          alt="Mobile App Development"
+          style={{ height: "350px", objectFit: "cover" }}
+        />
+        <Carousel.Caption>
+          <h3>Mobile App Development</h3>
+          <p>Build seamless and high-performance mobile apps.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src={CloudImage}
+          alt="Banking Applications"
+          style={{ height: "350pxpx", objectFit: "cover" }}
+        />
+        <Carousel.Caption>
+          <h3>Java Enterprise Application</h3>
+          <p>Develop secure and robust banking platforms.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+
     </Carousel>
   );
 }

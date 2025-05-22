@@ -1,3 +1,4 @@
+// Footer.jsx
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { FaFacebook, FaLinkedin, FaYoutube, FaRegCopyright } from 'react-icons/fa';
@@ -9,40 +10,38 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="text-dark footer-main-content" style={{ backgroundColor: 'teal' }}>
+    <footer className="footer-main-content">
       <Container>
         <Row className="gy-4">
           <Col md={3}>
             <h1 className="fw-bold text-warning">Finytive</h1>
             <p className="mt-3 text-light">
               Finytive is an independent, leading software firm specialized in Enterprise
-              business applications (POS, CRM, ERP for Retail, Manufacturing & Education).
+              business applications .
             </p>
           </Col>
 
           <Col md={2}>
-            <h5 className="mb-3 text-white">Products</h5>
+            <h5 className="mb-3 text-warning">Products</h5>
             <ul className="list-unstyled lh-lg text-light">
-             
               <li>Finytive CRM</li>
               <li>Finytive Tickora</li>
               <li>ITCBC</li>
-             
             </ul>
           </Col>
 
           <Col md={2}>
-            <h5 className="mb-3 text-white">Our Services</h5>
+            <h5 className="mb-3 text-warning">Our Services</h5>
             <ul className="list-unstyled lh-lg text-light">
               <li>AI Solutions</li>
               <li>Mobile App Development</li>
               <li>Cloud Computing</li>
-              <li>Banking Applications</li>
+              <li>Java Enterprise Application</li>
             </ul>
           </Col>
 
           <Col md={2}>
-            <h5 className="mb-3 text-white">About Us</h5>
+            <h5 className="mb-3 text-warning">About Us</h5>
             <ul className="list-unstyled lh-lg text-light">
               <li>Our Company</li>
               <li>Jobs</li>
@@ -52,8 +51,10 @@ const Footer = () => {
           </Col>
 
           <Col md={3}>
-            <h5 className="mb-3 text-white">Contact Us</h5>
-            <p className="text-light">Location: Chennai, INDIA.</p>
+            <h5 className="mb-3 text-warning">Contact Us</h5>
+            <p className="text-light">
+              New no:30, Old no: 16, Akbarabad 1st St, China Raji Thottam, Kodambakkam, Chennai, Tamil Nadu 600024
+            </p>
             <p className="text-light">+91 44 4853 2233</p>
             <p className="text-light">
               E-mail:{' '}
@@ -66,13 +67,31 @@ const Footer = () => {
 
         <Row className="mt-4">
           <Col className="text-center">
-            <a href="https://www.facebook.com" className="text-light me-3">
+            <a
+              href="https://www.facebook.com"
+              className="text-light me-3"
+              aria-label="Facebook"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaFacebook size={24} />
             </a>
-            <a href="https://www.linkedin.com" className="text-light me-3">
+            <a
+              href="https://www.linkedin.com"
+              className="text-light me-3"
+              aria-label="LinkedIn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaLinkedin size={24} />
             </a>
-            <a href="https://www.youtube.com" className="text-light">
+            <a
+              href="https://www.youtube.com"
+              className="text-light"
+              aria-label="YouTube"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaYoutube size={24} />
             </a>
           </Col>

@@ -60,6 +60,16 @@ function HomePage() {
         }
     };
 
+    // New animation for button entry
+    const buttonEntryVariants = {
+        hidden: { opacity: 0, y: 20 },
+        visible: { 
+            opacity: 1, 
+            y: 0, 
+            transition: { duration: 1, ease: "easeOut", delay: 0.5 }
+        }
+    };
+
     const handleNavigation = (item) => {
         if (item === 'Services') {
             navigate('/service');
@@ -90,7 +100,7 @@ function HomePage() {
                 
                 <div className='list-tab'>
                     <ul>
-                        {['Home', 'Services', 'Works', 'Blog', 'Contact'].map((item, index) => (
+                        {['Home', 'Services', 'Products', 'Career', 'Contact'].map((item, index) => (
                             <motion.li 
                                 key={index}
                                 whileHover="hover"
@@ -112,8 +122,12 @@ function HomePage() {
                 
                 <motion.button 
                     className='view-more-btn'
+                    initial="hidden"
+                    animate="visible"
+                    variants={buttonEntryVariants}
                     whileHover="hover"
-                    variants={buttonVariants}
+                    whileTap={{ scale: 0.98 }}
+                    transition={{ type: "spring", stiffness: 300 }}
                 >
                     Client Login
                 </motion.button>

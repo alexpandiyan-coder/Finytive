@@ -1,0 +1,137 @@
+/* AiService.css */
+.ai-service-container {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+}
+
+.ai-service-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #2d3748;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.ai-service-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: teal;
+  border-radius: 2px;
+}
+
+.ai-service-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.ai-service-image-container {
+  flex: 1;
+  min-width: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.ai-service-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.ai-service-image:hover {
+  transform: scale(1.03);
+}
+
+.ai-service-text {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ai-service-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #4a5568;
+  margin-bottom: 30px;
+}
+
+.ai-service-button {
+  background-color: transparent;
+  color: teal;
+  padding: 14px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 2px solid teal;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease 0.1s;
+  z-index: 1;
+  align-self: flex-start;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.ai-service-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: teal;
+  z-index: -1;
+  transition: width 0.4s ease;
+}
+
+.ai-service-button:hover {
+  color: white;
+}
+
+.ai-service-button:hover::before {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .ai-service-container {
+    padding: 40px 20px;
+  }
+  
+  .ai-service-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .ai-service-content {
+    flex-direction: column;
+  }
+  
+  .ai-service-button {
+    align-self: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .ai-service-title {
+    font-size: 1.8rem;
+  }
+  
+  .ai-service-description {
+    font-size: 1rem;
+  }
+}

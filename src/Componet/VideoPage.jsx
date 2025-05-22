@@ -59,11 +59,7 @@ function VideoPage() {
         </Carousel.Item>
       </Carousel>
 
-      {/* Bottom Content */}
-      <div style={styles.bottomContent}>
-        <h4>Join the AI Revolution</h4>
-        <p>Stay updated with the latest AI trends and innovations. Follow us for more!</p>
-      </div>
+     
     </div>
   );
 }

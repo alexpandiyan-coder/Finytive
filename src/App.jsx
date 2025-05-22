@@ -24,21 +24,21 @@ function App() {
     
       <Routes>
         <Route path="/" element={<Layout />}>
-          {/* Default page (home) content */}
+         
           <Route index element={
             <>
               <HeaderPage />
-              <ProjectPage />
+         
               <AboutCompany />
               <VideoPage />
-              <CaseStudies />
+           
               <WhyChoose />
               <VisionMission />
-              <OurRecentBlogs />
+            
             </>
           } />
 
-          {/* Other routes (still inside layout with same nav + footer) */}
+         
           <Route path="/service" element={<Service />} />
           <Route path="/Contact" element={<ContactPage />} />
         </Route>

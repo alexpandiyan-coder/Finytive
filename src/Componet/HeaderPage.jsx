@@ -1,10 +1,10 @@
 import "./header.css"
-import img1 from "../assets/banner-thumb-7 1.svg"
+import img1 from "../assets/ai woman 1.svg"
 
 import 'aos/dist/aos.css';
 function HeaderPage() {
 
-  return (
+return (
     <header className='header-page'>
       <div className='header'>
         <p className='font-header'>
@@ -21,8 +21,8 @@ function HeaderPage() {
         </div>
       </div>
 
-      <div className='logo-container' width={"1000px"} data-aos="fade-left">
-        <img src={img1} width={"400px"} className='logo-img' alt="ERP Solutions Illustration" />
+      <div className='logo-container'  data-aos="fade-left">
+        <img src={img1}  className='logo-img' alt="ERP Solutions Illustration" />
       </div>
     </header>
   )

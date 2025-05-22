@@ -8,7 +8,7 @@ function AiService() {
   useEffect(() => {
     AOS.init({
       duration: 1000,
-      once: false, // Animates every time on scroll
+      once: false,
     });
   }, []);
 
@@ -19,7 +19,7 @@ function AiService() {
       </p>
 
       <div className="ai-service-content" data-aos="fade-up">
-        <div className="ai-service-image-container">
+        <div className="ai-service-image-container" data-aos="fade-right">
           <img
             src={AiImage}
             alt="AI Service"
@@ -27,11 +27,11 @@ function AiService() {
           />
         </div>
 
-        <div className="ai-service-text">
+        <div className="ai-service-text" data-aos="fade-left">
           <p className="ai-service-description">
-            At Finytive, we provide cutting-edge Artificial Intelligence consulting solutions tailored to meet the unique needs of startups and enterprises. Our AI experts help organizations unlock the true potential of data by integrating intelligent systems into their operations. Whether it’s building predictive models, automating business processes, or enhancing customer experiences through machine learning, we ensure innovative, scalable, and ethical AI implementations. From concept to deployment, we support every stage of the AI journey—empowering businesses to work smarter, make faster decisions, and stay ahead in a competitive landscape.
+            At Finytive, we provide cutting-edge Artificial Intelligence consulting solutions tailored to meet the unique needs of startups and enterprises. Our AI experts help organizations unlock the true potential of data by integrating intelligent systems into their operations. Whether it's building predictive models, automating business processes, or enhancing customer experiences through machine learning, we ensure innovative, scalable, and ethical AI implementations. From concept to deployment, we support every stage of the AI journey—empowering businesses to work smarter, make faster decisions, and stay ahead in a competitive landscape.
           </p>
-          <button className="ai-service-button">Apply for demo</button>
+          <button className="ai-service-button">Demo</button>
         </div>
       </div>
     </div>

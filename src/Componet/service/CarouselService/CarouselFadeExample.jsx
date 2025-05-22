@@ -5,7 +5,7 @@ import MobileImage from './Blog-Images---The-Future-of-SEO-AG-6 1.png';
 
 function CarouselFadeExample() {
   return (
-    <Carousel fade interval={3000} style={{ width: "900px", margin: "0 auto", height: "350px" }}>
+    <Carousel fade interval={3000} style={{ width: "900px",maxWidth:"900px", margin: "0 auto", height: "350px" }}>
       
       <Carousel.Item>
         <img

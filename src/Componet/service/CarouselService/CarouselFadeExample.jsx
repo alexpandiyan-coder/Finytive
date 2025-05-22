@@ -51,7 +51,7 @@ function CarouselFadeExample() {
           className="d-block w-100"
           src={CloudImage}
           alt="Banking Applications"
-          style={{ height: "350pxpx", objectFit: "cover" }}
+          style={{ height: "350px", objectFit: "cover" }}
         />
         <Carousel.Caption>
           <h3>Java Enterprise Application</h3>

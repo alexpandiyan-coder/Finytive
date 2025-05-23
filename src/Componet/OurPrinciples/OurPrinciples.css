@@ -1,0 +1,134 @@
+.principles-orb {
+  min-height: 900px;
+  margin: 20px;
+  background-color: teal;
+  padding: 80px 20px;
+  text-align: center;
+  font-family: 'Inter', system-ui, sans-serif;
+  overflow: hidden;
+}
+
+.orb-title {
+  font-size: 2.8rem;
+  color: yellow;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.orb-subtitle {
+  font-size: 1.2rem;
+  color: yellow;
+  margin-bottom: 3rem;
+}
+
+.orb-container {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+.orb-center {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: yellow;
+  border-radius: 50%;
+  top: 25%;
+  left: 45%;
+  transform: translate(-20%, 500%);
+  padding: 10px;
+}
+
+.orb-node {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  width: 160px;
+  height: 160px;
+  transform-origin: center;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), z-index 0.3s ease;
+  outline: none;
+}
+
+.node-circle {
+  width: 100%;
+  height: 100%;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid yellow; /* ✅ Added yellow 1px border */
+}
+
+.orb-node.active {
+  transform: scale(1.7) !important;
+}
+
+.node-title {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.orb-node.active .node-title {
+  color: yellow;
+  margin-bottom: 10px;
+}
+
+.node-description {
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-10px);
+  overflow: hidden;
+  font-size: 0.85rem;
+  color: transparent;
+  transition: all 0.4s ease;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.orb-node.active .node-description {
+  max-height: 200px;
+  color: rgba(255, 255, 255, 0.9);
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .orb-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .orb-center {
+    display: none;
+  }
+
+  .orb-node {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none !important;
+    width: 140px;
+    height: 140px;
+  }
+
+  .orb-node.active {
+    transform: scale(1.1) !important;
+  }
+}

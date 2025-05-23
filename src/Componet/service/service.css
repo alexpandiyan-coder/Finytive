@@ -1,10 +1,10 @@
 .service-container {
-
   background-color: #f5f5f5;
   font-family: 'Segoe UI', sans-serif;
   max-width: 1250px;
-  margin: 32px;
+  margin: 32px auto;
   overflow: hidden;
+  padding: 20px;
 }
 
 .banner {
@@ -35,14 +35,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: 20px;
 }
 
 /* Common styling for all service cards */
 .service-card {
   background-color: #ffffff;
-  width: 480px;
-  height: 350px;
+  width: 90%;
+  max-width: 1000px;
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
@@ -50,16 +50,17 @@
   overflow: hidden;
   transition: transform 0.3s ease;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  gap: 20px;
 }
 
 .service-card:hover {
-  transform: translateY(-10px);
+  transform: translateX(10px);
 }
 
 .card-logo {
-  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .i-card-logo {
@@ -74,40 +75,31 @@
   margin: 10px 0;
 }
 
+.contant-top {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: start;
+  padding: 20px;
+}
+
 .card-description {
   font-size: 1rem;
   color: #444;
-  max-width: 250px;
   line-height: 1.5;
-}
-
-/* Image inside the card */
-.img-4 {
-  width: 200px;
-  height: 300px;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  object-fit: contain;
-  z-index: 0;
-  opacity: 0.7;
-  pointer-events: none;
 }
 
 /* Responsive support */
 @media (max-width: 768px) {
   .service-card {
-    width: 100%;
+    flex-direction: column;
     height: auto;
     padding: 20px;
   }
 
-  .img-4 {
-    position: static;
-    width: 100%;
-    height: auto;
-    margin-top: 15px;
-    opacity: 1;
+  .contant-top {
+    padding: 10px;
   }
 
   .card-description {

@@ -1,0 +1,124 @@
+/* Work With Us Section Styles */
+.work-with-us-section {
+  background: var(--light-color);
+  padding: 3rem 0 2rem 0;
+}
+
+.work-card {
+  background: #fff;
+  border: 2px solid #2223;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.07);
+  transition: box-shadow 0.3s, transform 0.3s;
+  display: flex;
+  align-items: center;
+  min-height: 150px;
+}
+
+.work-card:hover {
+  box-shadow: 0 16px 40px rgba(0,131,176,0.13);
+  transform: translateY(-4px) scale(1.02);
+  border-color: var(--primary-color);
+}
+
+.icon-box {
+  font-size: 2.5rem;
+  min-width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.work-card h4 {
+  color: var(--dark-color);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.work-card p {
+  color: var(--text-color);
+  font-size: 1.1rem;
+  margin-bottom: 0;
+}
+
+/* Job Openings Section Styles */
+.skills-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.skill-tag {
+  background-color: rgba(0, 128, 128, 0.1);
+  color: teal;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.icon-wrapper {
+  background-color: rgba(0, 128, 128, 0.1);
+  border-radius: 12px;
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.card:hover .icon-wrapper {
+  background-color: rgba(0, 128, 128, 0.2);
+  transform: scale(1.1);
+}
+
+.text-teal {
+  color: teal !important;
+}
+
+/* Animation classes */
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Common Styles */
+:root {
+  --primary-color: teal;
+  --dark-color: #333;
+  --text-color: #666;
+  --light-color: #f8f9fa;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .work-card {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 1.5rem 1rem;
+  }
+  
+  .icon-box {
+    margin-bottom: 1rem;
+    margin-right: 0;
+  }
+  
+  .skills-wrapper {
+    justify-content: center;
+  }
+  
+  .icon-wrapper {
+    padding: 0.5rem;
+}
+}

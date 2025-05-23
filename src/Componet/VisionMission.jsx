@@ -116,7 +116,7 @@ function VisionMission() {
             position: 'relative',
             overflow: 'hidden',
             textAlign: 'center'
-          }}
+          }} data-aos="zoom-in-right" 
         >
           {/* Dynamic Image with scroll animation */}
           <motion.img
@@ -135,7 +135,7 @@ function VisionMission() {
             transition={{ duration: 1 }}
           />
 
-          <AnimatePresence mode="wait">
+          <AnimatePresence mode="wait" data-aos="zoom-in-right">
             <motion.h2
               key={isToggle ? "mission" : "vision"}
               variants={textFade}
@@ -199,7 +199,7 @@ function VisionMission() {
             flexDirection: 'column',
             gap: '1.5rem',
             flex: '1 1 400px'
-          }}
+          }} data-aos="zoom-in-left"
         >
           <AnimatePresence mode="wait">
             {(isToggle ? mission : vissionData).map((item, index) => (

@@ -19,8 +19,8 @@ const steps = [
 const CloudWorkflow = () => {
   return (
     <div className="container">
-      <h2 className="title">Our Workflow</h2>
-      <div className="flow-container">
+      <h2 className="title" data-aos="zoom-in">Our Workflow</h2>
+      <div className="flow-container" data-aos="zoom-in">
         {steps.map((step, index) => (
           <div key={index} className="step-wrapper">
             <div className="cloud" role="region" aria-label={`Step: ${step.title}`}>

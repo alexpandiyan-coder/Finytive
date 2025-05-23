@@ -2,11 +2,12 @@ import "./header.css"
 import img1 from "../assets/ai woman 1.svg"
 
 import 'aos/dist/aos.css';
+
 function HeaderPage() {
 
 return (
     <header className='header-page'>
-      <div className='header'>
+      <div className='header' data-aos="zoom-in-right">
         <p className='font-header'>
           Streamline Your <br/> <span className='font-child'> Business with ERP Solutions</span>
         </p>

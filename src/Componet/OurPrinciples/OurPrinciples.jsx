@@ -22,7 +22,7 @@ const OurPrinciples = ({ activeColor = 'teal' }) => {
   }, []);
 
   return (
-    <section className="principles-orb">
+    <section className="principles-orb" data-aos="zoom-in">
       <h2 className="orb-title">Our Principles</h2>
       <p className="orb-subtitle">The core values that guide our work</p>
 

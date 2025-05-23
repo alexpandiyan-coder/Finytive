@@ -73,7 +73,7 @@ export default function WhyChoose() {
 
   return (
     <section className="why-choose-section">
-      <div className="why-choose-header">
+      <div className="why-choose-header" data-aos="fade-up">
         <h2>
           Why Choose <span className="logo-title">Finytive?</span>
         </h2>
@@ -85,7 +85,7 @@ export default function WhyChoose() {
       </div>
       <div className="card-container">
         {steps.map((step, index) => (
-          <div className="choose-card" key={index}>
+          <div className="choose-card" data-aos="fade-right" key={index}>
             <div className="card-icon">{step.icon}</div>
             <h3 className="card-title">{step.title}</h3>
             <p className="card-description">{step.description}</p>

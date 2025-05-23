@@ -19,18 +19,19 @@ function Service() {
 
       {/* Welcome Message */}
       <div className="service-intro text-center my-4">
+        <div data-aos="zoom-out">
         <p className="logo-name companey-name fs-2">
           Welcome to Finytive Service
         </p>
         <p className="intro-subtext">
           Empowering startups and enterprises with intelligent digital solutions
         </p>
-
+    </div>
         {/* Service Cards Section */}
         <div className="service-cards">
 
           {/* AI Solutions */}
-          <div className="service-card service-card-1">
+          <div className="service-card service-card-1" data-aos="fade-up-right">
             <span className="card-logo">
               <GiArtificialIntelligence className="i-card-logo" />
             </span>
@@ -43,7 +44,7 @@ function Service() {
           </div>
 
           {/* Mobile Application */}
-          <div className="service-card service-card-2">
+          <div className="service-card service-card-2" data-aos="fade-up-left">
             <span className="card-logo">
               <GiSmartphone className="i-card-logo" />
             </span>
@@ -56,7 +57,7 @@ function Service() {
           </div>
 
           {/* Cloud Services */}
-          <div className="service-card service-card-3">
+          <div className="service-card service-card-3" data-aos="fade-up-right">
             <span className="card-logo">
               <GiCloudDownload className="i-card-logo" />
             </span>
@@ -69,7 +70,7 @@ function Service() {
           </div>
 
           {/* Banking Solutions */}
-          <div className="service-card service-card-4">
+          <div className="service-card service-card-4" data-aos="fade-up-left">
             <span className="card-logo">
               <GiBank className="i-card-logo" />
             </span>

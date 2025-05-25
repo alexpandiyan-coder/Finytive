@@ -1,0 +1,31 @@
+.products-page {
+
+    width: 1250px;
+    max-width: 1200px;
+ 
+    height: 400px;
+    margin: 40px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid rgba(211, 211, 211, 0.5);
+
+}
+
+
+
+.nav-page-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid rgba(211, 211, 211, 0.5); 
+    width: 200px;
+    border-radius: 10px;
+}
+.nav-page-bar p{
+  margin: 10px;
+  padding: 10px;
+  font-weight: 900;
+
+}

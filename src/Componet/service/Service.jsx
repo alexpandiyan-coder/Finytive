@@ -9,6 +9,11 @@ import AiService from "./AiService/AiService"
 import "./service.css"
 import CarouselFadeExample from './CarouselService/CarouselFadeExample'
 import OurWorkflow from "./OurWorkFlow/OurWorkFlow"
+import Ai from "./jsonFile/Ai.json"
+import javaImage from "./jsonFile/java.json"
+import cloud from "./jsonFile/cloud.json"
+import mobile from "./jsonFile/mobile.json"
+import Lottie from "lottie-react"
 
 function Service() {
   return (
@@ -33,7 +38,7 @@ function Service() {
           {/* AI Solutions */}
           <div className="service-card service-card-1" data-aos="fade-up-right">
             <span className="card-logo">
-              <GiArtificialIntelligence className="i-card-logo" />
+              <Lottie animationData={Ai} loop={true} style={{ height: 100, width: 100 }}/>
             </span>
             <div className="contant-top">
               <h2 className="card-title">AI Solutions</h2>
@@ -46,7 +51,7 @@ function Service() {
           {/* Mobile Application */}
           <div className="service-card service-card-2" data-aos="fade-up-left">
             <span className="card-logo">
-              <GiSmartphone className="i-card-logo" />
+                <Lottie animationData={mobile} loop={true}  autoplay={true} style={{ height: 100, width: 100 }}/>
             </span>
             <div className="contant-top">
               <h2 className="card-title">Mobile App Development</h2>
@@ -59,7 +64,7 @@ function Service() {
           {/* Cloud Services */}
           <div className="service-card service-card-3" data-aos="fade-up-right">
             <span className="card-logo">
-              <GiCloudDownload className="i-card-logo" />
+              <Lottie animationData={cloud} loop={true}  autoplay={true} style={{ height: 100, width: 100 }}/>
             </span>
             <div className="contant-top">
               <h2 className="card-title">Cloud Computing</h2>
@@ -72,7 +77,7 @@ function Service() {
           {/* Banking Solutions */}
           <div className="service-card service-card-4" data-aos="fade-up-left">
             <span className="card-logo">
-              <GiBank className="i-card-logo" />
+               <Lottie animationData={javaImage} loop={true}  autoplay={true} style={{ height: 100, width: 100 }}/>
             </span>
             <div className="contant-top">
               <h2 className="card-title">Java Enterprise Applications</h2>

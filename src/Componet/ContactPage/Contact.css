@@ -93,7 +93,7 @@
   .icon-wrapper {
     width: 45px;
     height: 45px;
-    background: #008080;
+    background: teal;
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -263,7 +263,7 @@
   
   /* Override Bootstrap's default button styles */
   .btn-primary.submit-btn {
-    background: #00b3b3 !important;
+    background: #00c0c0 !important;
     border-color: #00b3b3 !important;
   }
   

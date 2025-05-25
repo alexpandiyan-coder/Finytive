@@ -128,11 +128,8 @@ function VisionMission() {
               maxWidth: '350px',
               marginBottom: '1.5rem',
               borderRadius: '12px',
-              y: springY
             }}
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 1 }}
+            
           />
 
           <AnimatePresence mode="wait" data-aos="zoom-in-right">

@@ -17,6 +17,9 @@ import ContactPage from './Componet/ContactPage/ContactPage';
 import OurPrinciples from './Componet/OurPrinciples/OurPrinciples';
 import Careers from './Componet/CareerPage/CareerPage';
 import JobTitle from "./Componet/CareerPage/JobTitle"
+import "./Componet/Products.css"
+import Technology from './Componet/Technology';
+import ProductsPage from './Componet/Products/ProductsPage';
 
 function App() {
   useEffect(() => {
@@ -30,15 +33,14 @@ function App() {
          
           <Route index element={
             <>
-              <HeaderPage />
-         
-              <AboutCompany />
-              <VideoPage />
-             <CoreValue/>
-              <WhyChoose />
-              <OurPrinciples/>
-              <VisionMission />
             
+              <HeaderPage />
+             <CoreValue/>
+             <Technology/>
+              <WhyChoose />
+             
+              <VisionMission />
+              
             </>
           } />
 
@@ -46,6 +48,7 @@ function App() {
            <Route path="/service" element={<Service />} />
            <Route path="/Contact" element={<ContactPage />} />
            <Route path="/Careers" element={ <Careers/>} />
+           <Route path="/ProductsPage" element={<ProductsPage/>} />
         </Route>
       </Routes>
   );

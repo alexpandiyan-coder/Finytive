@@ -246,7 +246,7 @@ const CareerPage = () => {
 
   const handleFileChange = (e) => {
     const file = e.target.files[0];
-    if (file && file.size <= 5 * 1024 * 1024) { // 5MB limit
+    if (file && file.size <= 5 * 1024 * 1024) { 
       setFormData(prev => ({
         ...prev,
         resume: file
@@ -464,26 +464,30 @@ const CareerPage = () => {
             Discover the advantages of joining Finytive. We are committed to creating an environment where you can thrive both personally and professionally.
           </p>
           <Row className="g-4">
-            {workWithUsData.map((item, idx) => (
-              <Col md={6} key={idx}>
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.3, delay: idx * 0.1 }}
-                >
-                  <div className="work-card h-100 d-flex align-items-center p-4">
-                    <div className="icon-box me-4">
-                      {item.icon}
-                    </div>
-                    <div>
-                      <h4 className="mb-2">{item.title}</h4>
-                      <p className="mb-0">{item.desc}</p>
-                    </div>
-                  </div>
-                </motion.div>
-              </Col>
-            ))}
-          </Row>
+  {workWithUsData.map((item, idx) => {
+  
+    const aosDirection = idx % 2 === 0 ? "fade-up-right" : "fade-up-left";
+
+    return (
+      <Col md={6} key={idx}>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3, delay: idx * 0.1 }}
+          data-aos={aosDirection}
+        >
+          <div className="work-card h-100 d-flex align-items-center p-4" data-aos={aosDirection}>
+            <div className="icon-box me-4">{item.icon}</div>
+            <div>
+              <h4 className="mb-2">{item.title}</h4>
+              <p className="mb-0">{item.desc}</p>
+            </div>
+          </div>
+        </motion.div>
+      </Col>
+    );
+  })}
+</Row>
         </Container>
       </section>
 
@@ -494,14 +498,15 @@ const CareerPage = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <div className="d-flex align-items-center justify-content-center gap-2 mb-3">
+          <div className="d-flex align-items-center justify-content-center gap-2 mb-3" data-aos="zoom-in-up">
             <MdWorkOutline className="fs-3" style={{ color: 'teal' }} />
             <h2 className="fw-bold mb-0" style={{ color: 'teal' }}>Current Openings</h2>
           </div>
-          <p className="text-muted mt-3">Join our team and be part of something extraordinary</p>
+          <p className="text-muted mt-3" data-aos="zoom-in-up">Join our team and be part of something extraordinary</p>
         </motion.div>
         <Row className="g-4">
           {jobList.map((job, idx) => (
+
             <Col md={6} lg={4} key={idx}>
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -511,7 +516,9 @@ const CareerPage = () => {
               >
                 <Card className="rounded-4 shadow border-0 h-100">
                   <Card.Body className="p-4 d-flex flex-column">
-                    <div className="mb-4">
+                    <div className="mb-4" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="1000">
                       <div className="d-flex align-items-center gap-3 mb-3">
                         <div className="icon-wrapper p-2 rounded-3" style={{ backgroundColor: 'rgba(0, 128, 128, 0.1)' }}>
                           {job.icon}

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './OurPrinciples.css';
+import Value from './Value';
 
 const principles = [
   { title: "Customer Obsession", description: "Our customers are at the heart of everything we do." },
@@ -8,6 +9,25 @@ const principles = [
   { title: "Embrace Innovation", description: "We foster creativity, experimentation, and out-of-the-box thinking." },
   { title: "Evidence-Based", description: "Data empowers us to innovate and achieve impactful results with confidence." },
   { title: "Ownership", description: "We take full responsibility for challenges and outcomes." }
+];
+
+const staticPrinciples = [
+  {
+    title: "Earn Trust",
+    description: "We build lasting relationships through reliability, authenticity, and transparency."
+  },
+  {
+    title: "Continuous Learning",
+    description: "We actively pursue growth, skills mastery, and emerging technologies."
+  },
+  {
+    title: "Simplify Solutions",
+    description: "We solve problems efficiently with clear, practical solutions."
+  },
+  {
+    title: "Social Responsibility",
+    description: "We contribute to society through responsible actions and foresight."
+  }
 ];
 
 const OurPrinciples = ({ activeColor = 'teal' }) => {
@@ -22,11 +42,11 @@ const OurPrinciples = ({ activeColor = 'teal' }) => {
   }, []);
 
   return (
-    <section className="principles-orb" data-aos="zoom-in">
+    <section className="principles-orb">
       <h2 className="orb-title">Our Principles</h2>
       <p className="orb-subtitle">The core values that guide our work</p>
 
-      <div className="orb-container">
+      <div className="orb-container"  data-aos="zoom-in">
         <div className="orb-center"></div>
 
         {principles.map((principle, index) => {
@@ -65,6 +85,12 @@ const OurPrinciples = ({ activeColor = 'teal' }) => {
             </div>
           );
         })}
+      </div>
+      <div>
+     <div>
+
+      
+     </div>
       </div>
     </section>
   );

@@ -79,6 +79,8 @@ function HomePage() {
             navigate('/');
         }else if(item === "Career"){
             navigate("/Careers")
+        }else if(item=="Products"){
+            navigate("/ProductsPage")
         }
         // Add more navigation routes here if needed
     };

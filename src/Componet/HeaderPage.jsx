@@ -1,6 +1,6 @@
 import "./header.css"
-import img1 from "../assets/ai woman 1.svg"
-
+import Lottie from 'lottie-react';
+import animationData from '../assets/homePageJson/Animation - 1748153244181.json';
 import 'aos/dist/aos.css';
 
 function HeaderPage() {
@@ -22,8 +22,8 @@ return (
         </div>
       </div>
 
-      <div className='logo-container'  data-aos="fade-left">
-        <img src={img1}  className='logo-img' alt="ERP Solutions Illustration" />
+      <div className='logo-container'  data-aos="fade-left" >
+        <Lottie animationData={animationData} loop={true} />
       </div>
     </header>
   )

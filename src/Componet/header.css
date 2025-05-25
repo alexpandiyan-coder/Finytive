@@ -106,10 +106,11 @@
 }
 
 .logo-container {
-  width: 700px;
+  width: 450px;
   perspective: 1000px;
   position: relative;
   z-index: 1;
+  height: 400px;
 }
 
 .logo-img {

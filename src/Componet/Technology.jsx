@@ -8,7 +8,7 @@ function Technology() {
     return (
         <section className='technology'>
            
-            <div className='technology-header'>
+            <div className='technology-header' data-aos="zoom-in">
           
                 <h1 className='technology-heading'>
                     TECHNOLOGY
@@ -37,34 +37,34 @@ function Technology() {
             </div>
 
             <div className='technology-footer'>
+                <div className='videoVision' data-aos="zoom-in">
+                    <img src={Robot} alt="" className='robot-img' />
+                    <p>Video Vision</p>
+                    <img src={img1} alt=""  className='img-1'/>
+                    <p>Simple easy distinguish when
+                        our power right.</p>
+                </div>
+               <div className='videoVision' data-aos="zoom-in">
+                    <img src={Robot} alt="" className='robot-img' />
+                    <p>Computer Vision</p>
+                    <img src={img1} alt=""  className='img-1'/>
+                    <p>Simple easy distinguish when
+                        our power right.</p>
+                </div>
+                {/* <div className='videoVision'>
+                    <img src={Robot} alt="" className='robot-img' />
+                    <p>Video Vision</p>
+                    <img src={img1} alt=""  className='img-1'/>
+                    <p>Simple easy distinguish when
+                        our power right.</p>
+                </div>
                 <div className='videoVision'>
                     <img src={Robot} alt="" className='robot-img' />
                     <p>Video Vision</p>
                     <img src={img1} alt=""  className='img-1'/>
                     <p>Simple easy distinguish when
                         our power right.</p>
-                </div>
-               <div className='videoVision'>
-                    <img src={Robot} alt="" className='robot-img' />
-                    <p>Video Vision</p>
-                    <img src={img1} alt=""  className='img-1'/>
-                    <p>Simple easy distinguish when
-                        our power right.</p>
-                </div>
-                <div className='videoVision'>
-                    <img src={Robot} alt="" className='robot-img' />
-                    <p>Video Vision</p>
-                    <img src={img1} alt=""  className='img-1'/>
-                    <p>Simple easy distinguish when
-                        our power right.</p>
-                </div>
-                <div className='videoVision'>
-                    <img src={Robot} alt="" className='robot-img' />
-                    <p>Video Vision</p>
-                    <img src={img1} alt=""  className='img-1'/>
-                    <p>Simple easy distinguish when
-                        our power right.</p>
-                </div>
+                </div> */}
             </div>
 
 

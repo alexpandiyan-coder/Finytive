@@ -82,8 +82,9 @@ const CoreValues = () => {
                 '--value-color': value.color,
                 '--value-gradient': value.gradient
               }}
+              
             >
-              <div className="value-content">
+              <div className="value-content" data-aos="fade-right">
                 <div className="value-icon">{value.icon}</div>
                 <div className="value-text">
                   <h3>{value.title}</h3>

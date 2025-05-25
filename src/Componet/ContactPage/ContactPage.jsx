@@ -51,7 +51,7 @@ const Contact = () => {
                     </div>
                     <div className="method-details">
                       <h3>Email Us</h3>
-                      <p>Fiinytive@gmil.com</p>
+                      <p>info@finytive.com</p>
                     </div>
                   </div>
 
@@ -71,7 +71,7 @@ const Contact = () => {
                     </div>
                     <div className="method-details">
                       <h3>Visit Us</h3>
-                      <p>123 Innovation Street<br />Tech City, TC 12345</p>
+                      <p>New no:30, Old no: 16, Akbarabad 1st St, China Raji Thottam, Kodambakkam, Chennai, Tamil Nadu 600024</p>
                     </div>
                   </div>
                 </div>

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef  } from 'react';
 import {  Routes, Route } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -20,7 +20,7 @@ import JobTitle from "./Componet/CareerPage/JobTitle"
 import "./Componet/Products.css"
 import Technology from './Componet/Technology';
 import ProductsPage from './Componet/Products/ProductsPage';
-
+import gsap from 'gsap';
 function App() {
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -33,7 +33,6 @@ function App() {
          
           <Route index element={
             <>
-            
               <HeaderPage />
              <CoreValue/>
              <Technology/>
@@ -55,3 +54,6 @@ function App() {
 }
 
 export default App;
+
+
+

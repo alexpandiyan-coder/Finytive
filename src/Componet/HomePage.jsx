@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import "./home.css";
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 function HomePage() {
     const navControls = useAnimation();
@@ -99,7 +99,7 @@ function HomePage() {
                     whileHover={{ scale: 1.05 }}
                     transition={{ type: "spring", stiffness: 300 }}
                 >
-                    <h1>Finytive</h1>
+                   <h1> <Link to={"/"}>Finytive</Link></h1>
                 </motion.div>
                 
                 <div className='list-tab'>

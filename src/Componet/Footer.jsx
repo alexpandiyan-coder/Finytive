@@ -5,10 +5,11 @@ import { FaFacebook, FaLinkedin, FaYoutube, FaRegCopyright } from 'react-icons/f
 import footerImg1 from "../assets/Footer/div.pattern-1.png";
 import footerImg2 from "../assets/Footer/div.pattern-2.png";
 import './footer.css';
-
+import { useNavigate } from 'react-router-dom';
+ 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-
+     const navigate= useNavigate()
   return (
     <footer className="footer-main-content" >
       <Container>
@@ -41,12 +42,13 @@ const Footer = () => {
           </Col>
 
           <Col md={2}>
-            <h5 className="mb-3 text-warning">About Us</h5>
+            <h5 className="mb-3 text-warning">Company</h5>
             <ul className="list-unstyled lh-lg text-light">
-              <li>Our Company</li>
-              <li>Jobs</li>
-              <li>Blogs</li>
-              <li>Contact Us</li>
+              <li style={{cursor:"pointer"}} onClick={()=>navigate("/")}>About</li>
+              <li style={{cursor:"pointer"}} onClick={()=>navigate("/service")}>Services</li>
+              <li style={{cursor:"pointer"}} onClick={()=>navigate("/ProductsPage")}>Products</li>
+              <li style={{cursor:"pointer"}} onClick={()=>navigate("/Careers")}>Career</li>
+              <li style={{cursor:"pointer"}} onClick={()=>navigate("/Contact")}>Contact Us</li>
             </ul>
           </Col>
 

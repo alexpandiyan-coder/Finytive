@@ -11,15 +11,18 @@
 .footer-img-1,
 .footer-img-2 {
   position: absolute;
-  z-index: 1;
+  z-index: -1;
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
   transition: transform 0.5s ease;
 }
+
+
 
 .footer-img-1 {
   top: -140px;
   left: -50px;
   transform: perspective(500px) rotate3d(1, 1, 0, 20deg);
+  
 }
 
 .footer-img-2 {
@@ -28,8 +31,11 @@
   transform: perspective(500px) rotate3d(1, -1, 0, 20deg);
 }
 
-.footer-img-1:hover,
-.footer-img-2:hover {
+.footer-img-1:hover{
+  transform: perspective(500px) rotate3d(1, 1, 0, 35deg) scale(1.05);
+}
+
+.footer-img-2:hover{
   transform: perspective(500px) rotate3d(1, 1, 0, 35deg) scale(1.05);
 }
 

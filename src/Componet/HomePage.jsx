@@ -81,6 +81,8 @@ function HomePage() {
             navigate("/Careers")
         }else if(item=="Products"){
             navigate("/ProductsPage")
+        }else if(item=="About"){
+            navigate("/About")
         }
         // Add more navigation routes here if needed
     };
@@ -104,7 +106,7 @@ function HomePage() {
                 
                 <div className='list-tab'>
                     <ul>
-                        {['Home', 'Services', 'Products', 'Career', 'Contact'].map((item, index) => (
+                        {['Home','About', 'Services', 'Products', 'Career', 'Contact'].map((item, index) => (
                             <motion.li 
                                 key={index}
                                 whileHover="hover"

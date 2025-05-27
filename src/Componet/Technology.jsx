@@ -51,14 +51,14 @@ function Technology() {
                     <p>Simple easy distinguish when
                         our power right.</p>
                 </div>
-                {/* <div className='videoVision'>
+                {/* <div className='videoVision' data-aos="zoom-in">
                     <img src={Robot} alt="" className='robot-img' />
                     <p>Video Vision</p>
                     <img src={img1} alt=""  className='img-1'/>
                     <p>Simple easy distinguish when
                         our power right.</p>
                 </div>
-                <div className='videoVision'>
+                <div className='videoVision' data-aos="zoom-in">
                     <img src={Robot} alt="" className='robot-img' />
                     <p>Video Vision</p>
                     <img src={img1} alt=""  className='img-1'/>

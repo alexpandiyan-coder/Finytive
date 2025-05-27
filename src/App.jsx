@@ -21,6 +21,8 @@ import "./Componet/Products.css"
 import Technology from './Componet/Technology';
 import ProductsPage from './Componet/Products/ProductsPage';
 import gsap from 'gsap';
+import Reordering from './Componet/About/Reordering';
+import About from './Componet/About/About';
 function App() {
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -33,6 +35,7 @@ function App() {
          
           <Route index element={
             <>
+          
               <HeaderPage />
              <CoreValue/>
              <Technology/>
@@ -48,6 +51,7 @@ function App() {
            <Route path="/Contact" element={<ContactPage />} />
            <Route path="/Careers" element={ <Careers/>} />
            <Route path="/ProductsPage" element={<ProductsPage/>} />
+           <Route path="/About" element={ <About/>} />
         </Route>
       </Routes>
   );

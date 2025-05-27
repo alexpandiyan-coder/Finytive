@@ -65,3 +65,76 @@
   font-weight: 600;
   margin: 0 10px;
 }
+
+
+/* For tablets and smaller laptops (768px - 1024px) */
+@media (max-width: 1024px) {
+  .cloud-conteant {
+    width: 100%;
+    left: 0;
+    bottom: 200px;
+    padding: 0 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .cloud-box-child {
+    width: 130px;
+    height: 70px;
+  }
+}
+
+/* For tablets and large phones (600px - 767px) */
+@media (max-width: 767px) {
+  .cloud-title {
+    font-size: 24px;
+  }
+
+  .cloud-box {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .cloud-box-child {
+    width: 100%;
+    max-width: 300px;
+    height: 60px;
+  }
+
+  .cloud-conteant {
+    bottom: 180px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cloud-conteant p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+}
+
+/* For mobile phones (max-width: 480px) */
+@media (max-width: 480px) {
+  .cloud-container {
+    padding: 10px;
+  }
+
+  .cloud-title {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .cloud-box-child {
+    height: 55px;
+    font-size: 14px;
+  }
+
+  .cloud-conteant {
+    width: 100%;
+    bottom: 160px;
+    left: 0;
+    padding: 0 10px;
+  }
+}

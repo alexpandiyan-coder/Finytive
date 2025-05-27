@@ -31,7 +31,7 @@ function AiService() {
           <p className="ai-service-description">
             At Finytive, we provide cutting-edge Artificial Intelligence consulting solutions tailored to meet the unique needs of startups and enterprises. Our AI experts help organizations unlock the true potential of data by integrating intelligent systems into their operations. Whether it's building predictive models, automating business processes, or enhancing customer experiences through machine learning, we ensure innovative, scalable, and ethical AI implementations. From concept to deployment, we support every stage of the AI journey—empowering businesses to work smarter, make faster decisions, and stay ahead in a competitive landscape.
           </p>
-          <button className="ai-service-button">Demo</button>
+          <button style={{width:"200px"}} className="view-more-btn">Demo</button>
         </div>
       </div>
     </div>

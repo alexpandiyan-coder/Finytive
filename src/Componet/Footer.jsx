@@ -44,11 +44,32 @@ const Footer = () => {
           <Col md={2}>
             <h5 className="mb-3 text-warning">Company</h5>
             <ul className="list-unstyled lh-lg text-light">
-              <li style={{cursor:"pointer"}} onClick={()=>navigate("/")}>About</li>
-              <li style={{cursor:"pointer"}} onClick={()=>navigate("/service")}>Services</li>
-              <li style={{cursor:"pointer"}} onClick={()=>navigate("/ProductsPage")}>Products</li>
-              <li style={{cursor:"pointer"}} onClick={()=>navigate("/Careers")}>Career</li>
-              <li style={{cursor:"pointer"}} onClick={()=>navigate("/Contact")}>Contact Us</li>
+              <li style={{cursor:"pointer"}}  onClick={() => {
+    navigate('/');
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 100); 
+  }}>About</li>
+              <li style={{cursor:"pointer"}} onClick={()=>{navigate("/service")
+                setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 100); 
+              }}>Services</li>
+              <li style={{cursor:"pointer"}} onClick={()=>{navigate("/ProductsPage")
+                setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 100); 
+              }}>Products</li>
+              <li style={{cursor:"pointer"}} onClick={()=>{navigate("/Careers")
+                setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 100); 
+              }}>Career</li>
+              <li style={{cursor:"pointer"}} onClick={()=>{navigate("/Contact")
+                setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 100); 
+              }}>Contact Us</li>
             </ul>
           </Col>
 

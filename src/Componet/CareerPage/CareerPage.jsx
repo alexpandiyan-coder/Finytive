@@ -540,7 +540,11 @@ const CareerPage = () => {
                     </div>
                     <div className="mt-auto">
                       <Button 
-                        onClick={() => handleApplyClick(job)}
+                        onClick={() => {handleApplyClick(job)
+                           setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 100);
+                        }}
                         style={{ backgroundColor: 'teal', borderColor: 'teal' }} 
                         className="rounded-pill px-4 py-2 w-100 d-flex align-items-center justify-content-center gap-2"
                       >

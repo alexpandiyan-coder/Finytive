@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Card, Button, Form } from 'react-bootstrap';
-import { 
-  FaFlask, 
-  FaUsers, 
-  FaGraduationCap, 
-  FaChartLine, 
-  FaBalanceScale, 
+import {
+  FaFlask,
+  FaUsers,
+  FaGraduationCap,
+  FaChartLine,
+  FaBalanceScale,
   FaMedal,
   FaCode,
   FaLaptopCode,
@@ -16,11 +16,11 @@ import {
   FaAngleRight,
   FaPlus
 } from 'react-icons/fa';
-import { 
-  SiSpring, 
-  SiPython, 
-  SiReact, 
-  SiAngular, 
+import {
+  SiSpring,
+  SiPython,
+  SiReact,
+  SiAngular,
   SiDocker,
 
 } from 'react-icons/si';
@@ -246,7 +246,7 @@ const CareerPage = () => {
 
   const handleFileChange = (e) => {
     const file = e.target.files[0];
-    if (file && file.size <= 5 * 1024 * 1024) { 
+    if (file && file.size <= 5 * 1024 * 1024) {
       setFormData(prev => ({
         ...prev,
         resume: file
@@ -277,8 +277,8 @@ const CareerPage = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <Button 
-            variant="link" 
+          <Button
+            variant="link"
             onClick={handleBackToJobs}
             className="mb-4 p-0 text-teal"
             style={{ textDecoration: 'none' }}
@@ -304,7 +304,7 @@ const CareerPage = () => {
                     <strong>Full Description:</strong><br />
                     {selectedJob.description}
                   </Card.Text>
-                  
+
                   <div className="mt-4">
                     <h5 className="fw-semibold text-teal mb-3">Key Responsibilities:</h5>
                     <ul className="list-unstyled">
@@ -325,7 +325,7 @@ const CareerPage = () => {
                     <div className="mb-3">
                       <strong>Education:</strong> {selectedJob.details.requirements.education}
                     </div>
-                    
+
                     <div className="mb-3">
                       <strong>Technical Skills:</strong>
                       <ul className="list-unstyled mt-2">
@@ -379,36 +379,36 @@ const CareerPage = () => {
                   <Form onSubmit={handleSubmit}>
                     <Form.Group className="mb-3">
                       <Form.Label>Full Name</Form.Label>
-                      <Form.Control 
-                        type="text" 
+                      <Form.Control
+                        type="text"
                         name="fullName"
                         value={formData.fullName}
                         onChange={handleInputChange}
-                        placeholder="John Doe" 
+                        placeholder="John Doe"
                         className="rounded-pill"
-                        required 
+                        required
                       />
                     </Form.Group>
 
                     <Form.Group className="mb-3">
                       <Form.Label>Email Address</Form.Label>
-                      <Form.Control 
-                        type="email" 
+                      <Form.Control
+                        type="email"
                         name="email"
                         value={formData.email}
                         onChange={handleInputChange}
-                        placeholder="john.doe@example.com" 
+                        placeholder="john.doe@example.com"
                         className="rounded-pill"
-                        required 
+                        required
                       />
                     </Form.Group>
 
                     <Form.Group className="mb-4">
                       <Form.Label>Resume/CV</Form.Label>
-                      <div 
-                        className="border p-4 text-center bg-light rounded-4" 
-                        style={{ 
-                          borderStyle: 'dashed', 
+                      <div
+                        className="border p-4 text-center bg-light rounded-4"
+                        style={{
+                          borderStyle: 'dashed',
                           borderColor: '#ccc',
                           cursor: 'pointer'
                         }}
@@ -436,10 +436,10 @@ const CareerPage = () => {
                     </Form.Group>
 
                     <div className="d-grid">
-                      <Button 
-                        variant="primary" 
-                        type="submit" 
-                        className="rounded-pill py-2 px-4" 
+                      <Button
+                        variant="primary"
+                        type="submit"
+                        className="rounded-pill py-2 px-4"
                         style={{ backgroundColor: 'teal', borderColor: 'teal' }}
                       >
                         Submit Application
@@ -464,30 +464,30 @@ const CareerPage = () => {
             Discover the advantages of joining Finytive. We are committed to creating an environment where you can thrive both personally and professionally.
           </p>
           <Row className="g-4">
-  {workWithUsData.map((item, idx) => {
-  
-    const aosDirection = idx % 2 === 0 ? "fade-up-right" : "fade-up-left";
+            {workWithUsData.map((item, idx) => {
 
-    return (
-      <Col md={6} key={idx}>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.3, delay: idx * 0.1 }}
-          data-aos={aosDirection}
-        >
-          <div className="work-card h-100 d-flex align-items-center p-4" data-aos={aosDirection}>
-            <div className="icon-box me-4">{item.icon}</div>
-            <div>
-              <h4 className="mb-2">{item.title}</h4>
-              <p className="mb-0">{item.desc}</p>
-            </div>
-          </div>
-        </motion.div>
-      </Col>
-    );
-  })}
-</Row>
+              const aosDirection = idx % 2 === 0 ? "fade-up-right" : "fade-up-left";
+
+              return (
+                <Col md={6} key={idx}>
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.3, delay: idx * 0.1 }}
+                    data-aos={aosDirection}
+                  >
+                    <div className="work-card h-100 d-flex align-items-center p-4" data-aos={aosDirection}>
+                      <div className="icon-box me-4">{item.icon}</div>
+                      <div>
+                        <h4 className="mb-2">{item.title}</h4>
+                        <p className="mb-0">{item.desc}</p>
+                      </div>
+                    </div>
+                  </motion.div>
+                </Col>
+              );
+            })}
+          </Row>
         </Container>
       </section>
 
@@ -517,8 +517,8 @@ const CareerPage = () => {
                 <Card className="rounded-4 shadow border-0 h-100">
                   <Card.Body className="p-4 d-flex flex-column">
                     <div className="mb-4" data-aos="flip-left"
-     data-aos-easing="ease-out-cubic"
-     data-aos-duration="1000">
+                      data-aos-easing="ease-out-cubic"
+                      data-aos-duration="1000">
                       <div className="d-flex align-items-center gap-3 mb-3">
                         <div className="icon-wrapper p-2 rounded-3" style={{ backgroundColor: 'rgba(0, 128, 128, 0.1)' }}>
                           {job.icon}
@@ -539,13 +539,14 @@ const CareerPage = () => {
                       </div>
                     </div>
                     <div className="mt-auto">
-                      <Button 
-                        onClick={() => {handleApplyClick(job)
-                           setTimeout(() => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }, 100);
+                      <Button
+                        onClick={() => {
+                          handleApplyClick(job)
+                          setTimeout(() => {
+                            window.scrollTo({ top: 10, behavior: 'smooth' });
+                          }, 100);
                         }}
-                        style={{ backgroundColor: 'teal', borderColor: 'teal' }} 
+                        style={{ backgroundColor: 'teal', borderColor: 'teal' }}
                         className="rounded-pill px-4 py-2 w-100 d-flex align-items-center justify-content-center gap-2"
                       >
                         Apply Now <BsArrowRight style={{ color: 'white' }} />
@@ -562,4 +563,4 @@ const CareerPage = () => {
   );
 };
 
-export default CareerPage;
+export default CareerPage;

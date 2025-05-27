@@ -250,7 +250,7 @@ const FiveYear = () => {
                 initial="hidden"
                 whileInView="visible"
                 whileHover="hover"
-                viewport={{ once: true, margin: "-50px" }}
+                viewport={{ once: false, margin: "-50px" }}
                 variants={cardVariants}
                 custom={i}
                 style={{ borderTop: `4px solid ${plan.accentColor}` }}

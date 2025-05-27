@@ -49,6 +49,12 @@ const Footer = () => {
     setTimeout(() => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }, 100); 
+  }}>Home</li>
+  <li style={{cursor:"pointer"}}  onClick={() => {
+    navigate('/About');
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 100); 
   }}>About</li>
               <li style={{cursor:"pointer"}} onClick={()=>{navigate("/service")
                 setTimeout(() => {

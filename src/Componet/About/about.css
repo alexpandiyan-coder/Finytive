@@ -1,56 +1,119 @@
-.about-page{
-    margin: 30px;
-    padding: 10px;
-    overflow: hidden;
-    max-width: 1200px;
-    width: 1200px;
-    display: flex;
+.about-page {
+  margin: 30px auto;
+  padding: 10px;
+  overflow: hidden;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.about {
+  overflow: hidden;
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.about-contant {
+  width: 550px;
+  line-height: 2rem;
+  font-weight: 900;
+}
+
+.container-about {
+  width: 550px;
+}
+
+.vission-mission {
+  max-width: 1250px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 35px auto;
+  padding: 10px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.vission-container {
+  width: 450px;
+  background: rgb(250, 235, 215);
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.img-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.vission-img {
+  width: 200px;
+}
+
+/* ================================
+   MEDIA QUERIES FOR RESPONSIVENESS
+   ================================ */
+
+@media (max-width: 1024px) {
+  .about-contant,
+  .container-about {
+    width: 100%;
+    text-align: center;
+  }
+
+  .vission-container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .img-container {
     justify-content: center;
-    align-items: center;
-   gap: 10px;
+  }
 }
 
-.about{
-   
-    overflow: hidden;
-    max-width: 1200px;
-    width: 1200px;
-}
-.about-contant{
-    width: 550px;
-    line-height: 2rem;
-    font-weight: 900;
-}
-
-.container-about{
-    width: 550px;
-}
-
-.vission-mission{
-    max-width: 1250px;
-    width: 1250px;
-   display: flex;
-   justify-content: space-around;
-   margin: 35px;
-   padding: 10px;
-   
-  
-}
-
-.vission-container{
-    width: 450px;
-   background: 	rgb(250, 235, 215);
-    display: flex;
+@media (max-width: 768px) {
+  .about-page {
     flex-direction: column;
-    height: 350px;
-    padding: 10px;
-    border-radius: 20px;
-}
-.img-container{
-    display: flex;
-    justify-content: start;
     align-items: center;
+  }
+
+  .about-contant {
+    font-size: 1rem;
+  }
+
+  .vission-mission {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vission-img {
+    width: 150px;
+  }
 }
-.vission-img{
-    width: 200px;
+
+@media (max-width: 480px) {
+  .about-contant {
+    font-size: 0.95rem;
+  }
+
+  .vission-img {
+    width: 120px;
+  }
+
+  .view-more-btn {
+    width: 100%;
+    padding: 10px;
+  }
 }
+/*  */

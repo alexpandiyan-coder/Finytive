@@ -76,7 +76,7 @@
 
 .contact-method {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   margin-bottom: 1rem;
   padding: 0.8rem;
   background: #f8f9fa;
@@ -103,6 +103,7 @@
   font-size: 1.2rem;
   color: #ffffff;
   transition: all 0.3s ease;
+  flex-shrink: 0;
 }
 
 .contact-method:hover .icon-wrapper {
@@ -110,16 +111,23 @@
   transform: scale(1.1);
 }
 
+.method-details {
+  flex-grow: 1;
+  text-align: center;
+}
+
 .method-details h3 {
   font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 0.3rem;
   color: #008080;
+  text-align: center;
 }
 
 .method-details p {
   color: #6c757d;
   margin: 0;
+  text-align: center;
 }
 
 .contact-method:hover .method-details h3 {

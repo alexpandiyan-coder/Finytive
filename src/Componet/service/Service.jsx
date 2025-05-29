@@ -15,13 +15,10 @@ import cloud from "./jsonFile/cloud.json"
 import mobile from "./jsonFile/mobile.json"
 import Lottie from "lottie-react"
 
+
 function Service() {
   return (
     <div className="service-container">
-      <div>
-        <CarouselFadeExample />
-      </div>
-
       {/* Welcome Message */}
       <div className="service-intro text-center my-4">
         <div data-aos="zoom-out">

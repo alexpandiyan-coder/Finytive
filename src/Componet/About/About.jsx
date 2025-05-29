@@ -11,7 +11,7 @@ import FiveYear from '../FiveYear'
 function About() {
   return (
     <section className='about'>
-        <div className='about-page'>
+        <div className='about-page' data-aos="zoom-in">
 
         
       <div className="about-contant">
@@ -21,7 +21,7 @@ function About() {
          </p>
          <button className='view-more-btn'>Connect</button>
       </div>
-      <div className="container-about">
+      <div className="container-about" data-aos="zoom-in-up">
           <Lottie animationData={imgPage} loop={true}/>
             
         </div> 
@@ -29,7 +29,7 @@ function About() {
     </div>
     <div className='vission-mission'>
      
-     <div className='vission-container'>
+     <div className='vission-container' data-aos="fade-right">
          <div className='img-container'>
             <p className='vission-img'>
 
@@ -39,7 +39,7 @@ function About() {
        </div>
        <p>To be a dominant service provider in the IT sector and help companies improve their business growth and sucess</p>
      </div>
-     <div className='vission-container'>
+     <div className='vission-container' data-aos="fade-left">
        <div className='img-container'>
         <p className='vission-img'>
 

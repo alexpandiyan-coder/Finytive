@@ -1,8 +1,9 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import CloudImage from './cloud-storage-background-business-network-design.jpg';
-import AiImage from './Blog-Images---The-Future-of-SEO-AG-4 1.png';
+import AiImage from './ai.jpg';
 import MobileImage from './Blog-Images---The-Future-of-SEO-AG-6 1.png';
+import JavaImage from './Enterprise Application1.jpg';
  // Replace with a unique Java image if available
 
 function CarouselFadeExample() {
@@ -26,7 +27,7 @@ function CarouselFadeExample() {
       desc: "Build seamless and high-performance mobile apps.",
     },
     {
-      src: CloudImage, // Replace with your Java-related image
+      src: JavaImage, // Replace with your Java-related image
       alt: "Java Enterprise Application - Secure banking platform",
       title: "Java Enterprise Application",
       desc: "Develop secure and robust banking platforms.",
@@ -41,7 +42,7 @@ function CarouselFadeExample() {
             className="d-block w-100"
             src={item.src}
             alt={item.alt}
-            style={{ height: "350px", objectFit: "cover" }}
+            style={{ height: "350px", objectFit: "cover", }}
           />
           <Carousel.Caption>
             <h3>{item.title}</h3>

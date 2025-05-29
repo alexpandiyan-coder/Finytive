@@ -210,7 +210,7 @@ const FiveYear = () => {
       `}</style>
 
       <section className="container py-5" id="five-year-plan">
-        <div className="text-center mb-5">
+        <div className="text-center mb-5" data-aos="zoom-out">
           <span className="badge bg-primary mb-3" style={{ 
             fontSize: '0.9rem',
             background: 'linear-gradient(45deg, #3b82f6, #8b5cf6)',

@@ -11,7 +11,7 @@ function Round() {
         </p>
       </div>
 
-      <div className='icon-container'>
+      <div className='icon-container' data-aos="zoom-in">
         <div className='icon-row icon-row1'>
           <span className="icon-box" style={{ backgroundColor: "#A7E9AF" }}>📊</span>
           <span className="icon-box" style={{ backgroundColor: "#A0CED9" }}>👥</span>

@@ -141,7 +141,7 @@ function Products() {
         {services.map((service, index) => (
           <motion.div 
             key={index} 
-            className='service-card'
+            className='service-cardss'
             variants={cardVariants}
             whileHover="hover"
             style={{ perspective: 1000, transformStyle: "preserve-3d" }}

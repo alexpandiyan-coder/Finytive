@@ -23,6 +23,7 @@ import ProductsPage from './Componet/Products/ProductsPage';
 import gsap from 'gsap';
 import Reordering from './Componet/About/Reordering';
 import About from './Componet/About/About';
+import FAQSection from './Componet/FAQSection/FAQSection';
 function App() {
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -38,19 +39,15 @@ function App() {
           
               <HeaderPage />
              <CoreValue/>
-             <Technology/>
               <WhyChoose />
-             
-              <VisionMission />
+              <VisionMission /> 
               
             </>
           } />
-
-         
            <Route path="/service" element={<Service />} />
            <Route path="/Contact" element={<ContactPage />} />
            <Route path="/Careers" element={ <Careers/>} />
-           <Route path="/ProductsPage" element={<ProductsPage/>} />
+           <Route path="/ProductsPage" element={<ProjectPage/>} />
            <Route path="/About" element={ <About/>} />
         </Route>
       </Routes>

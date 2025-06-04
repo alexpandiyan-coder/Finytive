@@ -1,21 +1,91 @@
 .cloud-container {
-  margin: 20px auto;
-  padding: 20px;
-  max-width: 1100px;
-  text-align: center;
-  position: relative;
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
 }
 
 .cloud-title {
-  font-size: 28px;
-  font-weight: bold;
-  margin-bottom: 20px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  text-align: center;
+  color: #2d3748;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.cloud-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: teal;
+  border-radius: 2px;
 }
 
 .cloud-line {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.cloud-text, .cloud-animation {
+  flex: 1;
+  min-width: 280px;
+  width: 100%;
+}
+
+.cloud-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.cloud-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #4a5568;
   margin-bottom: 30px;
+}
+
+.view-more-btn {
+  background-color: teal;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 200px;
+}
+
+.view-more-btn:hover {
+  background-color: #006666;
+}
+
+.cloud-animation {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  height: auto;
+}
+
+.cloud-img-service {
+  width: 80%;
+  height: auto;
+  max-height: 500px;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.cloud-img-service:hover {
+  transform: scale(1.03);
 }
 
 .cloud-box {
@@ -28,7 +98,7 @@
   background-color: #f9f9f9;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   position: relative;
-  top: -30px;
+  top: 30px;
 }
 
 .cloud-box-child {
@@ -51,43 +121,29 @@
   transform: scale(1.05);
 }
 
-.cloud-conteant {
-  display: flex;
-  position: absolute;
-  justify-content: space-between;
-  width: 900px;
-  bottom: 240px;
-  left: 220px;
-}
+/* Responsive Styles */
 
-.cloud-conteant p {
-  font-size: 18px;
-  font-weight: 600;
-  margin: 0 10px;
-}
-
-
-/* For tablets and smaller laptops (768px - 1024px) */
+/* Tablets and smaller laptops */
 @media (max-width: 1024px) {
-  .cloud-conteant {
-    width: 100%;
-    left: 0;
-    bottom: 200px;
-    padding: 0 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
   .cloud-box-child {
     width: 130px;
     height: 70px;
   }
+
+  .cloud-img-service {
+    max-height: 400px;
+  }
 }
 
-/* For tablets and large phones (600px - 767px) */
+/* Tablets and large phones */
 @media (max-width: 767px) {
   .cloud-title {
     font-size: 24px;
+  }
+
+  .cloud-line {
+    flex-direction: column-reverse;
+    align-items: center;
   }
 
   .cloud-box {
@@ -102,20 +158,17 @@
     height: 60px;
   }
 
-  .cloud-conteant {
-    bottom: 180px;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  .view-more-btn {
+    width: 100%;
+    font-size: 14px;
   }
 
-  .cloud-conteant p {
-    font-size: 16px;
-    margin: 5px 0;
+  .cloud-img-service {
+    max-height: 300px;
   }
 }
 
-/* For mobile phones (max-width: 480px) */
+/* Mobile phones */
 @media (max-width: 480px) {
   .cloud-container {
     padding: 10px;
@@ -131,10 +184,12 @@
     font-size: 14px;
   }
 
-  .cloud-conteant {
-    width: 100%;
-    bottom: 160px;
-    left: 0;
-    padding: 0 10px;
+  .cloud-box {
+    padding: 10px;
+    gap: 8px;
+  }
+
+  .view-more-btn {
+    font-size: 13px;
   }
 }

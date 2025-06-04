@@ -130,7 +130,7 @@
 }
 
 
-/* Responsive Design */
+
 @media (max-width: 1200px) {
   .header-page {
       flex-direction: column;

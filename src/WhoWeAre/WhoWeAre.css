@@ -1,0 +1,96 @@
+.who-wrapper {
+  background-color: #fff;
+  padding: 60px 30px;
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.who-header {
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.who-header h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.who-header .highlight {
+  color: #fcb900;
+}
+
+.who-header p {
+  max-width: 800px;
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.who-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.who-card {
+  flex: 1 1 30%;
+  background: #f9f9f9;
+  padding: 25px;
+  border-left: 6px solid;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+}
+
+.who-card:hover {
+  transform: translateY(-5px);
+}
+
+.who-card h3 {
+  font-size: 18px;
+  margin: 15px 0 10px;
+  line-height: 1.4;
+}
+
+.who-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.who-card .icon {
+  font-size: 28px;
+}
+
+.green {
+  border-color: #24b47e;
+  color: #24b47e;
+}
+
+.blue {
+  border-color: #0073e6;
+  color: #0073e6;
+}
+
+.red {
+  border-color: #e63946;
+  color: #e63946;
+}
+
+.rotate-icon {
+  transform: rotate(360deg);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .who-cards {
+    flex-direction: column;
+  }
+
+  .who-card {
+    flex: 1 1 100%;
+  }
+}

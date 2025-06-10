@@ -1,53 +1,51 @@
-import React, { useEffect } from 'react';
-import "./home.css";
+import React, { useState } from 'react';
+import './home.css';
 import { Link, useNavigate } from 'react-router-dom';
 
 function HomePage() {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
+  const [menuOpen, setMenuOpen] = useState(false);
 
-    const handleNavigation = (item) => {
-        if (item === 'Services') {
-            navigate('/service');
-        } else if (item === 'Contact') {
-            navigate('/contact');
-        } else if (item === "Home") {
-            navigate('/');
-        } else if (item === "Career") {
-            navigate("/Careers");
-        } else if (item === "Products") {
-            navigate("/ProductsPage");
-        } else if (item === "About") {
-            navigate("/About");
-        }
-    };
+  const handleNavigation = (path) => {
+    navigate(path);
+    setMenuOpen(false); // Close menu on navigation
+  };
 
-    return (
-        <section className='nav-main'>
-            <nav className='nav-bar slide-down'>
-                <div className='logo-name bounce'>
-                    <h1><Link to={"/"}>Finytive</Link></h1>
-                </div>
+  return (
+    <header className="navbar-container">
+      {/* Logo */}
+      <div className="navbar-logo">
+        <Link to="/" className="logo-text">Finytive</Link>
+      </div>
 
-                <div className='list-tab fade-in'>
-                    <ul>
-                        {['Home','About', 'Services', 'Products', 'Career', 'Contact'].map((item, index) => (
-                            <li 
-                                key={index}
-                                onClick={() => handleNavigation(item)}
-                            >
-                                {item}
-                                <div className="underline"></div>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
+      {/* Toggle Button */}
+      <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+        <div className={`bar ${menuOpen ? 'open' : ''}`}></div>
+        <div className={`bar ${menuOpen ? 'open' : ''}`}></div>
+        <div className={`bar ${menuOpen ? 'open' : ''}`}></div>
+      </div>
 
-                <button className='view-more-btn fade-in'>
-                    Client Login
-                </button>
-            </nav>
-        </section>
-    );
+      {/* Nav links + Button */}
+      <div className={`navbar-right ${menuOpen ? 'open' : ''}`}>
+        <nav className="navbar-links">
+          {[
+            { name: 'Home', path: '/' },
+            { name: 'About', path: '/About' },
+            { name: 'Services', path: '/service' },
+            { name: 'Products', path: '/ProductsPage' },
+            { name: 'Career', path: '/Careers' },
+            { name: 'Contact', path: '/contact' },
+          ].map((item, idx) => (
+            <span key={idx} onClick={() => handleNavigation(item.path)} className="nav-link">
+              {item.name}
+              <div className="nav-underline"></div>
+            </span>
+          ))}
+        </nav>
+        <button className="login-btn">Client Login</button>
+      </div>
+    </header>
+  );
 }
 
 export default HomePage;

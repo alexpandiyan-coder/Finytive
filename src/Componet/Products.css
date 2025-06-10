@@ -149,7 +149,7 @@
 }
 
 .view-more-btn {
-    padding: 12px 30px;
+    padding: 12px 10px;
     border: 2px solid #297988;
     border-radius: 6px;
     background: transparent;
@@ -160,6 +160,7 @@
     position: relative;
     overflow: hidden;
     z-index: 1;
+    width: 12em;
 }
 
 .view-more-btn::before {

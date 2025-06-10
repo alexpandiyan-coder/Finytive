@@ -24,6 +24,7 @@ import gsap from 'gsap';
 import Reordering from './Componet/About/Reordering';
 import About from './Componet/About/About';
 import FAQSection from './Componet/FAQSection/FAQSection';
+import WhoWeAre from './WhoWeAre/WhoWeAre';
 function App() {
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -38,9 +39,10 @@ function App() {
             <>
           
               <HeaderPage />
+              <VisionMission /> 
+              <WhoWeAre/>
              <CoreValue/>
               <WhyChoose />
-              <VisionMission /> 
               
             </>
           } />

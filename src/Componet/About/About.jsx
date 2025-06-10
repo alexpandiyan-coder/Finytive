@@ -19,7 +19,7 @@ function About() {
          <p>
             We take pride to introduce ourselves as reputed software development and digital transformation service company offering end-to-end solutions for SMEs to digital agencies around the globe. Our specialty is developing customized solutions using innovative technologies and resources.
          </p>
-         <button className='view-more-btn'>Connect</button>
+         <button className='view-more-btn' style={{fontSize:"20px",width:"150px"}}>Connect</button>
       </div>
       <div className="container-about" data-aos="zoom-in-up">
           <Lottie animationData={imgPage} loop={true}/>

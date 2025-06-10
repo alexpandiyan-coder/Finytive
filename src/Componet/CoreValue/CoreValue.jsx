@@ -67,7 +67,7 @@ const CoreValues = () => {
       <Container fluid className="px-0">
         <div className="section-header">
           <div className="header-content" data-aos="zoom-out-up">
-            <h2 className="animate-text">Driving Excellence Through Core Values</h2>
+            <h2 className="animate-text" style={{ color: "teal" }}>Driving Excellence Through Core Values</h2>
             <p className="section-subtitle animate-text-delay">
               Building a better future through innovation, collaboration, and sustainable practices.
             </p>

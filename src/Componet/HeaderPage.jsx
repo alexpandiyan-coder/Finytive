@@ -5,16 +5,15 @@ import 'aos/dist/aos.css';
 
 function HeaderPage() {
 
-return (
+  return (
     <header className='header-page'>
       <div className='header' data-aos="zoom-in-right">
         <p className='font-header'>
-          Streamline Your <br/> <span className='font-child'> Business with ERP Solutions</span>
+          Where Infinite Vision  <span className='font-child'> Meets</span>
         </p>
-        <p className='header-subtext'>Nothing can be Delivered, without 100%</p>
+        {/* <p className='header-subtext'>Nothing can be Delivered, without 100%</p> */}
         <p className='header-description'>
-          Discover Seamless Integration, Enhanced Efficiency, and Real-Time Insights.<br/> 
-          Let Our Expert Team Craft Your Custom ERP Software Today!
+          At Finytive, our name reflects our purpose — blending the boundless possibilities of innovation with precise, impactful solutions. From startups to enterprises, we deliver smart, secure, and scalable technology that transforms.
         </p>
         <div className='header-buttons'>
           <button className='view-more-btn'>Schedule a demo</button>
@@ -22,7 +21,7 @@ return (
         </div>
       </div>
 
-      <div className='logo-container'  data-aos="fade-left" >
+      <div className='logo-container' data-aos="fade-left" >
         <Lottie animationData={animationData} loop={true} />
       </div>
     </header>

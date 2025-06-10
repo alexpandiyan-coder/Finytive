@@ -17,16 +17,14 @@ function ProjectPageLayout() {
          <div className="items4">User-Friendly Interface:</div>
          <div className="items5">Attendance History & Reports</div>
          <div className="items6">Smart Time Management</div>
-         <div className="items7"></div>
-         <div className="items8"></div>
-         <div className="items9"></div>
+        
        </div>
 
-     <div className=''>
+     <div className='project-data'>
              <div className="project-img">
-                <img src="" alt="" />
+                <img src="" alt="Logo" />
              </div>
-             
+
      </div>
 
     </div>

@@ -83,11 +83,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.navbar-container{
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
+
 
 .login-btn:hover {
   background: linear-gradient(135deg, #297988, #4fd1c5);

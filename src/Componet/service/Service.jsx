@@ -1,25 +1,24 @@
-import {
-  GiArtificialIntelligence,
-  GiSmartphone,
-  GiCloudDownload,
-  GiBank
-} from "react-icons/gi";
+
 
 import Cloud from "./cloud/Cloud";
 import AiService from "./AiService/AiService";
 import "./service.css";
 import CarouselFadeExample from './CarouselService/CarouselFadeExample';
 import OurWorkflow from "./OurWorkFlow/OurWorkFlow";
-
+import { IoIosArrowForward } from "react-icons/io";
 import Ai from "./jsonFile/Ai.json";
 import javaImage from "./jsonFile/java.json";
 import cloud from "./jsonFile/cloud.json";
 import mobile from "./jsonFile/mobile.json";
-
+import { Link,useNavigate } from "react-router-dom";
 import Lottie from "lottie-react";
 import BoxPageService from "./BoxPageService";
 
 function Service() {
+  
+
+          const navigate=useNavigate()
+
   return (
     <div className="service-container">
 
@@ -61,7 +60,8 @@ function Service() {
         <div className="service-cards">
 
           {/* AI Solutions */}
-          <div className="service-card service-card-1" data-aos="fade-up-right">
+      
+          <div className="service-card service-card-1" data-aos="fade-up-right" onClick={()=>navigate("/")}>
             <span className="card-logo">
               <Lottie animationData={Ai} loop={true} style={{ height: 100, width: 100 }} />
             </span>
@@ -71,10 +71,11 @@ function Service() {
                 Leverage Artificial Intelligence to automate operations, enhance decision-making, and gain deep business insights.
               </p>
             </div>
+            <p style={{fontSize:"50px"}}><IoIosArrowForward /></p>
           </div>
-
+     
           {/* Mobile Application */}
-          <div className="service-card service-card-2" data-aos="fade-up-left">
+          <div className="service-card service-card-2" data-aos="fade-up-left" onClick={()=>navigate("/")}>
             <span className="card-logo">
               <Lottie animationData={mobile} loop={true} autoplay={true} style={{ height: 100, width: 100 }} />
             </span>
@@ -84,10 +85,11 @@ function Service() {
                 Build high-performance Android and iOS apps with seamless user experience and scalable architecture.
               </p>
             </div>
+            <p style={{fontSize:"50px"}}><IoIosArrowForward /></p>
           </div>
 
           {/* Cloud Services */}
-          <div className="service-card service-card-3" data-aos="fade-up-right">
+          <div className="service-card service-card-3" data-aos="fade-up-right" onClick={()=>navigate("/")}>
             <span className="card-logo">
               <Lottie animationData={cloud} loop={true} autoplay={true} style={{ height: 100, width: 100 }} />
             </span>
@@ -97,10 +99,11 @@ function Service() {
                 Migrate, manage, and scale your applications in the cloud for better availability, security, and performance.
               </p>
             </div>
+            <p style={{fontSize:"50px"}}><IoIosArrowForward /></p>
           </div>
 
           {/* Java Enterprise Apps */}
-          <div className="service-card service-card-4" data-aos="fade-up-left">
+          <div className="service-card service-card-4" data-aos="fade-up-left" onClick={()=>navigate("/")}>
             <span className="card-logo">
               <Lottie animationData={javaImage} loop={true} autoplay={true} style={{ height: 100, width: 100 }} />
             </span>
@@ -110,6 +113,7 @@ function Service() {
                 Develop secure, compliant, and robust banking platforms with modern tech and intelligent automation.
               </p>
             </div>
+              <p style={{fontSize:"50px"}}><IoIosArrowForward /></p>
           </div>
         </div>
       </div>

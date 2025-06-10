@@ -44,24 +44,6 @@ function ProjectPage() {
         "Comprehensive Data Management",
         "Powerful Analytics"
       ]
-    },
-    {
-      title: "Parking Management Software",
-      desc: "Smart parking allocation and tracking system for organizations.",
-      img: crm,
-      features: ["Smart Allocation", "Live Monitoring", "License Plate Recognition", "Alerts"]
-    },
-    {
-      title: "Helpdesk Management Software",
-      desc: "Streamlined ticketing, SLA monitoring, and team collaboration.",
-      img: crm,
-      features: ["Ticketing System", "SLA Tracking", "Collaboration Tools", "Email Support"]
-    },
-    {
-      title: "Visitor Management Software",
-      desc: "Digitally manage visitor entries with real-time alerts and records.",
-      img: crm,
-      features: ["Digital Entry", "Live Alerts", "Visitor Logs", "Badge Printing"]
     }
   ];
 
@@ -104,8 +86,10 @@ function ProjectPage() {
                 <ul>
                   {product.features.map((feature, i) => (
                     <li key={i}>{feature}</li>
+                   
                   ))}
                 </ul>
+                 <button className="btn-outline-warnings">Get Demo</button>
               </div>
             </div>
           </div>

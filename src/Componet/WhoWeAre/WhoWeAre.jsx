@@ -5,7 +5,7 @@ import { FaRocket, FaLightbulb, FaSync } from 'react-icons/fa';
 function WhoWeAre() {
   return (
     <section className="who-wrapper">
-      <div className="who-header">
+      <div className="who-header" data-aos="fade-up-right">
         <h2>
           <span className="highlight">WHO</span> WE ARE
         </h2>
@@ -14,7 +14,7 @@ function WhoWeAre() {
         </p>
       </div>
 
-      <div className="who-cards">
+      <div className="who-cards" data-aos="fade-right">
         <div className="who-card green">
           <FaRocket className="icon" />
           <h3>LOREM IPSUM<br />IS SIMPLY</h3>
@@ -23,7 +23,7 @@ function WhoWeAre() {
           </p>
         </div>
 
-        <div className="who-card blue">
+        <div className="who-card blue" data-aos="fade-right">
           <FaLightbulb className="icon" />
           <h3>LOREM IPSUM<br />IS SIMPLY</h3>
           <p>
@@ -31,7 +31,7 @@ function WhoWeAre() {
           </p>
         </div>
 
-        <div className="who-card red">
+        <div className="who-card red" data-aos="fade-right">
           <FaSync className="icon rotate-icon" />
           <h3>LOREM IPSUM<br />IS SIMPLY</h3>
           <p>

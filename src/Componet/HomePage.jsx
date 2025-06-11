@@ -3,6 +3,7 @@ import './home.css';
 import { Link, useNavigate } from 'react-router-dom';
 
 function HomePage() {
+  let name ="alex"
   const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
 

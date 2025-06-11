@@ -7,7 +7,7 @@ function WhoWeAre() {
     <section className="who-wrapper">
       <div className="who-header" data-aos="fade-up-right">
         <h2>
-          <span className="highlight">WHO</span> WE ARE
+          <span className="highlight">WHO</span><span style={{color:"teal",}} className='m-1'>WE ARE</span>
         </h2>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.

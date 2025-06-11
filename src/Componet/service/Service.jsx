@@ -108,12 +108,24 @@ function Service() {
               <Lottie animationData={javaImage} loop={true} autoplay={true} style={{ height: 100, width: 100 }} />
             </span>
             <div className="contant-top">
-              <h2 className="card-title">Java Enterprise Applications</h2>
+              <h2 className="card-title">Enterprise Web Applications</h2>
               <p className="card-description">
                 Develop secure, compliant, and robust banking platforms with modern tech and intelligent automation.
               </p>
             </div>
               <p style={{fontSize:"50px"}}><IoIosArrowForward /></p>
+          </div>
+          <div className="service-card service-card-3" data-aos="fade-up-right" onClick={()=>navigate("/")}>
+            <span className="card-logo">
+              <Lottie animationData={cloud} loop={true} autoplay={true} style={{ height: 100, width: 100 }} />
+            </span>
+            <div className="contant-top">
+              <h2 className="card-title">ERP & CRM</h2>
+              <p className="card-description">
+                Migrate, manage, and scale your applications in the cloud for better availability, security, and performance.
+              </p>
+            </div>
+            <p style={{fontSize:"50px"}}><IoIosArrowForward /></p>
           </div>
         </div>
       </div>

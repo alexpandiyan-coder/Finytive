@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import crm from "../assets/products/crm-crm-svgrepo-com (1).svg";
-import timeDevice from "../assets/products/watch-clock-device-mobile-smartphone-phone-time-svgrepo-com.svg";
-import time from "../assets/products/time-management-clock-svgrepo-com.svg";
+import timeDevice from "../assets/products/itpce.png";
+import time from "../assets/products/tickora.png";
 import "./project.css";
 import FAQSection from './FAQSection/FAQSection';
 

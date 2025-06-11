@@ -44,7 +44,7 @@ function App() {
               <VisionMission /> 
              <CoreValue/>
               <WhyChoose />
-              {/* <ProjectPageLayout/> */}
+              <ProjectPageLayout/>
             </>
           } />
            <Route path="/service" element={<Service />} />

@@ -8,24 +8,24 @@ function HomePage() {
 
   const handleNavigation = (path) => {
     navigate(path);
-    setMenuOpen(false); // Close menu on navigation
+    setMenuOpen(false); 
   };
 
   return (
     <header className="navbar-container">
-      {/* Logo */}
+     
       <div className="navbar-logo">
         <Link to="/" className="logo-text">Finytive</Link>
       </div>
 
-      {/* Toggle Button */}
+      
       <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
         <div className={`bar ${menuOpen ? 'open' : ''}`}></div>
         <div className={`bar ${menuOpen ? 'open' : ''}`}></div>
         <div className={`bar ${menuOpen ? 'open' : ''}`}></div>
       </div>
 
-      {/* Nav links + Button */}
+      
       <div className={`navbar-right ${menuOpen ? 'open' : ''}`}>
         <nav className="navbar-links">
           {[

@@ -89,7 +89,7 @@ function VisionMission() {
   const springY = useSpring(y, { stiffness: 80, damping: 20 });
 
   return (
-    <section style={{ padding: '4rem 1rem', background: '#eef2f7' }}>
+    <section style={{ padding: '2rem 0.5rem', background: '#eef2f7' }}>
       <div
         style={{
           display: 'flex',

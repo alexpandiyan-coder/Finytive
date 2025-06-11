@@ -3,13 +3,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 5%;
+  padding: 20px 5%;
   min-height: 80vh;
 }
 
 .header {
   margin-left: 30px;
-  margin-top: 10px;
   display: flex;
   flex-direction: column;
   max-width: 600px;
@@ -135,7 +134,7 @@
   .header-page {
       flex-direction: column;
       text-align: center;
-      padding: 60px 5%;
+      padding: 30px 5%;
   }
   
   .header {

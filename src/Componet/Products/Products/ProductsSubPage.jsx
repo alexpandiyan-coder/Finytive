@@ -7,18 +7,15 @@ import {
   FaClock,
   FaUserFriends,
   FaChartBar,
-  FaCalendarAlt,
   FaCheck,
   FaArrowLeft
 } from 'react-icons/fa';
 
 import crm from "../../../assets/products/crm-crm-svgrepo-com (1).svg";
-import timeDevice from "../../../assets/products/crm-crm-svgrepo-com (1).svg";
-import time from "../../../assets/products/crm-crm-svgrepo-com (1).svg";
+import timeDevice from "../../../assets/products/itpce.png";
+import time from "../../../assets/products/tickora.png";
 import "./product.css";
 import "./ProductSubPage.css";
-// import FAQSection from './FAQSection/FAQSection';
-
 function ProductsSubPage() {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [selectedFeature, setSelectedFeature] = useState(0);

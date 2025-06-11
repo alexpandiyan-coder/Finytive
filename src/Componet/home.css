@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
+  padding: 10px 40px;
   border-radius: 12px;
   margin: 20px auto;
   max-width: 1200px;
@@ -14,7 +14,7 @@
 
 /* Logo */
 .logo-text {
-  font-size: 28px;
+  font-size: 38px;
   font-weight: bold;
   background: linear-gradient(135deg, #297988, #4fd1c5);
   background-clip: text;

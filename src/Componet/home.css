@@ -167,17 +167,9 @@
   }
 }
 
-/* Accessibility */
-[role="button"]:focus,
-button:focus {
-  outline: 2px solid #297988;
-  outline-offset: 4px;
-}
-
-/* Fallback for gradient text */
-@supports not (background-clip: text) {
+/* @supports not (background-clip: text) {
   .logo-text {
     color: #297988;
     background: none;
   }
-}
+} */

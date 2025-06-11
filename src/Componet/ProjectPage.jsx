@@ -8,13 +8,7 @@ import "./project.css";
 import FAQSection from './FAQSection/FAQSection';
 
 function ProjectPage() {
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      once: true,
-      easing: 'ease-out-quad'
-    });
-  }, []);
+
 
   const products = [
     {
@@ -96,7 +90,6 @@ function ProjectPage() {
         ))}
       </div>
       <div>
-        <FAQSection/>
       </div>
     </div>
   );

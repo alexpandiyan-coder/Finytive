@@ -10,7 +10,7 @@ import {
   FaCheck,
   FaArrowLeft
 } from 'react-icons/fa';
-
+import FAQSection from "../../FAQSection/FAQSection"
 import crm from "../../../assets/products/crm-crm-svgrepo-com (1).svg";
 import timeDevice from "../../../assets/products/itpce.png";
 import time from "../../../assets/products/tickora.png";
@@ -220,7 +220,17 @@ function ProductsSubPage() {
 
   if (selectedProduct) {
     const product = productData[selectedProduct];
+    console.log(product)
     return (
+      <div className='bg-color-products'>
+        <div className="header-content" data-aos="fade-up">
+        <h2 className="title">
+          <span className='companey-name'>{product.title}</span> 
+        </h2>
+        <p className="subtitle">
+         {product.description}
+        </p>
+      </div>
       <div className='project-page-layout'>
         <button 
           className="back-button" 
@@ -273,6 +283,8 @@ function ProductsSubPage() {
             ))}
           </div>
         </div>
+      </div>
+    <FAQSection/>
       </div>
     );
   }
@@ -335,7 +347,7 @@ function ProductsSubPage() {
         ))}
       </div>
       <div>
-        {/* <FAQSection /> */}
+        
       </div>
     </div>
   );

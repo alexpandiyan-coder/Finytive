@@ -11,10 +11,13 @@ import Service from './Componet/service/Service';
 import ContactPage from './Componet/ContactPage/ContactPage';
 import Careers from './Componet/CareerPage/CareerPage';
 import "./Componet/Products.css"
-import ProductsPage from './Componet/Products/ProductsPage';
 import About from './Componet/About/About';
 import WhoWeAre from './Componet/WhoWeAre/WhoWeAre';
 import ProductsSubPage from './Componet/Products/Products/ProductsSubPage';
+import AuthPage from './Componet/ClientLogin/AuthPage';
+import WhatWeDo from './Componet/WhatWeDo/WhatWeDo';
+import AIChat from './Componet/AiChat/AiChat';
+
 function App() {
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -27,9 +30,10 @@ function App() {
          
           <Route index element={
             <>
-          
+              
               <HeaderPage />
               <WhoWeAre/>
+             <WhatWeDo/>
               <VisionMission /> 
              <CoreValue/>
               <WhyChoose />
@@ -40,6 +44,7 @@ function App() {
            <Route path="/Careers" element={ <Careers/>} />
            <Route path="/ProductsPage" element={<ProductsSubPage/>} />
            <Route path="/About" element={ <About/>} />
+           <Route path="/Login" element={ <AuthPage/>} />
         </Route>
       </Routes>
   );

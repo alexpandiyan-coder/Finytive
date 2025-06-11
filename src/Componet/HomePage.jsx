@@ -58,7 +58,7 @@ function HomePage() {
             </div>
           ))}
         </nav>
-        <button className="login-btn" tabIndex="0">
+        <button className="login-btn" tabIndex="0" onClick={()=>navigate("/Login")}>
           Client Login
         </button>
       </div>

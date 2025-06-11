@@ -7,8 +7,10 @@ import mission from "./json/mission.json"
 import vission from "./json/idea.json"
 import VisionMission from '../VisionMission'
 import FiveYear from '../FiveYear'
-
+ import { useNavigate } from 'react-router-dom'
 function About() {
+
+   const navigate=    useNavigate()
   return (
     <section className='about'>
         <div className='about-page' data-aos="zoom-in">
@@ -19,7 +21,10 @@ function About() {
          <p>
             We take pride to introduce ourselves as reputed software development and digital transformation service company offering end-to-end solutions for SMEs to digital agencies around the globe. Our specialty is developing customized solutions using innovative technologies and resources.
          </p>
-         <button className='view-more-btn' style={{fontSize:"20px",width:"150px"}}>Connect</button>
+         <button className='view-more-btn' onClick={() => {
+              
+              navigate("/Contact");
+            }} style={{fontSize:"20px",width:"150px"}}>Connect</button>
       </div>
       <div className="container-about" data-aos="zoom-in-up">
           <Lottie animationData={imgPage} loop={true}/>

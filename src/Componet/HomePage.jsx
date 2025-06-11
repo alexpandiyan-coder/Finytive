@@ -8,26 +8,35 @@ function HomePage() {
 
   const handleNavigation = (path) => {
     navigate(path);
-    setMenuOpen(false); 
+    setMenuOpen(false);
+  };
+
+  const handleKeyDown = (e, path) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      handleNavigation(path);
+    }
   };
 
   return (
     <header className="navbar-container">
-     
       <div className="navbar-logo">
         <Link to="/" className="logo-text">Finytive</Link>
       </div>
 
-      
-      <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
-        <div className={`bar ${menuOpen ? 'open' : ''}`}></div>
-        <div className={`bar ${menuOpen ? 'open' : ''}`}></div>
-        <div className={`bar ${menuOpen ? 'open' : ''}`}></div>
-      </div>
+      <button
+        className={`hamburger ${menuOpen ? 'open' : ''}`}
+        onClick={() => setMenuOpen(!menuOpen)}
+        aria-label="Menu"
+        aria-expanded={menuOpen}
+        aria-controls="navbar-right"
+      >
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
+      </button>
 
-      
-      <div className={`navbar-right ${menuOpen ? 'open' : ''}`}>
-        <nav className="navbar-links">
+      <div id="navbar-right" className={`navbar-right ${menuOpen ? 'open' : ''}`}>
+        <nav className="navbar-links" aria-label="Main navigation">
           {[
             { name: 'Home', path: '/' },
             { name: 'About', path: '/About' },
@@ -36,13 +45,22 @@ function HomePage() {
             { name: 'Career', path: '/Careers' },
             { name: 'Contact', path: '/contact' },
           ].map((item, idx) => (
-            <span key={idx} onClick={() => handleNavigation(item.path)} className="nav-link">
+            <div
+              key={idx}
+              onClick={() => handleNavigation(item.path)}
+              onKeyDown={(e) => handleKeyDown(e, item.path)}
+              className="nav-link"
+              role="button"
+              tabIndex="0"
+            >
               {item.name}
-              <div className="nav-underline"></div>
-            </span>
+              <span className="nav-underline"></span>
+            </div>
           ))}
         </nav>
-        <button className="login-btn">Client Login</button>
+        <button className="login-btn" tabIndex="0">
+          Client Login
+        </button>
       </div>
     </header>
   );

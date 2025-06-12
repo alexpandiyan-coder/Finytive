@@ -17,6 +17,7 @@ import ProductsSubPage from './Componet/Products/Products/ProductsSubPage';
 import AuthPage from './Componet/ClientLogin/AuthPage';
 import WhatWeDo from './Componet/WhatWeDo/WhatWeDo';
 import AIChat from './Componet/AiChat/AiChat';
+import HowItWorks from './Componet/HowItWorks/HowItWorks';
 
 function App() {
   useEffect(() => {

@@ -3,9 +3,10 @@
   position: relative;
   overflow: hidden;
   z-index: 2;
-  padding-top: 40px;
+  padding-top: 30px;
   padding-bottom: 40px;
   background-color: teal;
+  max-height: 430px;
 }
 
 .footer-img-1,

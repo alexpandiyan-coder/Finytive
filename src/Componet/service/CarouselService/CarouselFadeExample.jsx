@@ -28,8 +28,8 @@ function CarouselFadeExample() {
     },
     {
       src: JavaImage, // Replace with your Java-related image
-      alt: "Java Enterprise Application - Secure banking platform",
-      title: "Java Enterprise Application",
+      alt: " Enterprise application development- Secure banking platform",
+      title: " Enterprise application development",
       desc: "Develop secure and robust banking platforms.",
     },
   ];

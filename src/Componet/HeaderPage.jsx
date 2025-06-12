@@ -13,7 +13,7 @@ function HeaderPage() {
     <header className='header-page'>
       <div className='header' data-aos="zoom-in-right">
         <p className='font-header'>
-          Finytive idea <span className='font-child'>infinite possibilities</span>
+          Finite ideas <span className='font-child'>Infinite possibilities</span>
         </p>
         {/* <p className='header-subtext'>Nothing can be Delivered, without 100%</p> */}
         <p className='header-description'>

@@ -26,7 +26,7 @@ const Footer = () => {
             <h5 className="mb-3 text-warning">Products</h5>
             <ul className="list-unstyled lh-lg text-light">
               <li>Finytive CRM</li>
-              <li>Finytive Tickora</li>
+              <li>Tickora</li>
               <li>ITCBC</li>
             </ul>
           </Col>
@@ -37,7 +37,7 @@ const Footer = () => {
               <li>AI Solutions</li>
               <li>Mobile App Development</li>
               <li>Cloud Computing</li>
-              <li>Java Enterprise Application</li>
+              <li> Enterprise application development</li>
             </ul>
           </Col>
 

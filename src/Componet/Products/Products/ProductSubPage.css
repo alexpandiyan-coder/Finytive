@@ -109,7 +109,10 @@
 }
 
 .companey-name {
+  font-size: 50px;
+  display: inline-block;
   color: #297988;
+  margin-bottom: 20px;
 }
 
 .product-card-grid {

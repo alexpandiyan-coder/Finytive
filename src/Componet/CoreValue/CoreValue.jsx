@@ -10,16 +10,16 @@ const CoreValues = () => {
       icon: '💡',
       color: '#4A90E2',
       gradient: 'linear-gradient(135deg, #4A90E2 0%, #357ABD 100%)',
-      stats: '100+',
+      stats: '',
       statLabel: 'Innovative Solutions'
     },
     {
-      title: 'Collaboration Excellence',
+      title: 'Collaboration',
       description: 'Building strong partnerships with our customers and team to achieve shared goals.',
       icon: '🤝',
       color: '#50E3C2',
       gradient: 'linear-gradient(135deg, #50E3C2 0%, #2ECC71 100%)',
-      stats: '10+',
+      stats: '',
       statLabel: 'Global Partners'
     },
     {
@@ -28,7 +28,7 @@ const CoreValues = () => {
       icon: '⭐',
       color: '#F5A623',
       gradient: 'linear-gradient(135deg, #F5A623 0%, #F39C12 100%)',
-      stats: '10+',
+      stats: '',
       statLabel: 'Awards Won'
     },
     {
@@ -37,7 +37,7 @@ const CoreValues = () => {
       icon: '🌱',
       color: '#7ED321',
       gradient: 'linear-gradient(135deg, #7ED321 0%, #2ECC71 100%)',
-      stats: '75%',
+      stats: '',
       statLabel: 'Carbon Reduction'
     }
   ];

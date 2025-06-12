@@ -10,6 +10,7 @@ import {
   FaCheck,
   FaArrowLeft
 } from 'react-icons/fa';
+import Dashboard from "./svg/Dashboard-cuate.svg"
 import FAQSection from "../../FAQSection/FAQSection"
 import crm from "../../../assets/products/crm-crm-svgrepo-com (1).svg";
 import timeDevice from "../../../assets/products/itpce.png";
@@ -76,7 +77,7 @@ function ProductsSubPage() {
         {
           title: "Real-time Analytics",
           icon: <FaChartBar className="feature-icon" />,
-          image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop&q=60",
+          image: Dashboard,
           descriptions: [
             "Comprehensive sales performance metrics",
             "Real-time dashboard with key indicators",
@@ -117,26 +118,36 @@ function ProductsSubPage() {
     },
     tickora: {
       title: "Tickora - Time Management System",
-      description: "Smart attendance system with face recognition and geo-fencing for accurate tracking.",
+      title2:"Welcome to Your Smart Attendance Management System",
+      description: `Say goodbye to outdated manual attendance systems and step into a new era of seamless,
+secure, and accurate attendance tracking. Powered by Face Recognition and Geo-Fencing
+Technology, this solution ensures that every attendance record is captured effortlessly and
+with pinpoint accuracy—no more missed punches or manual errors.
+Designed with schools, colleges, training institutes, and educational organizations in mind,
+this user-friendly application is the ultimate time management system for the modern
+learning environment. Manage attendance, track history, and generate insights—all from one
+powerful and intuitive platform.
+Stay ahead of the curve and simplify attendance tracking for your institution. Because managing
+time should be simple, not stressful`,
       features: [
         {
-          title: "Face Recognition-Based Attendance",
+          title: "Face Recognition-Based Attendance ",
           icon: <FaUserCircle className="feature-icon" />,
-          image: "https://images.unsplash.com/photo-1555952497-ef1906810d7a?w=800&auto=format&fit=crop&q=60",
+          image:  Dashboard,
           descriptions: [
-            "Advanced facial recognition technology",
-            "Multiple face detection capability",
-            "Secure face data storage"
+            "Ensure 100% Accuracy Achieve unmatched precision through advanced technology",
+            "Advanced Facial Recognition Leverage cutting-edge facial mapping to detect, analyze, and verify faces instantly",
+            "AI-Powered Engine Seamlessly powered by intelligent algorithms for speed and security"
           ]
         },
         {
           title: "Geo-Fencing Integration",
           icon: <FaMapMarkedAlt className="feature-icon" />,
-          image: "https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800&auto=format&fit=crop&q=60",
+          image: Dashboard,
           descriptions: [
-            "Precise location-based tracking",
-            "Customizable geo-fence boundaries",
-            "Real-time location verification"
+            "Attendance is allowed only within the campus boundary using GPS",
+            "The system verifies real-time location before marking attendance",
+            "Attendance outside designated zones is automatically blocked"
           ]
         },
         {
@@ -144,65 +155,102 @@ function ProductsSubPage() {
           icon: <FaClock className="feature-icon" />,
           image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop&q=60",
           descriptions: [
-            "Instant attendance status updates",
-            "Live dashboard with analytics",
-            "Automated notifications"
+            "Track attendance in real-time from anywhere",
+            "Instantly view daily, weekly, or monthly records",
+            "Access attendance summaries with just a tap"
           ]
         },
         {
-          title: "Detailed Reports",
+          title: "User-Friendly Interface",
           icon: <FaChartBar className="feature-icon" />,
           image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=60",
           descriptions: [
-            "Comprehensive attendance reports",
-            "Customizable report formats",
-            "Export functionality"
+            "User-friendly design for teachers, students, and admins",
+            "Seamless access on both web and mobile platforms",
+            "Easy navigation for a smooth attendance experience"
+          ]
+        },{
+          title: "Attendance History & Reports",
+          icon: <FaChartBar className="feature-icon" />,
+          image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=60",
+          descriptions: [
+            "Generate detailed reports by individual, class, or department",
+            "Export attendance data easily for analysis",
+            "Keep accurate records with downloadable reports"
+          ]
+        },
+        {
+          title: "Smart Time Management",
+          icon: <FaChartBar className="feature-icon" />,
+          image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=60",
+          descriptions: [
+            "Reduce manual attendance tasks effortlessly",
+            "Save valuable time for teachers and staff",
+            "Focus more on teaching and learning outcomes"
           ]
         }
       ]
     },
     itcpc: {
       title: "ITCPC – Smart Auction Management",
-      description: "Streamline auctions with automated billing and real-time tracking.",
+      title2:"Welcome to the future of auction management – efficient, transparent, and made for success",
+      description: `Say goodbye to tedious, manual auction processes and step into the future of smart, seamless,
+and efficient auction management.
+ITCPC is your all-in-one platform for automated bill generation, real-time auction tracking,
+and powerful data analysis – designed to make your spices auction workflow faster, more
+transparent.
+Whether you’re managing small lots or large-scale auctions, ITCPC empowers you with tools to
+eliminate errors, improve accuracy, and make confident, data-driven decisions.
+With an intuitive interface and smooth operations, ITCPC turns complex auction management
+into a simple, streamlined experience.`,
       features: [
         {
-          title: "Automated Bill Generation",
+          title: "Simplified Bill Generation",
           icon: <FaChartBar className="feature-icon" />,
           image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop&q=60",
           descriptions: [
-            "Instant bill generation",
-            "Customizable billing templates",
-            "Automated payment tracking"
-          ]
-        },
-        {
-          title: "Auction Status Monitoring",
-          icon: <FaClock className="feature-icon" />,
-          image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&auto=format&fit=crop&q=60",
-          descriptions: [
-            "Real-time auction progress tracking",
-            "Bid monitoring and alerts",
-            "Auction timeline management"
+            "Generate bills quickly with minimal effort",
+            "Automate fee calculations and invoicing",
+            "Reduce errors with streamlined billing processes"
           ]
         },
         {
           title: "Comprehensive Data Management",
-          icon: <FaUserCircle className="feature-icon" />,
-          image: "https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800&auto=format&fit=crop&q=60",
+          icon: <FaClock className="feature-icon" />,
+          image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&auto=format&fit=crop&q=60",
           descriptions: [
-            "Centralized data storage",
-            "Secure data access controls",
-            "Automated data backup"
+            "Store and manage all student and staff data in one place",
+            "Access academic, attendance, and fee records instantly",
+            "Ensure data accuracy with organized digital records"
           ]
         },
         {
-          title: "Powerful Analytics",
+          title: "Auction Status Monitoring",
+          icon: <FaUserCircle className="feature-icon" />,
+          image: "https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800&auto=format&fit=crop&q=60",
+          descriptions: [
+            "Track live auction progress in real-time",
+            "Monitor bids, timings, and participant activity",
+            "Get instant updates on auction status and results"
+          ]
+        },
+        {
+          title: "Powerful Reporting & Analysis",
           icon: <FaChartBar className="feature-icon" />,
           image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=60",
           descriptions: [
-            "Advanced auction analytics",
-            "Performance metrics dashboard",
-            "Custom report generation"
+            "Generate insightful reports with a single click",
+            "Analyze trends across students, classes, or departments",
+            "Make data-driven decisions with detailed analytics"
+          ]
+        }, {
+          title: "User-Friendly Interface",
+          icon: <FaChartBar className="feature-icon" />,
+          image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=60",
+          descriptions: [
+            "Easy to navigate for all user types",
+            "Clean and intuitive design for smooth usage",
+            "Requires minimal training to get started"
           ]
         }
       ]
@@ -220,12 +268,14 @@ function ProductsSubPage() {
 
   if (selectedProduct) {
     const product = productData[selectedProduct];
-    console.log(product)
+  
     return (
       <div className='bg-color-products'>
         <div className="header-content" data-aos="fade-up">
         <h2 className="title">
           <span className='companey-name'>{product.title}</span> 
+          <br />
+          <span className='text-warning fs-1'>{product.title2}</span> 
         </h2>
         <p className="subtitle">
          {product.description}

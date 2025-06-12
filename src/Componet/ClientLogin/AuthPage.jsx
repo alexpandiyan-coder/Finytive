@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FaUser, FaLock, FaEnvelope } from 'react-icons/fa';
-import './AuthPage.css'; // We'll create this next
+import "./AuthPage"
 
 const AuthPage = () => {
   const [isLogin, setIsLogin] = useState(true);

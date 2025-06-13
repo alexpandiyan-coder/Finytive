@@ -1,6 +1,6 @@
 .service-container {
   background-color: rgba(255, 255, 255, 0.95);;
-  font-family: 'Segoe UI', sans-serif;
+
   max-width: 1250px;
   margin: 10px auto;
   overflow: hidden;
@@ -39,6 +39,7 @@
 
 .service-card {
   cursor: pointer;
+  height: 180px;
    
   }
 

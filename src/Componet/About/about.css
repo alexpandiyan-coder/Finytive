@@ -18,8 +18,12 @@
   margin: auto;
   padding: 0 15px;
 }
-
+.contant{
+  margin-bottom: 20px;
+}
 .about-contant {
+  /* top: -10px; */
+  position: relative;
   width: 550px;
   line-height: 2rem;
   font-weight: 900;
@@ -41,7 +45,8 @@
 }
 
 .vission-container {
-  width: 500px;
+  text-align: justify;
+  width: 550px;
   background: rgb(250, 235, 215);
   display: flex;
   flex-direction: column;

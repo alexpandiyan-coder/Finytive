@@ -6,15 +6,15 @@ import footerImg1 from "../assets/Footer/div.pattern-1.png";
 import footerImg2 from "../assets/Footer/div.pattern-2.png";
 import './footer.css';
 import { useNavigate } from 'react-router-dom';
- 
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-     const navigate= useNavigate()
+  const navigate = useNavigate()
   return (
     <footer className="footer-main-content" >
       <Container>
         <Row className="gy-4">
-          <Col md={3}>
+          <Col md={2}>
             <h1 className="fw-bold text-warning">Finytive</h1>
             <p className="mt-3 text-light">
               Finytive is an independent, leading software firm specialized in Enterprise
@@ -27,11 +27,11 @@ const Footer = () => {
             <ul className="list-unstyled lh-lg text-light">
               <li>Finytive CRM</li>
               <li>Tickora</li>
-              <li>ITCBC</li>
+              <li>ITCPC</li>
             </ul>
           </Col>
 
-          <Col md={2}>
+          <Col md={3}>
             <h5 className="mb-3 text-warning">Our Services</h5>
             <ul className="list-unstyled lh-lg text-light">
               <li>AI Solutions</li>
@@ -44,37 +44,41 @@ const Footer = () => {
           <Col md={2}>
             <h5 className="mb-3 text-warning">Company</h5>
             <ul className="list-unstyled lh-lg text-light">
-              <li style={{cursor:"pointer"}}  onClick={() => {
-    navigate('/');
-    setTimeout(() => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }, 100); 
-  }}>Home</li>
-  <li style={{cursor:"pointer"}}  onClick={() => {
-    navigate('/About');
-    setTimeout(() => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }, 100); 
-  }}>About</li>
-              <li style={{cursor:"pointer"}} onClick={()=>{navigate("/service")
+              <li style={{ cursor: "pointer" }} onClick={() => {
+                navigate('/');
                 setTimeout(() => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }, 100); 
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }, 100);
+              }}>Home</li>
+              <li style={{ cursor: "pointer" }} onClick={() => {
+                navigate('/About');
+                setTimeout(() => {
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }, 100);
+              }}>About</li>
+              <li style={{ cursor: "pointer" }} onClick={() => {
+                navigate("/service")
+                setTimeout(() => {
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }, 100);
               }}>Services</li>
-              <li style={{cursor:"pointer"}} onClick={()=>{navigate("/ProductsPage")
+              <li style={{ cursor: "pointer" }} onClick={() => {
+                navigate("/ProductsPage")
                 setTimeout(() => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }, 100); 
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }, 100);
               }}>Products</li>
-              <li style={{cursor:"pointer"}} onClick={()=>{navigate("/Careers")
+              <li style={{ cursor: "pointer" }} onClick={() => {
+                navigate("/Careers")
                 setTimeout(() => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }, 100); 
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }, 100);
               }}>Career</li>
-              <li style={{cursor:"pointer"}} onClick={()=>{navigate("/Contact")
+              <li style={{ cursor: "pointer" }} onClick={() => {
+                navigate("/Contact")
                 setTimeout(() => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }, 100); 
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }, 100);
               }}>Contact Us</li>
             </ul>
           </Col>

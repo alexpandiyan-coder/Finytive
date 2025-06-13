@@ -8,9 +8,15 @@ import {
   FaUserFriends,
   FaChartBar,
   FaCheck,
-  FaArrowLeft
+  FaUserCheck,
+  FaLaptop,
+  FaCalendarAlt
 } from 'react-icons/fa';
 import Dashboard from "./svg/Dashboard-cuate.svg"
+import Location from "./svg/Location tracking-rafiki.svg"
+import Report from "./svg/Report-cuate.svg"
+import Interaction from "./svg/Interaction Design-amico.svg"
+import face from "./svg/TAM_1-BQrjPs_T.png"
 import FAQSection from "../../FAQSection/FAQSection"
 import crm from "../../../assets/products/crm-crm-svgrepo-com (1).svg";
 import timeDevice from "../../../assets/products/itpce.png";
@@ -118,7 +124,7 @@ function ProductsSubPage() {
     },
     tickora: {
       title: "Tickora - Time Management System",
-      title2:"Welcome to Your Smart Attendance Management System",
+      title2: "Welcome to Your Smart Attendance Management System",
       description: `Say goodbye to outdated manual attendance systems and step into a new era of seamless,
 secure, and accurate attendance tracking. Powered by Face Recognition and Geo-Fencing
 Technology, this solution ensures that every attendance record is captured effortlessly and
@@ -132,8 +138,8 @@ time should be simple, not stressful`,
       features: [
         {
           title: "Face Recognition-Based Attendance ",
-          icon: <FaUserCircle className="feature-icon" />,
-          image:  Dashboard,
+          icon: <FaUserCheck className="feature-icon" />,
+          image: face,
           descriptions: [
             "Ensure 100% Accuracy Achieve unmatched precision through advanced technology",
             "Advanced Facial Recognition Leverage cutting-edge facial mapping to detect, analyze, and verify faces instantly",
@@ -143,7 +149,7 @@ time should be simple, not stressful`,
         {
           title: "Geo-Fencing Integration",
           icon: <FaMapMarkedAlt className="feature-icon" />,
-          image: Dashboard,
+          image: Location,
           descriptions: [
             "Attendance is allowed only within the campus boundary using GPS",
             "The system verifies real-time location before marking attendance",
@@ -162,17 +168,17 @@ time should be simple, not stressful`,
         },
         {
           title: "User-Friendly Interface",
-          icon: <FaChartBar className="feature-icon" />,
-          image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=60",
+          icon: <FaLaptop className="feature-icon" />,
+          image: Interaction,
           descriptions: [
             "User-friendly design for teachers, students, and admins",
             "Seamless access on both web and mobile platforms",
             "Easy navigation for a smooth attendance experience"
           ]
-        },{
+        }, {
           title: "Attendance History & Reports",
           icon: <FaChartBar className="feature-icon" />,
-          image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=60",
+          image: Report,
           descriptions: [
             "Generate detailed reports by individual, class, or department",
             "Export attendance data easily for analysis",
@@ -181,7 +187,7 @@ time should be simple, not stressful`,
         },
         {
           title: "Smart Time Management",
-          icon: <FaChartBar className="feature-icon" />,
+          icon: <FaCalendarAlt className="feature-icon" />,
           image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=60",
           descriptions: [
             "Reduce manual attendance tasks effortlessly",
@@ -193,7 +199,7 @@ time should be simple, not stressful`,
     },
     itcpc: {
       title: "ITCPC – Smart Auction Management",
-      title2:"Welcome to the future of auction management – efficient, transparent, and made for success",
+      title2: "Welcome to the future of auction management – efficient, transparent, and made for success",
       description: `Say goodbye to tedious, manual auction processes and step into the future of smart, seamless,
 and efficient auction management.
 ITCPC is your all-in-one platform for automated bill generation, real-time auction tracking,
@@ -268,73 +274,52 @@ into a simple, streamlined experience.`,
 
   if (selectedProduct) {
     const product = productData[selectedProduct];
-  
+
     return (
       <div className='bg-color-products'>
         <div className="header-content" data-aos="fade-up">
-        <h2 className="title">
-          <span className='companey-name'>{product.title}</span> 
-          <br />
-          <span className='text-warning fs-1'>{product.title2}</span> 
-        </h2>
-        <p className="subtitle">
-         {product.description}
-        </p>
-      </div>
-      <div className='project-page-layout'>
-        <button 
-          className="back-button" 
-          onClick={handleBackClick}
-          style={{
-            margin:"30px",
-            position: 'absolute',
-            top: '-80px',
-            left: '20px',
-            padding: '10px 20px',
-            backgroundColor: '#297988',
-            color: 'white',
-            border: 'none',
-            borderRadius: '5px',
-            cursor: 'pointer',
-            zIndex: 1000,
-            display: 'flex',
-            alignItems: 'center',
-            gap: '8px'
-          }}
-        >
-          <FaArrowLeft /> Back to Products
-        </button>
-
-        <div className='project-items'>
-          {product.features.map((feature, index) => (
-            <div 
-              className={`items ${selectedFeature === index ? 'active' : ''}`} 
-              key={index}
-              onClick={() => setSelectedFeature(index)}
-            >
-              <div className="feature-content">
-                {feature.icon}
-                <span>{feature.title}</span>
-              </div>
-            </div>
-          ))}
+          <h2 className="title">
+            <span className='companey-name'>{product.title}</span>
+            <br />
+            <span className='text-warning fs-1'>{product.title2}</span>
+          </h2>
+          <p className="subtitle">
+            {product.description}
+          </p>
         </div>
+        <div className='project-page-layout'>
 
-        <div className='project-data'>
-          <div className="project-img">
-            <img src={product.features[selectedFeature].image} alt={product.features[selectedFeature].title} />
-          </div>
-          <div className="project-text">
-            {product.features[selectedFeature].descriptions.map((desc, index) => (
-              <div className="project-point" key={index}>
-                <FaCheck className="check-icon" />
-                {desc}
+
+          <div className='project-items'>
+            {product.features.map((feature, index) => (
+              <div
+                className={`items ${selectedFeature === index ? 'active' : ''}`}
+                key={index}
+                onClick={() => setSelectedFeature(index)}
+              >
+                <div className="feature-content">
+                  {feature.icon}
+                  <span>{feature.title}</span>
+                </div>
               </div>
             ))}
           </div>
+
+          <div className='project-data'>
+            <div className="project-img">
+              <img src={product.features[selectedFeature].image} alt={product.features[selectedFeature].title} />
+            </div>
+            <div className="project-text">
+              {product.features[selectedFeature].descriptions.map((desc, index) => (
+                <div className="project-point" key={index}>
+                  <FaCheck className="check-icon" />
+                  {desc}
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
-      </div>
-    <FAQSection/>
+        <FAQSection />
       </div>
     );
   }
@@ -343,7 +328,7 @@ into a simple, streamlined experience.`,
     <div className="project-wrapper">
       <div className="header-content" data-aos="fade-up">
         <h2 className="title">
-          <span className='companey-name'>Finytive</span> Products
+          <span className='companey-name'>Finytive Products</span> 
         </h2>
         <p className="subtitle">
           Explore our powerful suite of products designed to streamline your business operations.
@@ -362,16 +347,16 @@ into a simple, streamlined experience.`,
             <div className="product-card-inner">
               <div className="product-card-front">
                 {product.img && (
-                  <img 
-                    src={product.img} 
-                    alt={product.title} 
+                  <img
+                    src={product.img}
+                    alt={product.title}
                     className="product-card-img"
                     loading="lazy"
                   />
                 )}
                 <h4>{product.title}</h4>
                 <p>{product.desc}</p>
-                <button 
+                <button
                   className="btn-outline-warnings"
                   onClick={() => handleDemoClick(product.id)}
                 >
@@ -385,9 +370,9 @@ into a simple, streamlined experience.`,
                     <li key={i}>{feature}</li>
                   ))}
                 </ul>
-                <button 
+                <button
                   className="btn-outline-warnings"
-                  onClick={() => handleDemoClick(product.id)}
+                  // onClick={() => handleDemoClick(product.id)}
                 >
                   Get Demo
                 </button>
@@ -397,7 +382,7 @@ into a simple, streamlined experience.`,
         ))}
       </div>
       <div>
-        
+
       </div>
     </div>
   );

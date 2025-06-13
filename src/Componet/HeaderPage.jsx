@@ -1,49 +1,42 @@
 import "./header.css";
-import Lottie from 'lottie-react';
-import animationData from '../assets/homePageJson/Animation - 1748153244181.json';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 function HeaderPage() {
   const navigate = useNavigate();
 
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
 
   return (
     <header className='header-page'>
+      <div className="header-overlay"></div>
+
       <div className='header' data-aos="zoom-in-right">
-        <p className='font-header'>
-          Finite ideas <span className='font-child'>Infinite possibilities</span>
-        </p>
-        {/* <p className='header-subtext'>Nothing can be Delivered, without 100%</p> */}
+        <p className="font-header">Finytive</p>
+        <p className='font-child'>Finite ideas. Infinite possibilities.</p>
         <p className='header-description'>
-          At Finytive, our name reflects our purpose — blending the boundless possibilities of innovation with precise, impactful solutions.
-          From startups to enterprises, we deliver smart, secure, and scalable technology that transforms.
+          At Finytive, our name reflects our purpose — blending the boundless possibilities of innovation 
+          with precise, impactful solutions. From startups to enterprises, we deliver smart, secure, 
+          and scalable technology that transforms.
         </p>
         <div className='header-buttons'>
           <button
-            className='view-more-btn'
-            onClick={() => {
-              
-              navigate("/Contact");
-            }}
+            className='demo-btn1'
+            onClick={() => navigate("/Contact")}
           >
             Schedule a demo
           </button>
           <button
-            className='view-more-btn'
-            onClick={() => {
-               
-              navigate("/ProductsPage");
-            }}
+            className='demo-btn2'
+            onClick={() => navigate("/ProductsPage")}
           >
             Explore all products
           </button>
         </div>
-      </div>
-
-      <div className='logo-container' data-aos="fade-left">
-        <Lottie animationData={animationData} loop={true} />
       </div>
     </header>
   );

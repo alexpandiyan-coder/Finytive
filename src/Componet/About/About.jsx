@@ -17,7 +17,7 @@ function About() {
 
 
         <div className="about-contant">
-          <h1 className='contant fs-1'>About <span className='company-name'>Finytive</span></h1>
+          <h1 className='contant  fs-1'>About <span className='company-name'>Finytive</span></h1>
           <p>
             We take pride to introduce ourselves as reputed software development and digital transformation service company offering end-to-end solutions for SMEs to digital agencies around the globe. Our specialty is developing customized solutions using innovative technologies and resources.
           </p>
@@ -42,12 +42,9 @@ function About() {
             </p>
             <p className='fs-1'>Our Vision</p>
           </div>
-          <p className='fs-5'>By 2030, we aim to be a globally recognized
-            technology leader, enabling 1000+ businesses to
-            achieve digital transformation through innovative IT
-            solutions. Our goal is to drive at least 50% operational
-            efficiency improvements for our clients with 99.9%
-            success rate.</p>
+          <p className='fs-5'>
+          Our vision is to drive global digital innovation through intelligent product development. We empower businesses with transformative software that redefines industries and customer experiences. As a trusted partner, we build sustainable, scalable, and smart digital solutions with purpose and empathy.
+            </p>
         </div>
         <div className='vission-container' data-aos="fade-left">
           <div className='img-container'>
@@ -57,12 +54,7 @@ function About() {
             </p>
             <p className='fs-1'>Our Mission</p>
           </div>
-          <p className='fs-5'>By 2026, we will develop and deploy cutting-edge IT
-            products that empower businesses to scale globally. We
-            strive to help organizations achieve at least 40% faster
-            digital adoption, ensuring secure, scalable, and AI-
-            driven solutions that deliver measurable business
-            impact</p>
+          <p className='fs-5'>Our mission is to build reliable and future-ready software that solves real-world problems. We combine agile thinking with engineering excellence for rapid innovation. Through user-centric design and continuous learning, we create impactful digital solutions that deliver measurable value</p>
         </div>
       </div>
       <FiveYear />

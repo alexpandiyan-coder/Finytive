@@ -2,7 +2,12 @@ import { motion, AnimatePresence, useScroll, useTransform, useSpring } from 'fra
 import { useRef, useState, useEffect } from 'react';
 import img1 from '../assets/saas-concept-collage.jpg';
 import img2 from '../assets/cloud-storage-background-business-network-design.jpg';
-import { FaEye, FaGlobe, FaLightbulb, FaRocket, FaBullseye, FaMedal } from 'react-icons/fa';
+import { FaChartBar } from 'react-icons/fa';
+import { RiTeamFill,RiFlashlightLine } from "react-icons/ri";
+import { TbSettingsCog } from "react-icons/tb"
+import { BsShieldCheck } from "react-icons/bs";
+import { SiAiqfome } from "react-icons/si";
+
 
 const fadeInLeft = {
   hidden: { opacity: 0, x: -80 },
@@ -39,37 +44,37 @@ function VisionMission() {
 
   const [vissionData, setVision] = useState([
     {
-      icon: <FaEye size={28} color="#297988" />,
-      title: 'Global-Scale IT Products',
-      desc: 'Develop and deploy innovative IT solutions that enable businesses to expand and compete on a global scale.'
+      icon: <RiTeamFill size={28} color="#297988" />,
+      title: ' Empowering 1000+ Businesses',
+      desc: 'We strive to enable 1000+ businesses to achieve digital transformation through innovative IT solutions.'
     },
     {
-      icon: <FaGlobe size={28} color="#297988" />,
-      title: 'Accelerated Digital Adoption',
-      desc: 'Help organizations achieve at least 40% faster digital transformation through secure, scalable, and AI-powered technologies.'
+      icon: <TbSettingsCog size={28} color="#297988" />,
+      title: 'Boosting Operational Efficiency',
+      desc: 'Our mission is to drive at least 50% improvement in operational efficiency for our clients'
     },
     {
-      icon: <FaLightbulb size={28} color="#297988" />,
-      title: 'Measurable Business Impact',
-      desc: 'Deliver solutions that produce tangible results, enhancing efficiency, productivity, and ROI.'
+      icon: <BsShieldCheck size={28} color="#297988" />,
+      title: 'Delivering with 99.9% Success Rate',
+      desc: 'We are committed to delivering solutions with a 99.9% success rate, ensuring reliability and excellence'
     }
   ]);
 
   const [mission, setMission] = useState([
     {
-      icon: <FaBullseye size={28} color="#297988" />,
-      title: "Global Tech Leadership by 2030",
-      desc: "Aim to become a globally recognized leader in technology and innovation"
+      icon: <RiFlashlightLine size={28} color="#297988" />,
+      title: " 40% Faster Digital Adoption",
+      desc: "We strive to help organizations achieve at least 40% faster adoption of digital technologies"
     },
     {
-      icon: <FaRocket size={28} color="#297988" />,
-      title: "Enable 10,000+ Businesses",
-      desc: "Drive digital transformation for over 10,000 businesses through cutting-edge IT solutions"
+      icon: <SiAiqfome size={28} color="#297988" />,
+      title: "Secure, Scalable, and AI-Driven Solutions",
+      desc: "Our solutions are designed to be secure, scalable, and powered by AI for future-ready performance"
     },
     {
-      icon: <FaMedal size={28} color="#297988" />,
-      title: "Achieve 50% Efficiency with 99.9% Success",
-      desc: "Deliver at least 50% operational efficiency improvement for clients, maintaining a 99.9% success rate"
+      icon: <FaChartBar size={28} color="#297988" />,
+      title: " Measurable Business Impact",
+      desc: "We focus on delivering solutions that result in tangible, measurable improvements for our clients"
     }
   ]);
 
@@ -101,7 +106,6 @@ function VisionMission() {
           margin: '0 auto'
         }}
       >
-        {/* Left Panel */}
         <motion.div
           variants={fadeInLeft}
           initial="hidden"
@@ -183,8 +187,8 @@ function VisionMission() {
               }}
             >
               {isToggle
-                ? "Deliver solutions that produce tangible results, enhancing efficiency, productivity, and ROI."
-                : "Transform the world through responsible, scalable, and ethical AI that empowers humanity."}
+                ? "Global Recognition by 2030 We aim to become a globally recognized technology leader by the year 2030"
+                : "Global-Ready IT Products by 2026 We aim to develop and deploy cutting-edge IT products that enable businesses to scale globally by 2026"}
             </motion.p>
           </AnimatePresence>
         </motion.div>

@@ -74,7 +74,7 @@ function Service() {
             <p style={{fontSize:"50px"}}><IoIosArrowForward /></p>
           </div>
      
-          {/* Mobile Application */}
+          
           <div className="service-card service-card-2" data-aos="fade-up-left" onClick={()=>navigate("/")}>
             <span className="card-logo">
               <Lottie animationData={mobile} loop={true} autoplay={true} style={{ height: 100, width: 100 }} />
@@ -88,7 +88,6 @@ function Service() {
             <p style={{fontSize:"50px"}}><IoIosArrowForward /></p>
           </div>
 
-          {/* Cloud Services */}
           <div className="service-card service-card-3" data-aos="fade-up-right" onClick={()=>navigate("/")}>
             <span className="card-logo">
               <Lottie animationData={cloud} loop={true} autoplay={true} style={{ height: 100, width: 100 }} />
@@ -102,7 +101,7 @@ function Service() {
             <p style={{fontSize:"50px"}}><IoIosArrowForward /></p>
           </div>
 
-          {/* Java Enterprise Apps */}
+        
           <div className="service-card service-card-4" data-aos="fade-up-left" onClick={()=>navigate("/")}>
             <span className="card-logo">
               <Lottie animationData={javaImage} loop={true} autoplay={true} style={{ height: 100, width: 100 }} />

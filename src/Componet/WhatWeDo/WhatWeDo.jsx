@@ -31,13 +31,15 @@ const WhatWeDo = () => {
     <div className="timeline-wrapper">
       <Container>
         <div className="text-center mb-5">
-          <h2 className="timeline-title">What We Do</h2>
+          <h2 className="timeline-title text-warning">WHAT <span style={{color:"teal"}}>WE DO</span></h2>
           <p className="timeline-subtitle">Delivering smart tech solutions to modern challenges.</p>
         </div>
 
         <div className="timeline-lines"></div>
 
         <div className="scroll-container">
+
+          
           <div className="timeline-horizontal auto-scroll">
             {[...services, ...services].map((service, index) => (
               <div key={index} className="timeline-box">

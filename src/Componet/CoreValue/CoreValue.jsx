@@ -11,7 +11,7 @@ const CoreValues = () => {
       color: '#4A90E2',
       gradient: 'linear-gradient(135deg, #4A90E2 0%, #357ABD 100%)',
       stats: '',
-      statLabel: 'Innovative Solutions'
+     
     },
     {
       title: 'Collaboration',
@@ -20,7 +20,7 @@ const CoreValues = () => {
       color: '#50E3C2',
       gradient: 'linear-gradient(135deg, #50E3C2 0%, #2ECC71 100%)',
       stats: '',
-      statLabel: 'Global Partners'
+      
     },
     {
       title: 'Excellence',
@@ -29,7 +29,7 @@ const CoreValues = () => {
       color: '#F5A623',
       gradient: 'linear-gradient(135deg, #F5A623 0%, #F39C12 100%)',
       stats: '',
-      statLabel: 'Awards Won'
+     
     },
     {
       title: 'Sustainability',
@@ -38,7 +38,7 @@ const CoreValues = () => {
       color: '#7ED321',
       gradient: 'linear-gradient(135deg, #7ED321 0%, #2ECC71 100%)',
       stats: '',
-      statLabel: 'Carbon Reduction'
+      
     }
   ];
 
@@ -90,10 +90,7 @@ const CoreValues = () => {
                   <h3>{value.title}</h3>
                   <p>{value.description}</p>
                 </div>
-                <div className="value-stats">
-                  <div className="stat-number">{value.stats}</div>
-                  <div className="stat-label">{value.statLabel}</div>
-                </div>
+                
               </div>
               <div className="value-decoration">
                 <div className="decoration-circle"></div>

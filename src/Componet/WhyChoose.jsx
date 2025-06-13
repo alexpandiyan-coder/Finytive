@@ -74,7 +74,7 @@ export default function WhyChoose() {
   return (
     <section className="why-choose-section">
       <div className="why-choose-header" data-aos="fade-up">
-        <h2>
+        <h2 className="text-warning">
           Why Choose <span className="logo-title">Finytive?</span>
         </h2>
         <p className="subtitle">

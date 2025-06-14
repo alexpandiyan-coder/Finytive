@@ -14,7 +14,8 @@ import Technical from "./jsonFile/Technical.json";
 import Custom from "./jsonFile/Custom.json";
 import { Link,useNavigate } from "react-router-dom";
 import Lottie from "lottie-react";
-import BoxPageService from "./BoxPageService";
+import Cover from "./AiService/serviceImage/Cover.png";
+
 
 function Service() {
   
@@ -71,10 +72,10 @@ function Service() {
     <div className="service-container">
 
       {/* Hero Section with Value Content */}
-      <div className="visual-service-wrapper">
+      <div className="visual-service-wrappers text-warning">
         <div className="service-visual-section  my-5" data-aos="fade-right">
           <h2 className="fs-2 fw-bold">Explore Our Dynamic Visual Services</h2>
-          <p className="text-muted">
+          <p className="text-warning ">
             Real-time animated shuffling of our key service areas
           </p>
 
@@ -86,14 +87,13 @@ function Service() {
 
           <button className="view-more-btn mt-3 px-4">Learn More</button>
         </div>
-
-        {/* Box Grid or Interactive Content */}
-        <div className="box-service" data-aos="zoom-in">
-          <BoxPageService />
-        </div>
+              
+         
+    
+        
       </div>
 
-      {/* Welcome Section */}
+   
       <div className="service-intro text-center my-4">
         <div data-aos="zoom-out">
           <p className="logo-name companey-name fs-2">

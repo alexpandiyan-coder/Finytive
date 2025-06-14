@@ -17,7 +17,7 @@ function About() {
 
 
         <div className="about-contant">
-          <h1 className='contant  fs-1'>About <span className='company-name'>Finytive</span></h1>
+          <h1 className='contant  fs-1 text-warning'>About <span className='company-name'>Finytive</span></h1>
           <p>
             We take pride to introduce ourselves as reputed software development and digital transformation service company offering end-to-end solutions for SMEs to digital agencies around the globe. Our specialty is developing customized solutions using innovative technologies and resources.
           </p>

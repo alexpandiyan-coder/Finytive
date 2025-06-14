@@ -224,6 +224,9 @@
     padding: 20px 0;
   }
 
+  .animate-text{
+    font-size: 30px;
+  }
   .values-grid {
     gap: 20px;
     padding: 0 15px;

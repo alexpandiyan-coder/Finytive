@@ -1,5 +1,6 @@
-import React from "react";
-import "./HowItWorks.css";
+
+
+ import "./HowItWorks.css";
 
 const steps = [
   {
@@ -20,7 +21,7 @@ const steps = [
     desc: "Have to be repudiated annoyances accepted the wise.",
     icon: "🔄",
   },
-];
+]
 
 const HowItWorks = () => {
   return (

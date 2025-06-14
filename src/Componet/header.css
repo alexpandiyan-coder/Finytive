@@ -1,6 +1,6 @@
 .header-page {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 20px 5%;
   min-height: 100vh;
@@ -10,6 +10,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
+  text-align: left;
 }
 
 /* Dark overlay */
@@ -24,11 +25,19 @@
 }
 
 .header {
-  margin-left: 30px;
   display: flex;
   flex-direction: column;
-  max-width: 600px;
   z-index: 2;
+  max-width: 700px;
+  margin-left: 30px;
+}
+
+/* Apply shift only on large screens */
+@media (min-width: 1201px) {
+  .header {
+    position: relative;
+    left: -250px;
+  }
 }
 
 .font-header {
@@ -65,11 +74,12 @@
   font-size: 16px;
   color: white;
   line-height: 1.6;
-  margin-bottom: 30px;
+  margin: 20px 0 30px;
 }
 
 .header-buttons {
   display: flex;
+  flex-wrap: wrap;
   gap: 15px;
 }
 
@@ -108,18 +118,20 @@
   box-shadow: 0 5px 15px rgba(41, 121, 136, 0.3);
 }
 
-/* Responsive */
+/* --- RESPONSIVE BREAKPOINTS --- */
+
 @media (max-width: 1200px) {
   .header-page {
     flex-direction: column;
+    justify-content: center;
     text-align: center;
-    padding: 30px 5%;
   }
 
   .header {
     margin-left: 0;
     align-items: center;
-    margin-bottom: 40px;
+    left: 0;
+    position: relative;
   }
 
   .header-buttons {
@@ -127,21 +139,69 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .font-header {
-    font-size: 42px;
+    font-size: 50px;
   }
 
   .font-child {
     font-size: 28px;
   }
 
+  .header-description {
+    font-size: 15px;
+    padding: 0 10px;
+  }
+
+  .demo-btn1, .demo-btn2 {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .font-header {
+    font-size: 40px;
+  }
+
+  .font-child {
+    font-size: 24px;
+  }
+
+  .header-description {
+    font-size: 14px;
+  }
+
   .header-buttons {
     flex-direction: column;
-    gap: 10px;
+    width: 100%;
+    gap: 12px;
   }
 
   .demo-btn1, .demo-btn2 {
     width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .font-header {
+    font-size: 32px;
+  }
+
+  .font-child {
+    font-size: 20px;
+  }
+
+  .header-description {
+    font-size: 13px;
+  }
+
+  .header {
+    padding: 0 15px;
+  }
+
+  .demo-btn1, .demo-btn2 {
+    font-size: 14px;
+    padding: 10px 18px;
   }
 }

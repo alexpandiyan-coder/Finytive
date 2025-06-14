@@ -8,36 +8,36 @@ import img4 from "../assets/project/Innovation-pana.png";
 import img5 from "../assets/project/Security On-amico.png";
 
 function Products() {
-  const services = [
-    {
-      img: img5,
-      title: "Custom Web & Mobile Applications",
-      description: "Tailored apps built for performance, usability, and scalability across platforms.",
-    },
+  const services =[
     {
       img: img1,
-      title: "AI/ML System Automations",
-      description: "Smart solutions that learn, adapt, and automate critical business workflows.",
+      title: 'Enterprise IT Consulting',
+      description: 'End-to-end consulting for scalable, secure IT infrastructures.',
     },
     {
       img: img2,
-      title: "Cloud Native SaaS Platform",
-      description: "Scalable and secure cloud platforms designed for growth and agility.",
+      title: 'Mobile App Development',
+      description: 'Cross-platform mobile apps for Android and iOS tailored to your brand.',
     },
     {
       img: img3,
-      title: "Data Analytics & Optimization",
-      description: "Actionable insights from data to improve decisions and efficiency.",
+      title: 'Cloud Infrastructure Services',
+      description: 'Deploy, manage, and scale your applications on secure cloud platforms.',
     },
     {
       img: img4,
-      title: "System Integration & Training",
-      description: "Seamless integration and CI/CD pipelines for faster delivery and stability.",
+      title: 'Web Design & Development',
+      description: 'Secure, scalable solutions for enterprise digital workflows.',
     },
     {
       img: img5,
-      title: "IT Consulting & Training",
-      description: "Expert advice and product training to elevate your digital capabilities.",
+      title: 'Technical Support Services',
+      description: '24/7 tech support to ensure uninterrupted business operations.',
+    },
+    {
+      img: img3,
+      title: 'Custom Software Development',
+      description: 'Tailor-made software solutions designed to meet your business goals.',
     },
   ];
 

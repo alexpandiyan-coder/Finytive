@@ -1,37 +1,56 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import { FaBrain, FaMobileAlt, FaCloud, FaLaptopCode } from 'react-icons/fa';
+import {
+  FaBrain,
+  FaMobileAlt,
+  FaCloud,
+  FaLaptopCode,
+  FaHeadset,
+  FaCode,
+} from 'react-icons/fa';
 import './WhatWeDo.css';
+
 
 const services = [
   {
     icon: <FaBrain />,
-    title: 'AI Solutions',
-    description: 'Delivering automation, insights, and machine learning systems.',
+    title: 'Enterprise IT Consulting',
+    description: 'End-to-end consulting for scalable, secure IT infrastructures.',
   },
   {
     icon: <FaMobileAlt />,
     title: 'Mobile App Development',
-    description: 'Responsive, high-performance apps for Android and iOS.',
+    description: 'Cross-platform mobile apps for Android and iOS tailored to your brand.',
   },
   {
     icon: <FaCloud />,
-    title: 'Cloud Computing',
-    description: 'Robust, scalable, and secure cloud-based infrastructure.',
+    title: 'Cloud Infrastructure Services',
+    description: 'Deploy, manage, and scale your applications on secure cloud platforms.',
   },
   {
     icon: <FaLaptopCode />,
-    title: 'Enterprise Web App',
+    title: 'Web Design & Development',
     description: 'Secure, scalable solutions for enterprise digital workflows.',
   },
+  {
+    icon: <FaHeadset />,
+    title: 'Technical Support Services',
+    description: '24/7 tech support to ensure uninterrupted business operations.',
+  },
+  {
+    icon: <FaCode />,
+    title: 'Custom Software Development',
+    description: 'Tailor-made software solutions designed to meet your business goals.',
+  },
 ];
+
 
 const WhatWeDo = () => {
   return (
     <div className="timeline-wrapper">
       <Container>
         <div className="text-center mb-5">
-          <h2 className="timeline-title text-warning">WHAT <span style={{color:"teal"}}>WE DO</span></h2>
+          <h2 className="timeline-title text-warning">WHAT <span style={{ color: "teal" }}>WE DO</span></h2>
           <p className="timeline-subtitle">Delivering smart tech solutions to modern challenges.</p>
         </div>
 
@@ -39,7 +58,7 @@ const WhatWeDo = () => {
 
         <div className="scroll-container">
 
-          
+
           <div className="timeline-horizontal auto-scroll">
             {[...services, ...services].map((service, index) => (
               <div key={index} className="timeline-box">

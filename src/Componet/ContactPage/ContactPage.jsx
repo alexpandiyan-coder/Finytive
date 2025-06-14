@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaTwitter, FaFacebook } from 'react-icons/fa';
+import emailjs from '@emailjs/browser';
 import './Contact.css';
 
 const Contact = () => {
@@ -20,7 +21,34 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+
+    const serviceID = 'service_wrp0yyr';
+    const templateID = 'template_4k539tv';
+    const publicKey = 'fFDFAjnJOBsA2FTB0';
+
+    // Explicitly send only the needed values
+    const templateParams = {
+      name: formData.name,
+      email: formData.email,
+      subject: formData.subject,
+      message: formData.message
+    };
+
+    emailjs.send(serviceID, templateID, templateParams, publicKey)
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+        alert('Message sent successfully!');
+        setFormData({
+          name: '',
+          email: '',
+          subject: '',
+          message: ''
+        });
+      })
+      .catch((err) => {
+        console.error('FAILED...', err);
+        alert('Failed to send message. Please try again later.');
+      });
   };
 
   return (
@@ -43,7 +71,7 @@ const Contact = () => {
                 <p className="info-description">
                   Have questions about our services? We're here to help and answer any questions you might have.
                 </p>
-                
+
                 <div className="contact-methods">
                   <div className="contact-method">
                     <div className="icon-wrapper">
@@ -61,7 +89,7 @@ const Contact = () => {
                     </div>
                     <div className="method-details">
                       <h3>Call Us</h3>
-                      <p></p>
+                      <p>+91-9876543210</p>
                     </div>
                   </div>
 
@@ -71,7 +99,7 @@ const Contact = () => {
                     </div>
                     <div className="method-details">
                       <h3>Visit Us</h3>
-                      <p>New no:30, Old no: 16, Akbarabad 1st St, China Raji Thottam, Kodambakkam, Chennai, Tamil Nadu 600024</p>
+                      <p>New no:30, Old no:16, Akbarabad 1st St, China Raji Thottam, Kodambakkam, Chennai, Tamil Nadu 600024</p>
                     </div>
                   </div>
                 </div>
@@ -164,4 +192,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Contact;

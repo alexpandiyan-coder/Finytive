@@ -7,9 +7,11 @@ import CarouselFadeExample from './CarouselService/CarouselFadeExample';
 import OurWorkflow from "./OurWorkFlow/OurWorkFlow";
 import { IoIosArrowForward } from "react-icons/io";
 import Ai from "./jsonFile/Ai.json";
-import javaImage from "./jsonFile/java.json";
+import WebDesign from "./jsonFile/WebDesign.json";
 import cloud from "./jsonFile/cloud.json";
 import mobile from "./jsonFile/mobile.json";
+import Technical from "./jsonFile/Technical.json";
+import Custom from "./jsonFile/Custom.json";
 import { Link,useNavigate } from "react-router-dom";
 import Lottie from "lottie-react";
 import BoxPageService from "./BoxPageService";
@@ -18,6 +20,52 @@ function Service() {
   
 
           const navigate=useNavigate()
+
+          const services = [
+  {
+    id: 1,
+    title: "Enterprise IT Consulting",
+    description: "End-to-end consulting for scalable, secure IT infrastructures infrastructures.",
+    animation: Ai,
+    aos: "fade-up-right"
+  },
+  {
+    id: 2,
+    title: "Mobile App Development",
+    description: "Cross-platform mobile apps for Android and iOS tailored to your brand.",
+    animation: mobile,
+    aos: "fade-up-left"
+  },
+  {
+    id: 3,
+    title: "Cloud Infrastructure Services",
+    description: "Deploy, manage, and scale your applications on secure cloud platforms.",
+    animation: cloud,
+    aos: "fade-up-right"
+  },
+  {
+    id: 4,
+    title: "Web Design & Development",
+    description: "Responsive, fast, and modern websites that convert visitors into clients.",
+    animation: WebDesign,
+    aos: "fade-up-left"
+  },
+  {
+    id: 5,
+    title: "Custom Software Development",
+    description: "Tailor-made software solutions designed to meet your business goals.",
+    animation: Custom,
+    aos: "fade-up-right"
+  },
+  {
+    id: 6,
+    title: "Technical Support Services",
+    description: "24/7 tech support to ensure uninterrupted business operations operations.",
+    animation: Technical,
+    aos: "fade-up-left"
+  }
+];
+
 
   return (
     <div className="service-container">
@@ -56,79 +104,35 @@ function Service() {
           </p>
         </div>
 
-        {/* Service Cards Section */}
-        <div className="service-cards">
-
-          {/* AI Solutions */}
-      
-          <div className="service-card service-card-1" data-aos="fade-up-right" onClick={()=>navigate("/")}>
-            <span className="card-logo">
-              <Lottie animationData={Ai} loop={true} style={{ height: 100, width: 100 }} />
-            </span>
-            <div className="contant-top">
-              <h2 className="card-title">AI Solutions</h2>
-              <p className="card-description">
-                Leverage Artificial Intelligence to automate operations, enhance decision-making, and gain deep business insights.
-              </p>
-            </div>
-            <p style={{fontSize:"50px"}}><IoIosArrowForward /></p>
-          </div>
-     
-          
-          <div className="service-card service-card-2" data-aos="fade-up-left" onClick={()=>navigate("/")}>
-            <span className="card-logo">
-              <Lottie animationData={mobile} loop={true} autoplay={true} style={{ height: 100, width: 100 }} />
-            </span>
-            <div className="contant-top">
-              <h2 className="card-title">Mobile App Development</h2>
-              <p className="card-description">
-                Build high-performance Android and iOS apps with seamless user experience and scalable architecture.
-              </p>
-            </div>
-            <p style={{fontSize:"50px"}}><IoIosArrowForward /></p>
-          </div>
-
-          <div className="service-card service-card-3" data-aos="fade-up-right" onClick={()=>navigate("/")}>
-            <span className="card-logo">
-              <Lottie animationData={cloud} loop={true} autoplay={true} style={{ height: 100, width: 100 }} />
-            </span>
-            <div className="contant-top">
-              <h2 className="card-title">Cloud Computing</h2>
-              <p className="card-description">
-                Migrate, manage, and scale your applications in the cloud for better availability, security, and performance.
-              </p>
-            </div>
-            <p style={{fontSize:"50px"}}><IoIosArrowForward /></p>
-          </div>
+       <div className="service-cards">
+  {services.map((service, index) => (
+    <div
+      key={service.id}
+      className={`service-card service-card-${index + 1}`}
+      data-aos={service.aos}
+   
+    >
+      <span className="card-logo">
+        <Lottie
+          animationData={service.animation}
+          loop={true}
+          autoplay={true}
+          style={{ height: 100, width: 100 }}
+        />
+      </span>
+      <div className="contant-top">
+        <h2 className="card-title">{service.title}</h2>
+        <p className="card-description">{service.description}</p>
+      </div>
+      <p style={{ fontSize: "50px" }}>
+        <IoIosArrowForward />
+      </p>
+    </div>
+  ))}
+</div>
 
         
-          <div className="service-card service-card-4" data-aos="fade-up-left" onClick={()=>navigate("/")}>
-            <span className="card-logo">
-              <Lottie animationData={javaImage} loop={true} autoplay={true} style={{ height: 100, width: 100 }} />
-            </span>
-            <div className="contant-top">
-              <h2 className="card-title">Enterprise Web Applications</h2>
-              <p className="card-description">
-                Develop secure, compliant, and robust banking platforms with modern tech and intelligent automation.
-              </p>
-            </div>
-              <p style={{fontSize:"50px"}}><IoIosArrowForward /></p>
-          </div>
-          <div className="service-card service-card-3" data-aos="fade-up-right" onClick={()=>navigate("/")}>
-            <span className="card-logo">
-              <Lottie animationData={cloud} loop={true} autoplay={true} style={{ height: 100, width: 100 }} />
-            </span>
-            <div className="contant-top">
-              <h2 className="card-title">ERP & CRM</h2>
-              <p className="card-description">
-                Migrate, manage, and scale your applications in the cloud for better availability, security, and performance.
-              </p>
-            </div>
-            <p style={{fontSize:"50px"}}><IoIosArrowForward /></p>
-          </div>
-        </div>
-      </div>
-
+    </div>
       {/* Additional Components */}
       <AiService />
       <Cloud />

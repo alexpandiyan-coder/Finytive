@@ -1,8 +1,12 @@
 .who-wrapper {
   background-color: #fff;
   padding: 20px 30px;
-  max-width: 1200px;
+  width: 1300px;
   margin: 10px 45px;
+  position: relative;
+  top: -20px;
+  left: -50px;
+  overflow: hidden;
 
 }
 

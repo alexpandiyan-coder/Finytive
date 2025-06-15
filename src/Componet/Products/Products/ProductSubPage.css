@@ -24,7 +24,7 @@
   flex: 1;
   overflow-x: hidden;
   min-width: 250px;
-  background-color: rgba(220, 220, 220, 0.4);
+  background-color: #fdfdfd;
   border-radius: 10px;
 }
 
@@ -33,11 +33,15 @@
   margin: 35px;
 
 } */
+.project-point-text{
+  text-align: start;
+  padding-left: 5px;
+}
+
 
 .items {
  
   padding: 15px;
-  border-radius: 8px;
   font-weight: bold;
   color: #333;
   cursor: pointer;
@@ -65,8 +69,9 @@
 
 .project-img img {
   width: 100%;
-  height: auto;
+  height: 300px;
   border-radius: 10px;
+  background-color: #fdfdfd;
 }
 
 .project-text {
@@ -76,7 +81,7 @@
 }
 
 .project-point {
-  background-color: #e8e8e8;
+  background-color: #fdfdfd;
   padding: 12px;
   border-radius: 8px;
   font-size: 16px;

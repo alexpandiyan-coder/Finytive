@@ -10,11 +10,17 @@ import {
   FaCheck,
   FaUserCheck,
   FaLaptop,
-  FaCalendarAlt
+  FaCalendarAlt,
+  FaBullseye
 } from 'react-icons/fa';
 import Dashboard from "./svg/Dashboard-cuate.svg"
 import Location from "./svg/Location tracking-rafiki.svg"
+import Login from "./svg/Location review-pana.svg"
 import Report from "./svg/Report-cuate.svg"
+import Receipt from "./svg/itcpc/Receipt-cuate.svg"
+import dataImage from "./svg/itcpc/dataImage.svg"
+import Business from "./svg/itcpc/Business.svg"
+import Server from "./svg/itcpc/Server-pana.svg"
 import Interaction from "./svg/Interaction Design-amico.svg"
 import face from "./svg/TAM_1-BQrjPs_T.png"
 import FAQSection from "../../FAQSection/FAQSection"
@@ -159,7 +165,7 @@ time should be simple, not stressful`,
         {
           title: "Real-Time Attendance Logs",
           icon: <FaClock className="feature-icon" />,
-          image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop&q=60",
+          image: Login,
           descriptions: [
             "Track attendance in real-time from anywhere",
             "Instantly view daily, weekly, or monthly records",
@@ -188,7 +194,7 @@ time should be simple, not stressful`,
         {
           title: "Smart Time Management",
           icon: <FaCalendarAlt className="feature-icon" />,
-          image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=60",
+          image:Business,
           descriptions: [
             "Reduce manual attendance tasks effortlessly",
             "Save valuable time for teachers and staff",
@@ -213,7 +219,7 @@ into a simple, streamlined experience.`,
         {
           title: "Simplified Bill Generation",
           icon: <FaChartBar className="feature-icon" />,
-          image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&auto=format&fit=crop&q=60",
+          image: Receipt,
           descriptions: [
             "Generate bills quickly with minimal effort",
             "Automate fee calculations and invoicing",
@@ -223,7 +229,7 @@ into a simple, streamlined experience.`,
         {
           title: "Comprehensive Data Management",
           icon: <FaClock className="feature-icon" />,
-          image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&auto=format&fit=crop&q=60",
+          image:Server,
           descriptions: [
             "Store and manage all student and staff data in one place",
             "Access academic, attendance, and fee records instantly",
@@ -233,7 +239,7 @@ into a simple, streamlined experience.`,
         {
           title: "Auction Status Monitoring",
           icon: <FaUserCircle className="feature-icon" />,
-          image: "https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800&auto=format&fit=crop&q=60",
+          image:Business,
           descriptions: [
             "Track live auction progress in real-time",
             "Monitor bids, timings, and participant activity",
@@ -243,7 +249,7 @@ into a simple, streamlined experience.`,
         {
           title: "Powerful Reporting & Analysis",
           icon: <FaChartBar className="feature-icon" />,
-          image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=60",
+          image: dataImage,
           descriptions: [
             "Generate insightful reports with a single click",
             "Analyze trends across students, classes, or departments",
@@ -252,7 +258,7 @@ into a simple, streamlined experience.`,
         }, {
           title: "User-Friendly Interface",
           icon: <FaChartBar className="feature-icon" />,
-          image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=60",
+          image:  Interaction,
           descriptions: [
             "Easy to navigate for all user types",
             "Clean and intuitive design for smooth usage",
@@ -313,7 +319,7 @@ into a simple, streamlined experience.`,
               {product.features[selectedFeature].descriptions.map((desc, index) => (
                 <div className="project-point" key={index}>
                   <FaCheck className="check-icon" />
-                  {desc}
+                  <span className='project-point-text'>{desc}</span>
                 </div>
               ))}
             </div>
@@ -326,6 +332,9 @@ into a simple, streamlined experience.`,
 
   return (
     <div className="project-wrapper">
+      <div className='bg-image-products'>
+
+      </div>
       <div className="header-content" data-aos="fade-up">
         <h2 className="title">
           <span className='companey-name'>Finytive Products</span> 
@@ -372,7 +381,7 @@ into a simple, streamlined experience.`,
                 </ul>
                 <button
                   className="btn-outline-warnings"
-                  // onClick={() => handleDemoClick(product.id)}
+                  onClick={() => handleDemoClick(product.id)}
                 >
                   Get Demo
                 </button>

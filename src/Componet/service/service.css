@@ -85,9 +85,8 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
   height: 600px;
-  width: 120%; /* Use responsive width */
+  width: 120%;
   max-width: 1300px;
   position: relative;
   top: -30px;
@@ -95,11 +94,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
- 
-
   margin: 10px 20px;
-
-
   border-radius: 10px;
   overflow: hidden;
 }

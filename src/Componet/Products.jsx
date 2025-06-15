@@ -108,8 +108,7 @@ function Products() {
     }
   };
 
-  return (
-    <motion.div 
+  return (<motion.div 
       className='product-container'
       initial="hidden"
       animate="visible"

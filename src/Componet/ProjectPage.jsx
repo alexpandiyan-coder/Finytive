@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import crm from "../assets/products/crm-crm-svgrepo-com (1).svg";
@@ -8,7 +8,11 @@ import "./project.css";
 import FAQSection from './FAQSection/FAQSection';
 
 function ProjectPage() {
+  const [flippedCard, setFlippedCard] = useState(null);
 
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
 
   const products = [
     {
@@ -41,8 +45,12 @@ function ProjectPage() {
     }
   ];
 
+  const isMobile = window.innerWidth <= 768;
+
   return (
     <div className="project-wrapper">
+      <div className='bg-image-project'></div>
+
       <div className="header-content" data-aos="fade-up">
         <h2 className="title">
           <span className='companey-name'>Finytive</span> Products
@@ -56,17 +64,18 @@ function ProjectPage() {
       <div className="product-card-grid">
         {products.map((product, index) => (
           <div
-            className="product-card-3d"
+            className={`product-card-3d ${flippedCard === index ? "flipped" : ""}`}
             key={index}
             data-aos="fade-up"
             data-aos-delay={index * 100}
+            onClick={() => isMobile && setFlippedCard(flippedCard === index ? null : index)}
           >
             <div className="product-card-inner">
               <div className="product-card-front">
                 {product.img && (
-                  <img 
-                    src={product.img} 
-                    alt={product.title} 
+                  <img
+                    src={product.img}
+                    alt={product.title}
                     className="product-card-img"
                     loading="lazy"
                   />
@@ -80,16 +89,18 @@ function ProjectPage() {
                 <ul>
                   {product.features.map((feature, i) => (
                     <li key={i}>{feature}</li>
-                   
                   ))}
                 </ul>
-                 <button className="btn-outline-warnings">Get Demo</button>
+                <button className="btn-outline-warnings">Get Demo</button>
               </div>
             </div>
           </div>
         ))}
       </div>
-      <div>
+
+      {/* Optional FAQ Section */}
+      <div id="faq-section">
+        <FAQSection />
       </div>
     </div>
   );

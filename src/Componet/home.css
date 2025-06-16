@@ -1,4 +1,4 @@
-/* Base layout */
+
 .navbar-container {
   display: flex;
   justify-content: space-between;
@@ -7,11 +7,11 @@
   border-radius: 12px;
   max-width: 1200px;
   position: relative;
-
+  
   
 }
 
-/* Logo */
+
 .logo-text {
   font-size: 38px;
   font-weight: bold;
@@ -23,7 +23,7 @@
   text-decoration: none;
 }
 
-/* Hamburger menu */
+
 .hamburger {
   display: none;
   flex-direction: column;
@@ -43,7 +43,7 @@
   display: block;
 }
 
-/* Hamburger animation */
+
 .hamburger.open .bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
@@ -56,7 +56,7 @@
   transform: translateY(-8px) rotate(-45deg);
 }
 
-/* Right section */
+
 .navbar-right {
   display: flex;
   align-items: center;
@@ -93,7 +93,6 @@
   width: 110%;
 }
 
-/* Button */
 .login-btn {
   background: none;
   border: 2px solid #297988;
@@ -113,7 +112,7 @@
   outline: none;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
@@ -166,9 +165,9 @@
   }
 }
 
-/* @supports not (background-clip: text) {
+@supports not (background-clip: text) {
   .logo-text {
     color: #297988;
     background: none;
   }
-} */
+}

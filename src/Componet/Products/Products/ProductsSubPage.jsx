@@ -11,7 +11,7 @@ import {
   FaUserCheck,
   FaLaptop,
   FaCalendarAlt,
-  FaBullseye
+  FaBullseye 
 } from 'react-icons/fa';
 import Dashboard from "./svg/Dashboard-cuate.svg"
 import Location from "./svg/Location tracking-rafiki.svg"
@@ -22,6 +22,9 @@ import dataImage from "./svg/itcpc/dataImage.svg"
 import Business from "./svg/itcpc/Business.svg"
 import Server from "./svg/itcpc/Server-pana.svg"
 import Interaction from "./svg/Interaction Design-amico.svg"
+import CustomCRM from  "./svg/crm/Customer relationship management-pana.svg"
+import Mobile from  "./svg/crm/MobileSupport.svg"
+import  Support from  "./svg/crm/Support.svg"
 import face from "./svg/TAM_1-BQrjPs_T.png"
 import FAQSection from "../../FAQSection/FAQSection"
 import crm from "../../../assets/products/crm-crm-svgrepo-com (1).svg";
@@ -99,7 +102,7 @@ function ProductsSubPage() {
         {
           title: "Custom Dashboard",
           icon: <FaUserCircle className="feature-icon" />,
-          image: "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&auto=format&fit=crop&q=60",
+          image: CustomCRM,
           descriptions: [
             "Personalized dashboard layouts",
             "Drag-and-drop widget configuration",
@@ -109,7 +112,7 @@ function ProductsSubPage() {
         {
           title: "Mobile Support",
           icon: <FaMapMarkedAlt className="feature-icon" />,
-          image: "https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800&auto=format&fit=crop&q=60",
+          image: Mobile,
           descriptions: [
             "Native mobile applications",
             "Offline data synchronization",
@@ -119,7 +122,7 @@ function ProductsSubPage() {
         {
           title: "24/7 Support",
           icon: <FaUserFriends className="feature-icon" />,
-          image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&auto=format&fit=crop&q=60",
+          image: Support,
           descriptions: [
             "Round-the-clock customer support",
             "Multi-channel support options",

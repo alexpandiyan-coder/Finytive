@@ -85,10 +85,17 @@ const Footer = () => {
 
           <Col md={3}>
             <h5 className="mb-3 text-warning">Contact Us</h5>
+            <p>
             <a  href="https://www.google.com/maps?q=New+no:30,+Old+no:16,+Akbarabad+1st+St,+China+Raji+Thottam,+Kodambakkam,+Chennai,+Tamil+Nadu+600024" className="text-light " style={{textDecoration:"none"}}>
               New no:30, Old no: 16, Akbarabad 1st St, China Raji Thottam, Kodambakkam, Chennai, Tamil Nadu 600024
             </a>
-            <p className="text-light">+91 44 4853 2233</p>
+            </p>
+            <p className="text-light">
+              Mobile:{' '}
+              <a href="tel:9952996769" className="text-warning text-decoration-none">
+                9952996769
+              </a>
+            </p>
             <p className="text-light">
               E-mail:{' '}
               <a href="mailto:info@finytive.com" className="text-warning text-decoration-none">

@@ -89,17 +89,16 @@ const Contact = () => {
                     </div>
                     <div className="method-details">
                       <h3>Call Us</h3>
-                      <a href='tel:9876543210' style={{ color:"#2c3e50",textDecoration:"none"}}>+91-9876543210</a>
+                      <a href='tel:9952996769' style={{ color:"#2c3e50",textDecoration:"none"}}>+91-9952996769</a>
                     </div>
                   </div>
-
                   <div className="contact-method">
                     <div className="icon-wrapper">
                       <FaMapMarkerAlt />
                     </div>
                     <div className="method-details">
                       <h3>Visit Us</h3>
-                      <p>New no:30, Old no:16, Akbarabad 1st St, China Raji Thottam, Kodambakkam, Chennai, Tamil Nadu 600024</p>
+                   <a style={{ color:"#2c3e50",textDecoration:"none"}}  href="https://www.google.com/maps?q=New+no:30,+Old+no:16,+Akbarabad+1st+St,+China+Raji+Thottam,+Kodambakkam,+Chennai,+Tamil+Nadu+600024"  >New no:30, Old no:16, Akbarabad 1st St, China Raji Thottam, Kodambakkam, Chennai, Tamil Nadu 600024</a>
                     </div>
                   </div>
                 </div>
@@ -190,5 +189,4 @@ const Contact = () => {
     </div>
   );
 };
-
 export default Contact;

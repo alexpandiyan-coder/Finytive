@@ -74,7 +74,7 @@ function Service() {
      
       {/* Hero Section with Value Content */}
       <div className="visual-service-wrappers text-warning">
-        <div className="service-visual-section  my-5" data-aos="fade-right">
+        {/* <div className="service-visual-section  my-5" data-aos="fade-right">
           <h2 className="fs-2 fw-bold">Explore Our Dynamic Visual Services</h2>
           <p className="text-warning ">
             Real-time animated shuffling of our key service areas
@@ -87,7 +87,7 @@ function Service() {
           </div>
 
           <button className="view-more-btn mt-3 px-4">Learn More</button>
-        </div>
+        </div> */}
               
          
     

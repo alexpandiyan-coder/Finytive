@@ -134,8 +134,8 @@ function Service() {
 
         
     </div>
-      <AiService />
-      <Cloud />
+      {/* <AiService />
+      <Cloud /> */}
       <OurWorkflow />
     </div>
   );

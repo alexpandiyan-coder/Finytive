@@ -47,7 +47,7 @@
 
 .service-card {
   cursor: pointer;
-  height: 200px;
+  height: 230px;
    
   }
 
@@ -195,8 +195,9 @@
     font-size: 1.3rem;
   }
 
-  .card-description {
+ .icon-card-description, .card-description {
     font-size: 0.95rem;
+    display: none;
   }
 
   .contant-top {

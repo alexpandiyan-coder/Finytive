@@ -125,7 +125,7 @@ function Service() {
         <h2 className="card-title">{service.title}</h2>
         <p className="card-description">{service.description}</p>
       </div>
-      <p style={{ fontSize: "50px" }}>
+      <p className="icon-card-description" style={{ fontSize: "50px" }}>
         <IoIosArrowForward />
       </p>
     </div>

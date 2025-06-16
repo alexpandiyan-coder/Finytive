@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaTwitter, FaFacebook } from 'react-icons/fa';
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaInstagram } from 'react-icons/fa';
 import emailjs from '@emailjs/browser';
 import './Contact.css';
 
@@ -26,7 +26,7 @@ const Contact = () => {
     const templateID = 'template_4k539tv';
     const publicKey = 'fFDFAjnJOBsA2FTB0';
 
-    // Explicitly send only the needed values
+  
     const templateParams = {
       name: formData.name,
       email: formData.email,
@@ -79,7 +79,7 @@ const Contact = () => {
                     </div>
                     <div className="method-details">
                       <h3>Email Us</h3>
-                      <p>info@finytive.com</p>
+                      <a style={{ color:"#2c3e50",textDecoration:"none"}} href='mailto:info@finytive.com'>info@finytive.com</a>
                     </div>
                   </div>
 
@@ -89,7 +89,7 @@ const Contact = () => {
                     </div>
                     <div className="method-details">
                       <h3>Call Us</h3>
-                      <p>+91-9876543210</p>
+                      <a href='tel:9876543210' style={{ color:"#2c3e50",textDecoration:"none"}}>+91-9876543210</a>
                     </div>
                   </div>
 
@@ -107,9 +107,8 @@ const Contact = () => {
                 <div className="social-links">
                   <h3>Follow Us</h3>
                   <div className="social-icons">
-                    <a href="#" className="social-icon"><FaLinkedin /></a>
-                    <a href="#" className="social-icon"><FaTwitter /></a>
-                    <a href="#" className="social-icon"><FaFacebook /></a>
+                    <a href="https://www.linkedin.com/company/finytiveprivatelimited" className="social-icon"><FaLinkedin /></a>
+                    <a href="https://www.instagram.com/finytiveprivatelimited?igsh=d2R1eXlib2g4NnQx" className="social-icon"><FaInstagram /></a>
                   </div>
                 </div>
               </div>

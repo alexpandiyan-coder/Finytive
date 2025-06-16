@@ -1,7 +1,7 @@
 // Footer.jsx
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { FaFacebook, FaLinkedin, FaYoutube, FaRegCopyright } from 'react-icons/fa';
+import { FaInstagram, FaLinkedin, FaYoutube, FaRegCopyright } from 'react-icons/fa';
 import footerImg1 from "../assets/Footer/div.pattern-1.png";
 import footerImg2 from "../assets/Footer/div.pattern-2.png";
 import './footer.css';
@@ -85,9 +85,9 @@ const Footer = () => {
 
           <Col md={3}>
             <h5 className="mb-3 text-warning">Contact Us</h5>
-            <p className="text-light">
+            <a  href="https://www.google.com/maps?q=New+no:30,+Old+no:16,+Akbarabad+1st+St,+China+Raji+Thottam,+Kodambakkam,+Chennai,+Tamil+Nadu+600024" className="text-light " style={{textDecoration:"none"}}>
               New no:30, Old no: 16, Akbarabad 1st St, China Raji Thottam, Kodambakkam, Chennai, Tamil Nadu 600024
-            </p>
+            </a>
             <p className="text-light">+91 44 4853 2233</p>
             <p className="text-light">
               E-mail:{' '}
@@ -101,31 +101,22 @@ const Footer = () => {
         <Row className="mt-4">
           <Col className="text-center">
             <a
-              href="https://www.facebook.com"
+              href="https://www.instagram.com/finytiveprivatelimited?igsh=d2R1eXlib2g4NnQx"
               className="text-light me-3"
-              aria-label="Facebook"
+              aria-label="Instagram"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaFacebook size={24} />
+            <FaInstagram size={24}/>
             </a>
             <a
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/company/finytiveprivatelimited/"
               className="text-light me-3"
               aria-label="LinkedIn"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaLinkedin size={24} />
-            </a>
-            <a
-              href="https://www.youtube.com"
-              className="text-light"
-              aria-label="YouTube"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaYoutube size={24} />
             </a>
           </Col>
         </Row>

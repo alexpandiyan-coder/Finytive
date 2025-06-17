@@ -67,6 +67,20 @@ function Service() {
   }
 ];
 
+{/* <div className="service-visual-section  my-5" data-aos="fade-right">
+  <h2 className="fs-2 fw-bold">Explore Our Dynamic Visual Services</h2>
+  <p className="text-warning ">
+    Real-time animated shuffling of our key service areas
+  </p>
+
+  <div className="mt-4">
+    <p><strong>✓ Interactive Designs:</strong> Enhance user experience with smooth, engaging animations.</p>
+    <p><strong>✓ AI Integration:</strong> Deliver intelligent, data-driven content to your audience.</p>
+    <p><strong>✓ Responsive Layout:</strong> Optimized for all devices and screen sizes.</p>
+  </div>
+
+  <button className="view-more-btn mt-3 px-4">Learn More</button>
+</div> */}
 
   return (
     <div className="service-container">
@@ -74,20 +88,6 @@ function Service() {
      
       {/* Hero Section with Value Content */}
       <div className="visual-service-wrappers text-warning">
-        {/* <div className="service-visual-section  my-5" data-aos="fade-right">
-          <h2 className="fs-2 fw-bold">Explore Our Dynamic Visual Services</h2>
-          <p className="text-warning ">
-            Real-time animated shuffling of our key service areas
-          </p>
-
-          <div className="mt-4">
-            <p><strong>✓ Interactive Designs:</strong> Enhance user experience with smooth, engaging animations.</p>
-            <p><strong>✓ AI Integration:</strong> Deliver intelligent, data-driven content to your audience.</p>
-            <p><strong>✓ Responsive Layout:</strong> Optimized for all devices and screen sizes.</p>
-          </div>
-
-          <button className="view-more-btn mt-3 px-4">Learn More</button>
-        </div> */}
               
          
     

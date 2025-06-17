@@ -13,11 +13,10 @@ import Careers from './Componet/CareerPage/CareerPage';
 import "./Componet/Products.css"
 import About from './Componet/About/About';
 import WhoWeAre from './Componet/WhoWeAre/WhoWeAre';
-import ProductsSubPage from './Componet/Products/Products/ProductsSubPage';
 import AuthPage from './Componet/ClientLogin/AuthPage';
 import WhatWeDo from './Componet/WhatWeDo/WhatWeDo';
-import AIChat from './Componet/AiChat/AiChat';
-import HowItWorks from './Componet/HowItWorks/HowItWorks';
+import ProductListPage from './Componet/Products/Products/ProductListPage';
+import ProductDetailPage from './Componet/Products/Products/ProductDetailPage';
 
 function App() {
   useEffect(() => {
@@ -43,9 +42,11 @@ function App() {
            <Route path="/service" element={<Service />} />
            <Route path="/Contact" element={<ContactPage />} />
            <Route path="/Careers" element={ <Careers/>} />
-           <Route path="/ProductsPage" element={<ProductsSubPage/>} />
+           <Route path="/ProductsPage" element={<ProductListPage />} />
            <Route path="/About" element={ <About/>} />
            <Route path="/Login" element={ <AuthPage/>} />
+           {/* <Route path="/ProductListPage" element={<ProductListPage />} /> */}
+          <Route path="/product/:id" element={<ProductDetailPage />} />
         </Route>
       </Routes>
   );

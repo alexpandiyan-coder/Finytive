@@ -228,7 +228,7 @@
 
 @media (max-width: 576px) {
   .items {
-    width: 100%;
+    width: 150%;
   }
 
   .product-point-text {

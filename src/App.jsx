@@ -19,9 +19,14 @@ import ProductListPage from './Componet/Products/Products/ProductListPage';
 import ProductDetailPage from './Componet/Products/Products/ProductDetailPage';
 
 function App() {
+ 
   useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
+  AOS.init({
+    duration: 1000, 
+    once: false
+  });
+  AOS.refresh();
+}, []);
 
   return (
     

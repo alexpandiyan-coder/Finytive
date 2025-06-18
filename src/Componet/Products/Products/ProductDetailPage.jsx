@@ -56,7 +56,8 @@ function ProductDetailPage() {
           </div>
           <div className="project-text">
             {product.features[selectedFeature].descriptions.map((desc, index) => (
-              <div className="project-point" key={index}>
+              <div className="project-point" key={index} data-aos="fade-right"
+            data-aos-delay={index * 200}>
                 <FaCheck className="check-icon" />
                 <span className='project-point-text'>{desc}</span>
               </div>

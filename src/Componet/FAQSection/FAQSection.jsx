@@ -45,7 +45,9 @@ const FAQSection = () => {
         </p>
 
         {faqData.map((faq, index) => (
-          <div key={index} className="accordion">
+          <div
+            data-aos="fade-right"
+            data-aos-delay={index * 160} key={index} className="accordion">
             <div
               className="accordion-header"
               onClick={() => toggleAccordion(index)}

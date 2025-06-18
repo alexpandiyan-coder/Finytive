@@ -1,9 +1,7 @@
 
 
-import Cloud from "./cloud/Cloud";
-import AiService from "./AiService/AiService";
+
 import "./service.css";
-import CarouselFadeExample from './CarouselService/CarouselFadeExample';
 import OurWorkflow from "./OurWorkFlow/OurWorkFlow";
 import { IoIosArrowForward } from "react-icons/io";
 import Ai from "./jsonFile/Ai.json";
@@ -14,7 +12,6 @@ import Technical from "./jsonFile/Technical.json";
 import Custom from "./jsonFile/Custom.json";
 import { Link,useNavigate } from "react-router-dom";
 import Lottie from "lottie-react";
-import Cover from "./AiService/serviceImage/Cover.png";
 
 
 function Service() {

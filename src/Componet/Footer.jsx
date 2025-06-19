@@ -25,9 +25,9 @@ const Footer = () => {
           <Col md={2}>
             <h5 className="mb-3 text-warning">Products</h5>
             <ul className="list-unstyled lh-lg text-light">
-              <li>Finytive CRM</li>
               <li>Tickora</li>
               <li>ITCPC</li>
+              <li>Finytive CRM</li>
             </ul>
           </Col>
 

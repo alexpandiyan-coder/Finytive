@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaInstagram } from 'react-icons/fa';
-import emailjs from '@emailjs/browser';
 import './Contact.css';
 
 const Contact = () => {
@@ -19,37 +18,9 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    const serviceID = 'service_wrp0yyr';
-    const templateID = 'template_4k539tv';
-    const publicKey = 'fFDFAjnJOBsA2FTB0';
-
+ const handleSubmit = async (e) => {
   
-    const templateParams = {
-      name: formData.name,
-      email: formData.email,
-      subject: formData.subject,
-      message: formData.message
-    };
-
-    emailjs.send(serviceID, templateID, templateParams, publicKey)
-      .then((response) => {
-        console.log('SUCCESS!', response.status, response.text);
-        alert('Message sent successfully!');
-        setFormData({
-          name: '',
-          email: '',
-          subject: '',
-          message: ''
-        });
-      })
-      .catch((err) => {
-        console.error('FAILED...', err);
-        alert('Failed to send message. Please try again later.');
-      });
-  };
+};
 
   return (
     <div className="contact-page">

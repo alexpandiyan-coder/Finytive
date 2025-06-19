@@ -1,28 +1,41 @@
-
 .bg-image-products {
   background-image: url("../../../assets/10.jpg");
-  background-size: cover;
-  background-position: center;
+  background-size: cover;            
+  background-position: center center; 
   background-repeat: no-repeat;
+  
   width: 100%;
-  height: 70vh;
+  min-height: 300px;                 
+  height: 70vh;                     
+  
   position: relative;
+  display: flex;                     
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
+
 
 @media (max-width: 768px) {
   .bg-image-products {
-    height: 40vh;
+    height: 50vh;    
   }
 }
 
-/* Optional: add dark overlay (remove if not needed) */
+@media (max-width: 480px) {
+  .bg-image-products {
+    height: 40vh;   
+  }
+}
+
+
 .bg-image-products::after {
   content: "";
   position: absolute;
   top: 0; left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.3); /* dark overlay */
+  background-color: rgba(0, 0, 0, 0.3); 
 }
 
 
@@ -150,7 +163,7 @@
   }
 }
 
-/* Full Responsive Media Query for ProductsSubPage */
+
 
 @media (max-width: 991px) {
   .product-card-grid {

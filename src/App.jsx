@@ -50,7 +50,7 @@ function App() {
            <Route path="/ProductsPage" element={<ProductListPage />} />
            <Route path="/About" element={ <About/>} />
            <Route path="/Login" element={ <AuthPage/>} />
-           {/* <Route path="/ProductListPage" element={<ProductListPage />} /> */}
+          
           <Route path="/product/:id" element={<ProductDetailPage />} />
         </Route>
       </Routes>

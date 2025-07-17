@@ -6,6 +6,8 @@ import { FaCheck } from 'react-icons/fa';
 import { productData } from "./ProductDataFile";
 import './ProductSubPage.css';
 import FAQSection from '../../FAQSection/FAQSection';
+import CTASection from '../../CtaSection';
+import PrivacyPolicy from '../../PrivacyPolicy';
 
 function ProductDetailPage() {
   const { id } = useParams();
@@ -69,6 +71,8 @@ function ProductDetailPage() {
       <div>
         <FAQSection/>
       </div>
+      <CTASection/>
+      {/* <PrivacyPolicy/> */}
     </div>
   );
 }

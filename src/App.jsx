@@ -1,4 +1,4 @@
-import React, { useEffect, useRef  } from 'react';
+import React, { useEffect  } from 'react';
 import {  Routes, Route } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -17,6 +17,8 @@ import AuthPage from './Componet/ClientLogin/AuthPage';
 import WhatWeDo from './Componet/WhatWeDo/WhatWeDo';
 import ProductListPage from './Componet/Products/Products/ProductListPage';
 import ProductDetailPage from './Componet/Products/Products/ProductDetailPage';
+import PrivacyPolicy from './Componet/PrivacyPolicy';
+import ScrollToTop from './Componet/ScrollToTop';
 
 function App() {
  
@@ -30,7 +32,10 @@ function App() {
 
   return (
     
+      <>
+      <ScrollToTop />
       <Routes>
+        
         <Route path="/" element={<Layout />}>
          
           <Route index element={
@@ -53,7 +58,9 @@ function App() {
           
           <Route path="/product/:id" element={<ProductDetailPage />} />
         </Route>
+          <Route path="/tickora/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
+      </>
   );
 }
 

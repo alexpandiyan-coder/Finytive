@@ -17,8 +17,7 @@ const Footer = () => {
           <Col md={2}>
             <h1 className="fw-bold text-warning">Finytive</h1>
             <p className="mt-3 text-light">
-              Finytive is an independent, leading software firm specialized in Enterprise
-              business applications .
+              Finytive is a product-first innovation hub building AI-powered platforms and scalable digital solutions. With deep engineering expertise and a startup mindset, we accelerate your journey from idea to market.
             </p>
           </Col>
 
@@ -26,7 +25,7 @@ const Footer = () => {
             <h5 className="mb-3 text-warning">Products</h5>
             <ul className="list-unstyled lh-lg text-light">
               <li>Tickora</li>
-              <li>ITCPC</li>
+              <li>Spice Action</li>
               <li>Finytive CRM</li>
             </ul>
           </Col>

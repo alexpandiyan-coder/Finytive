@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams} from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { FaCheck } from 'react-icons/fa';
@@ -7,12 +7,12 @@ import { productData } from "./ProductDataFile";
 import './ProductSubPage.css';
 import FAQSection from '../../FAQSection/FAQSection';
 import CTASection from '../../CtaSection';
-import PrivacyPolicy from '../../PrivacyPolicy';
+// import PrivacyPolicy from '../../PrivacyPolicy';
 
 function ProductDetailPage() {
   const { id } = useParams();
   const [selectedFeature, setSelectedFeature] = useState(0);
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   useEffect(() => {
     AOS.init({ duration: 800, once: true });
@@ -69,7 +69,7 @@ function ProductDetailPage() {
         
       </div>
       <div>
-        <FAQSection/>
+        {/* <FAQSection/> */}
       </div>
       <CTASection/>
       {/* <PrivacyPolicy/> */}

@@ -6,11 +6,11 @@ import { useNavigate } from "react-router-dom";
 const TickoraPrivacyPolicy = () => {
   // You can replace this with react-router's useNavigate if using react-router
   const navigate = useNavigate();
-    // Function to handle back navigation       
+  // Function to handle back navigation
 
   const handleBack = () => {
     navigate({
-        pathname: "/ProductsPage",
+      pathname: "/ProductsPage",
     });
   };
 
@@ -164,10 +164,28 @@ const TickoraPrivacyPolicy = () => {
           noted.
         </p>
       </section>
+      <section className="mb-5">
+        <h4 className="text-danger">
+          10. Deep Links for Password Reset and Authentication
+        </h4>
+        <p>
+          Our app uses deep links to support password reset and user
+          authentication processes. When you request a password reset or account
+          verification, we send a link to your registered email address. This
+          link may include your email ID or other information needed to confirm
+          your identity and complete the requested action.
+        </p>
+        <p>
+          These links are designed to work only for a limited time and are only
+          sent to the email address associated with your account. While we take
+          care to ensure these links are not easily guessable, they are not
+          encrypted, and we recommend you do not share them with anyone.
+        </p>
+      </section>
 
       <div className="text-center mt-5">
         <small className="text-muted">
-          Last updated: July 11, 2025 • Finytive Private Limited
+          Last updated: August 04, 2025 • Finytive Private Limited
         </small>
       </div>
     </div>

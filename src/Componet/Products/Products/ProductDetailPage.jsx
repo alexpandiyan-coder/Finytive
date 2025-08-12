@@ -31,6 +31,9 @@ function ProductDetailPage() {
           <span className='text-warning fs-1'>{product.title2}</span>
         </h2>
         <p className="subtitle">{product.description}</p>
+        <div className="d-flex justify-content-center">
+         <a href="http://www.tickora.co.in" target='_blank'> <button className='btn btn-danger  px-5'>Login</button></a>
+        </div>
       </div>
 
       <div className='project-page-layout'>
@@ -45,6 +48,7 @@ function ProductDetailPage() {
                 {feature.icon}
                 <span>{feature.title}</span>
               </div>
+             
             </div>
           ))}
         </div>
@@ -59,7 +63,7 @@ function ProductDetailPage() {
           <div className="project-text">
             {product.features[selectedFeature].descriptions.map((desc, index) => (
               <div className="project-point" key={index} data-aos="fade-right"
-            data-aos-delay={index * 200}>
+                data-aos-delay={index * 200}>
                 <FaCheck className="check-icon" />
                 <span className='project-point-text'>{desc}</span>
               </div>

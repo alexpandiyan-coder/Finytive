@@ -17,7 +17,7 @@ function HeaderPage() {
 
       <div className='header' data-aos="zoom-in-right">
         <p className="font-header">Finytive</p>
-        <p className='font-child'>Finite ideas. Infinite possibilities.</p>
+        <p className='font-child'>Finite ideas. Infinite possibilities.</p>
         <p className='header-description'>
           At Finytive, our name reflects our purpose — blending the boundless possibilities of innovation 
           with precise, impactful solutions. From startups to enterprises, we deliver smart, secure, 

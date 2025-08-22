@@ -20,7 +20,8 @@ function HomePage() {
   return (
     <header className="navbar-container">
       <div className="navbar-logo">
-        <Link to="/" className="logo-text">Finytive</Link>
+        <img className='logoImages' src="..\src\assets\OriginalLogo.png" alt="Finytive Logo  " />
+        {/* <Link to="/" className="logo-text">Finytive</Link> */}
       </div>
 
       <button

@@ -7,12 +7,11 @@ import { productData } from "./ProductDataFile";
 import './ProductSubPage.css';
 import FAQSection from '../../FAQSection/FAQSection';
 import CTASection from '../../CtaSection';
-// import PrivacyPolicy from '../../PrivacyPolicy';
+
 
 function ProductDetailPage() {
   const { id } = useParams();
   const [selectedFeature, setSelectedFeature] = useState(0);
-  // const navigate = useNavigate();
 
   useEffect(() => {
     AOS.init({ duration: 800, once: true });

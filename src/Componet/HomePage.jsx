@@ -19,10 +19,10 @@ function HomePage() {
 
   return (
     <header className="navbar-container">
-      <div className="navbar-logo">
-        <img className='logoImages' src="..\src\assets\OriginalLogo.png" alt="Finytive Logo  " />
+
+       <Link to="/" ><img className='logoImages' src="..\src\assets\OriginalLogo.png" alt="Finytive Logo " /></Link> 
         {/* <Link to="/" className="logo-text">Finytive</Link> */}
-      </div>
+
 
       <button
         className={`hamburger ${menuOpen ? 'open' : ''}`}

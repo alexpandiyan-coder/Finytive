@@ -36,7 +36,7 @@ const Footer = () => {
               <li>AI Solutions</li>
               <li>Mobile App Development</li>
               <li>Cloud Computing</li>
-              <li> Enterprise application development</li>
+              <li> Enterprise application development</li>
             </ul>
           </Col>
 
@@ -86,7 +86,7 @@ const Footer = () => {
             <h5 className="mb-3 text-warning">Contact Us</h5>
             <p>
             <a  href="https://www.google.com/maps?q=New+no:30,+Old+no:16,+Akbarabad+1st+St,+China+Raji+Thottam,+Kodambakkam,+Chennai,+Tamil+Nadu+600024" className="text-light " style={{textDecoration:"none"}}>
-              New no:30, Old no: 16, Akbarabad 1st St, China Raji Thottam, Kodambakkam, Chennai, Tamil Nadu 600024
+              G Floor, 30A/16, Akbarabad 1st street, Kodambakkam, Chennai City, Chennai- 600024, Tamil Nadu.
             </a>
             </p>
             <p className="text-light">
